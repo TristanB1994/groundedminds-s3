@@ -6,14 +6,27 @@
 # }
 
 resource "aws_cloudfront_distribution" "cdn" {
-  origin {
-    domain_name = "${var.origin_domain_name}"
-    origin_id   = "S3-${var.origin_domain_name}"
+  # origin {
+  #   domain_name = "${var.origin_domain_name}"
+  #   origin_id   = "S3-${var.origin_domain_name}"
 
-    s3_origin_config {
-      origin_access_identity = var.origin_access_identity_path
+  #   s3_origin_config {
+  #     origin_access_identity = var.origin_access_identity_path
+  #   }
+  # }
+
+  origin {
+      domain_name = var.origin_domain_name
+      origin_id   = "S3-${var.origin_domain_name}"
+
+      custom_origin_config {
+        http_port              = 80
+        https_port             = 443
+        origin_protocol_policy = "http-only" # Must be http-only for S3 Website Endpoints
+        origin_ssl_protocols   = ["TLSv1.2"]
+      }
     }
-  }
+
 
   enabled             = true
   is_ipv6_enabled     = true
