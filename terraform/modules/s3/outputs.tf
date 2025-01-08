@@ -21,7 +21,7 @@ output "bucket_rest_endpoint" {
 }
 
 output "bucket_website_endpoint" {
-  value = aws_s3_bucket.website_bucket.website_endpoint
+  value = aws_s3_bucket.website_bucket.website_domain
 }
 
 output "origin_access_identity_path" {
