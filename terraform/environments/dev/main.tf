@@ -18,7 +18,7 @@ module "acm" {
 module "cloudfront" {
   source                      = "../../modules/cloudfront"
   # origin_domain_name          = module.s3.bucket_rest_endpoint
-  origin_domain_name          = module.s3.bucket_website_endpoint 
+  origin_domain_name          = "${module.s3.bucket_name}.${module.s3.bucket_website_endpoint}" 
   origin_access_identity_path = module.s3.origin_access_identity_path
   bucket_arn                  = module.s3.bucket_arn 
   acm_certificate_arn         = module.acm.certificate_arn

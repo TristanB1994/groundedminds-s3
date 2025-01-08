@@ -27,3 +27,7 @@ output "bucket_website_endpoint" {
 output "origin_access_identity_path" {
   value = aws_cloudfront_origin_access_identity.oai.cloudfront_access_identity_path
 }
+
+output "bucket_name" {
+  value = aws_s3_bucket.website_bucket.id
+}
