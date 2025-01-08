@@ -7,7 +7,7 @@
 
 resource "aws_cloudfront_distribution" "cdn" {
   origin {
-    domain_name = "${var.origin_domain_name}.s3.${var.aws_region}.amazonaws.com" # S3 bucket domain
+    domain_name = "${var.origin_domain_name}"
     origin_id   = "S3-${var.origin_domain_name}"
 
     s3_origin_config {
