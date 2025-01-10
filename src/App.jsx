@@ -16,10 +16,12 @@ import AboutAnkaKrivokuca from './pages/about/About-anka-krivokuca';
 import AboutDanielleKirshenbaum from './pages/about/About-danielle-kirshenbaum';
 import AboutMoonsunJang from './pages/about/About-moonsun-jang';
 import Resources from './pages/Resources';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -37,7 +39,6 @@ const App = () => {
         <Route path="/ocd" element={<ServicesOcd />} />
         <Route path="/trauma" element={<ServicesTrauma />} />
         <Route path="/resources" element={<Resources />} />
-        {/* Add more routes as needed */}
         {/* 404 Page */}
         <Route path="*" element={<h1>404: Page Not Found</h1>} />
       </Routes>
