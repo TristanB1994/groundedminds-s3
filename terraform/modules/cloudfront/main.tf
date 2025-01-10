@@ -43,7 +43,7 @@ resource "aws_cloudfront_distribution" "cdn" {
     error_code            = 404
     response_code         = 200
     response_page_path    = "/index.html"
-    error_caching_min_ttl = 300
+    error_caching_min_ttl = 0
   }
 
   price_class = "PriceClass_100" # Adjust based on requirements

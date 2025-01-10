@@ -11,15 +11,15 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title> {{ titleString }} </title>
-                <meta name="description" content={{metaDescription}} />
+                <title> { titleString } </title>
+                <meta name="description" content={ metaDescription } />
 
                 <meta property="og:url" content="https://www.groundedminds.ca" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content=" Home | Grounded Minds Therapy " />
-                <meta property="og:description" content={{metaDescription}} />
+                <meta property="og:description" content={ metaDescription } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/homepg.jpeg" />
-                <meta property="og:image:alt" content={{metaDescription}} />
+                <meta property="og:image:alt" content={ metaDescription } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
