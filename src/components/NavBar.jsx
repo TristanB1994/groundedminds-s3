@@ -171,9 +171,23 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
   /**
    * DESKTOP HOVER HANDLERS
    */
+  useEffect(() => {
+    console.log('About Hover Menu Ref:', aboutHoverMenuRef.current);
+    console.log('About Hover Trigger Ref:', aboutHoverTriggerRef.current);
+    console.log('Services Hover Menu Ref:', servicesHoverMenuRef.current);
+    console.log('Services Hover Trigger Ref:', servicesHoverTriggerRef.current);
+  }, []);
   const showAboutHoverMenu = () => {
+    console.log("show about hover menu")
     setServicesHoverOpen(false);
     setAboutHoverOpen(true);
+
+    if (aboutHoverMenuRef.current) {
+      aboutHoverMenuRef.current.style.zIndex = '1000'; // Set desired z-index
+      aboutHoverMenuRef.current.style.opacity = '1';   // Make it fully opaque
+      // Optionally, ensure it's visible
+      aboutHoverMenuRef.current.style.display = 'block';
+    }
   };
   const hideAboutHoverMenu = () => {
     setTimeout(() => {
@@ -182,6 +196,11 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
         !aboutHoverTriggerRef.current?.matches(':hover')
       ) {
         setAboutHoverOpen(false);
+        if (aboutHoverMenuRef.current) {
+          aboutHoverMenuRef.current.style.zIndex = '0';  
+          aboutHoverMenuRef.current.style.opacity = '0'; 
+          aboutHoverMenuRef.current.style.display = 'none';
+        }
       }
     }, 200);
   };
@@ -189,6 +208,11 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
   const showServicesHoverMenu = () => {
     setAboutHoverOpen(false);
     setServicesHoverOpen(true);
+    if (servicesHoverMenuRef.current) {
+      servicesHoverMenuRef.current.style.zIndex = '1000';
+      servicesHoverMenuRef.current.style.opacity = '1';  
+      servicesHoverMenuRef.current.style.display = 'block';
+    }
   };
   const hideServicesHoverMenu = () => {
     setTimeout(() => {
@@ -197,6 +221,11 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
         !servicesHoverTriggerRef.current?.matches(':hover')
       ) {
         setServicesHoverOpen(false);
+        if (servicesHoverMenuRef.current) {
+          servicesHoverMenuRef.current.style.zIndex = '0';  
+          servicesHoverMenuRef.current.style.opacity = '0'; 
+          servicesHoverMenuRef.current.style.display = 'none';
+        }
       }
     }, 200);
   };
@@ -281,6 +310,8 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             className={`nav-hovermenu-container ${aboutHoverOpen ? 'active' : ''}`}
             onMouseEnter={showAboutHoverMenu}
             onMouseLeave={hideAboutHoverMenu}
+            aria-haspopup="true"
+            aria-expanded={aboutHoverOpen}
           >
             <div className="nav-about-hovermenu">
               <Link to="/about" className="nav-about-hovermenu-cta">Our Team</Link>
