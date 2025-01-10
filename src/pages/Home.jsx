@@ -5,19 +5,21 @@ import { Helmet } from 'react-helmet';
 
 
 const Home = () => {
-    // const titleString = "Home | Grounded Minds Therapy";
-    // const metaDescription = "Grounded Minds Therapy provides virtual therapy for anxiety and OCD. Schedule a complimentary consultation today.";
+    const titleString = "Home | Grounded Minds Therapy";
+    const metaDescription = "Virtual therapy for adults across Ontario. Treatment for anxiety, OCD and  PTSD.";
 
     return (
-        // <Layout title={titleString} metaDescription={metaDescription}>
         <>
             <Helmet>
+                <title> {{ titleString }} </title>
+                <meta name="description" content={{metaDescription}} />
+
                 <meta property="og:url" content="https://www.groundedminds.ca" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content=" Home | Grounded Minds Therapy " />
-                <meta property="og:description" content="Virtual therapy for adults across Ontario. Treatment for anxiety, OCD and  PTSD." />
+                <meta property="og:description" content={{metaDescription}} />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/homepg.jpeg" />
-                <meta property="og:image:alt" content="Virtual therapy for adults across Ontario. Treatment for anxiety, OCD and  PTSD." />
+                <meta property="og:image:alt" content={{metaDescription}} />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
