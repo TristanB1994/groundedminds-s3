@@ -10,7 +10,6 @@ const About = () => {
                 <title>Our Team | Grounded Minds Therapy</title>
                 <meta name="description" content="Our team specializes in supporting individuals with anxiety disorders and OCD. With extensive training and experience, we welcome the opportunity to work with you." />
 
-                {/* Facebook Meta Tags */}
                 <meta property="og:url" content="https://www.groundedminds.ca/about" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Our Team | Grounded Minds Therapy" />
