@@ -6,20 +6,25 @@ import { Helmet } from 'react-helmet';
 const AboutAngieBlandford = () => {
 
     const bannerLabel = "Meet Angie";
+    const titleString = "Angie Blandford | Grounded Minds Therapy";
+    const descriptionString = "Angie Blandford is a Registered Social Worker who specializes in anxiety disorders,  OCD and PTSD.";
 
     return (
         <>
             <Helmet>
+                <title>{titleString}</title>
+                <meta name="description" content={descriptionString} />
+
                 <meta property="og:url" content="https://www.groundedminds.ca/angieblandford" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Angie Blandford | Grounded Minds Therapy " />
-                <meta property="og:description" content="Angie Blandford is a Registered Social Worker who specializes in anxiety disorders,  OCD and PTSD." />
+                <meta property="og:title" content={titleString} />
+                <meta property="og:description" content={descriptionString} />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/portrait.jpeg" />
                 <meta property="og:image:alt" content="Angie Blandford OCD, PTSD and anxiety Specialist" />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel}}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <div>
                     <p className="question">Angie Blandford</p>
                 </div>

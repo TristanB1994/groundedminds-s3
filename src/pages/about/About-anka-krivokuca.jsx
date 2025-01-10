@@ -6,16 +6,21 @@ import { Helmet } from 'react-helmet';
 const AboutAnkaKrivokuca = () => {
     
     const bannerLabel = "Meet Anka";
+    const titleString = "Anka Krivokuca | Grounded Minds Therapy";
+    const descriptionString = "Anka Krivokuca is a Registered Social Worker who specializes in anxiety disorders, OCD, perinatal OCD, BFRBs, trauma and PTSD, and body dysmorphia.";
 
     return (
         <>
             <Helmet>
-               <meta property="og:url" content="https://www.groundedminds.ca/ankakrivokuca" />
+                <title>{titleString}</title>
+                <meta name="description" content={descriptionString} />
+                
+                <meta property="og:url" content="https://www.groundedminds.ca/ankakrivokuca" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Anka Krivokuca | Grounded Minds Therapy " />
-                <meta property="og:description" content="Anka Krivokuca is a Registered Social Worker who specializes in anxiety disorders, OCD, perinatal OCD, BFRBs, trauma and PTSD, and body dysmorphia." />
+                <meta property="og:title" content={titleString} />
+                <meta property="og:description" content={descriptionString} />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/anka.jpeg" />
-                <meta property="og:image:alt" content="Anka Krivokuca specialized specialist" />
+                <meta property="og:image:alt" content="Anka Krivokuca OCD, Perinatal OCD, BFRB, body dismorphia and trauma therapist." />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>

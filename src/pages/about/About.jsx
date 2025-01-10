@@ -4,22 +4,27 @@ import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
 
 const About = () => {
+
+    const bannerLabel = "Experts in Anxiety & OCD Treatment";
+    const titleString = "Our Team | Grounded Minds Therapy";
+    const descriptionString = "Our team specializes in supporting individuals with anxiety disorders and OCD. With extensive training and experience, we welcome the opportunity to work with you.";
+
     return (
         <>
             <Helmet>
-                <title>Our Team | Grounded Minds Therapy</title>
-                <meta name="description" content="Our team specializes in supporting individuals with anxiety disorders and OCD. With extensive training and experience, we welcome the opportunity to work with you." />
+                <title>{ titleString }</title>
+                <meta name="description" content={ descriptionString } />
 
                 <meta property="og:url" content="https://www.groundedminds.ca/about" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Our Team | Grounded Minds Therapy" />
-                <meta property="og:description" content="Our team specializes in supporting individuals with anxiety disorders and OCD. With extensive training and experience, we welcome the opportunity to work with you." />
+                <meta property="og:title" content={ titleString } />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/homepage.jpeg" />
-                <meta property="og:image:alt" content="Our team specializes in supporting individuals with anxiety disorders and OCD. With extensive training and experience, we welcome the opportunity to work with you." />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: 'Experts in Anxiety & OCD Treatment' }}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <section className="content">        
                     <p className="question">            
                         Do you...

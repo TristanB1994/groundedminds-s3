@@ -6,16 +6,21 @@ import { Helmet } from 'react-helmet';
 const Contact = () => {
 
     const bannerText = "Get In Touch"
+    const titleString = "Contact | Grounded Minds Therapy";
+    const descriptionString = "Get in touch to schedule a free consultation call, book a therapy session, or ask any  questions you might have. We’d love to hear from you!";
 
     return (
         <>
             <Helmet>
+                <title>{titleString}</title>
+                <meta name="description" content={descriptionString} />
+
                 <meta property="og:url" content="https://www.groundedminds.ca/contact" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Contact | Grounded Minds Therapy " />
-                <meta property="og:description" content="Get in touch to schedule a free consultation call, book a therapy session, or ask any  questions you might have. We’d love to hear from you!" />
+                <meta property="og:title" content={ titleString } />
+                <meta property="og:description" content={descriptionString} />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/contact_banner.jpg" />
-                <meta property="og:image:alt" content="Get in touch to schedule a free consultation call, book a therapy session, or ask any  questions you might have. We’d love to hear from you!" />
+                <meta property="og:image:alt" content={descriptionString} />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>

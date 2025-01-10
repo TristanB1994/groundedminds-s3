@@ -4,17 +4,22 @@ import { Helmet } from 'react-helmet';
 
 const FAQ = () => {
 
-  const bannerText = "FAQ"
+  const bannerText = "FAQ";
+  const titleString = "FAQ | Grounded Minds Therapy";
+  const descriptionString = "Discover answers to commonly asked questions. Have a question that’s not answered here? Reach out today.";
 
   return (
     <>
         <Helmet>
+            <title>{titleString}</title>
+            <meta name="description" content={descriptionString} />
+
             <meta property="og:url" content="https://www.groundedminds.ca/faq" />
             <meta property="og:type" content="website" />
-            <meta property="og:title" content=" FAQ | Grounded Minds Therapy " />
-            <meta property="og:description" content="Discover answers to commonly asked questions. Have a question that’s not answered here? Reach out today." />
+            <meta property="og:title" content={ titleString } />
+            <meta property="og:description" content={descriptionString} />
             <meta property="og:image" content="https://www.groundedminds.ca/static/assets/consultation.jpeg" />
-            <meta property="og:image:alt" content="Discover answers to commonly asked questions. Have a question that’s not answered here? Reach out today." />
+            <meta property="og:image:alt" content={descriptionString} />
             <meta property="og:image:height" content="300" />
             <meta property="og:image:width" content="300" />
         </Helmet>

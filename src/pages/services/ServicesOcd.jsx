@@ -4,20 +4,25 @@ import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
 
 const ServicesOcd = () => {
+
+    const bannerLabel = "OCD";
+    const titleString = "Therapy for OCD | Grounded Minds Therapy";
+    const descriptionString = "Our therapists are OCD experts. We offer Exposure and Response Prevention (ERP), Acceptance and Commitment Therapy (ACT) and Inference-Based Cognitive Behavioural Therapy (I-CBT).";
+    
     return (
         <>
             <Helmet>
                 <meta property="og:url" content="https://www.groundedminds.ca/ocd" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Therapy for OCD | Grounded Minds " />
+                <meta property="og:title" content={ titleString } />
                 {/* Description might be too long, 212 characters */}
-                <meta property="og:description" content="Our therapists are OCD experts. We offer Exposure and Response Prevention (ERP), Acceptance and Commitment Therapy (ACT) and Inference-Based Cognitive Behavioural Therapy (I-CBT)." />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/aboutmidbanner.jpg" />
-                <meta property="og:image:alt" content="Our therapists are OCD experts. We offer Exposure and Response Prevention (ERP), Acceptance and Commitment Therapy (ACT) and Inference-Based Cognitive Behavioural Therapy (I-CBT)." />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: 'OCD' }}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <section className="content">
                     <div id="consult">
                         <h3 className="caps sessions">                What is Obsessive-Compulsive Disorder (OCD)?            </h3>

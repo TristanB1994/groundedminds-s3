@@ -6,16 +6,21 @@ import { Helmet } from 'react-helmet';
 const AboutDanielleKirshenbaum = () => {
     
     const bannerLabel = "Meet Daniel";
+    const titleString = "Danielle Kirshenbaum | Grounded Minds Therapy";
+    const descriptionString = "Danielle Kirshenbaum is a Registered Social Worker who specializes in anxiety  disorders, OCD, perinatal mental health and psychosis.";
 
     return (
         <>
             <Helmet>
+                <title>{titleString}</title>
+                <meta name="description" content={descriptionString} />
+
                 <meta property="og:url" content="https://www.groundedminds.ca/daniellekirshenbaum" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Danielle Kirshenbaum | Grounded Minds Therapy " />
-                <meta property="og:description" content="Danielle Kirshenbaum is a Registered Social Worker who specializes in anxiety  disorders, OCD, perinatal mental health and psychosis." />
+                <meta property="og:title" content={titleString} />
+                <meta property="og:description" content={descriptionString} />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/headshotdanielle.png" />
-                <meta property="og:image:alt" content="Danielle Kirshenbaum specialized specialist" />
+                <meta property="og:image:alt" content="Danielle Kirshenbaum, therapist specialized in anxiety, OCD, Perinatal mental heath and psychosis. " />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>

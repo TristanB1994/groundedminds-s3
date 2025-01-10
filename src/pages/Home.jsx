@@ -5,21 +5,22 @@ import { Helmet } from 'react-helmet';
 
 
 const Home = () => {
+    
     const titleString = "Home | Grounded Minds Therapy";
-    const metaDescription = "Virtual therapy for adults across Ontario. Treatment for anxiety, OCD and  PTSD.";
+    const descriptionString = "Virtual therapy for adults across Ontario. Treatment for anxiety, OCD and  PTSD.";
 
     return (
         <>
             <Helmet>
                 <title> { titleString } </title>
-                <meta name="description" content={ metaDescription } />
+                <meta name="description" content={ descriptionString } />
 
                 <meta property="og:url" content="https://www.groundedminds.ca" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Home | Grounded Minds Therapy " />
-                <meta property="og:description" content={ metaDescription } />
+                <meta property="og:title" content={ titleString } />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/homepg.jpeg" />
-                <meta property="og:image:alt" content={ metaDescription } />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>

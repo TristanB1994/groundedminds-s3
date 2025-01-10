@@ -4,19 +4,27 @@ import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
 
 const ServicesAll = () => {
+    
+    const bannerLabel = "Services";
+    const titleString = "Services | Grounded Minds Therapy";
+    const descriptionString = "Grounded Minds offers virtual counselling and consultation services to  individuals across Ontario. We combine compassionate talk therapy with skills-based  techniques to support people with anxiety, OCD and PTSD.";
+    
     return (
         <>
             <Helmet>
+                <title>{titleString}</title>
+                <meta name="description" content={descriptionString} />
+
                 <meta property="og:url" content="https://www.groundedminds.ca/services" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Services | Grounded Minds Therapy " />
-                <meta property="og:description" content="Grounded Minds offers virtual counselling and consultation services to  individuals across Ontario. We combine compassionate talk therapy with skills-based  techniques to support people with anxiety, OCD and PTSD." />
+                <meta property="og:title" content={titleString} />
+                <meta property="og:description" content={descriptionString} />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/virtualtherapy.jpeg" />
-                <meta property="og:image:alt" content="Grounded Minds offers virtual counselling and consultation services to  individuals across Ontario. We combine compassionate talk therapy with skills-based  techniques to support people with anxiety, OCD and PTSD." />
+                <meta property="og:image:alt" content={descriptionString} />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: 'Services' }}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <section className="content">        
                     <p className="pb40 pt20" id="servicetag">       
                         Grounded Minds offers virtual counselling and psychotherapy services to individuals across Ontario.      

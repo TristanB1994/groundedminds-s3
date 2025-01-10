@@ -4,19 +4,27 @@ import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
 
 const ServicesClinicalConsult = () => {
+    
+    const bannerLabel = "Consultation";
+    const titleString = "Clinical Consultation | Grounded Minds Therapy";
+    const descriptionString = "Grounded Minds offers clinical consultation to fellow therapists. There is a  growing need for clinicians with expertise in OCD and anxiety disorders. We are passionate  about supporting you in doing this important work.";
+
     return (
         <>
             <Helmet>
+                <title>{ titleString }</title>
+                <meta name="description" content={ descriptionString } />
+
                 <meta property="og:url" content="https://www.groundedminds.ca/consultation" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Clinical Consultation | Grounded Minds Therapy " />
-                <meta property="og:description" content="Grounded Minds offers clinical consultation to fellow therapists. There is a  growing need for clinicians with expertise in OCD and anxiety disorders. We are passionate  about supporting you in doing this important work." />
+                <meta property="og:title" content={ titleString } />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/homepage.jpeg" />
-                <meta property="og:image:alt" content="Grounded Minds offers clinical consultation to fellow therapists. There is a  growing need for clinicians with expertise in OCD and anxiety disorders. We are passionate  about supporting you in doing this important work." />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: 'Consultation' }}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <div>
                     {/* <!-- Jump Angie's Picture to Angie's title -->  */}
                     <p className="question">

@@ -6,19 +6,24 @@ import TeamMember from '../../components/TeamMember';
 import { Helmet } from 'react-helmet';
 
 const ServicesIndividualTherapy = () => {
+
+    const bannerLabel = "Services";
+    const titleString = "Individual Therapy | Grounded Minds Therapy";
+    const descriptionString = "Our therapists are passionate about supporting adults with anxiety disorders,  OCD, and other mental health concerns. Together, we will explore your concerns, address your  symptoms, and help you find a way forward.";
+
     return (
         <>
             <Helmet>
                 <meta property="og:url" content="https://www.groundedminds.ca/individualtherapy" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Individual Therapy | Grounded Minds Therapy " />
-                <meta property="og:description" content="Our therapists are passionate about supporting adults with anxiety disorders,  OCD, and other mental health concerns. Together, we will explore your concerns, address your  symptoms, and help you find a way forward." />
+                <meta property="og:title" content={ titleString } />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/virtualtherapy.jpeg" />
-                <meta property="og:image:alt" content="Our therapists are passionate about supporting adults with anxiety disorders,  OCD, and other mental health concerns. Together, we will explore your concerns, address your  symptoms, and help you find a way forward." />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: 'Services' }}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <section className="content">        
                     <div className="sidesplt">            
                         <div className="">                

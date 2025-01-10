@@ -4,19 +4,26 @@ import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
 
 const ServicesAnxiety = () => {
+
+    const bannerLabel = "Anxiety";
+    const titleString = "Therapy for Anxiety | Grounded Minds";
+    const descriptionString = "Discover relief from anxiety with Grounded Minds. Our therapists can help you learn how to manage and overcome anxiety.";
+
     return (
         <>
             <Helmet>
+                <title>{ titleString }</title>
+                <meta name="description" content={ descriptionString } />
                 <meta property="og:url" content="https://www.groundedminds.ca/anxiety" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Therapy for Anxiety | Grounded Minds " />
-                <meta property="og:description" content="Discover relief from anxiety with Grounded Minds. Our therapists can help you learn how to manage and overcome anxiety." />
+                <meta property="og:title" content={ titleString } />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/anxiety-photo.jpeg" />
-                <meta property="og:image:alt" content="Discover relief from anxiety with Grounded Minds. Our therapists can help you learn how to manage and overcome anxiety." />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
-            <Layout navOptions={{ isHome: false, bannerLabel: 'Anxiety' }}>
+            <Layout navOptions={{ isHome: false, bannerLabel: bannerLabel }}>
                 <section className="content">
                     <p className="pb10 aaa">
                         <br />

@@ -6,15 +6,20 @@ import CenteredRow from '../components/CenteredRow';
 import { Helmet } from 'react-helmet';
 
 function Resources() {
+
+  const bannerLabel = 'Resources';
+  const titleString = 'Resources | Grounded Minds Therapy';
+  const descriptionString = 'Explore free services and affordable therapy options. Get support from Canadian helplines and access mental health services. Your mental well-being matters.';
+
   return (
     <>
       <Helmet>
         <meta property="og:url" content="https://www.groundedminds.ca/resources" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content=" Resources | Grounded Minds Therapy " />
-        <meta property="og:description" content="Explore free services and affordable therapy options. Get support from Canadian helplines and access mental health services. Your mental well-being matters." />
+        <meta property="og:title" content={ titleString } />
+        <meta property="og:description" content={ descriptionString } />
         <meta property="og:image" content="https://www.groundedminds.ca/static/assets/eucs.jpeg" />
-        <meta property="og:image:alt" content="Explore free services and affordable therapy options. Get support from Canadian helplines and access mental health services. Your mental well-being matters." />
+        <meta property="og:image:alt" content={ descriptionString } />
         <meta property="og:image:height" content="300" />
         <meta property="og:image:width" content="300" />
       </Helmet>

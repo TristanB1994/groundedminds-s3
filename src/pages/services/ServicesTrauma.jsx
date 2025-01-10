@@ -6,16 +6,22 @@ import { Helmet } from 'react-helmet';
 const ServicesTrauma = () => {
     
     const bannerLabel = "Trauma Therapy";
+    const titleString = "Therapy for Trauma and PTSD | Grounded Minds";
+    const descriptionString = "Are you struggling to regain your life after a traumatic event? Therapy can help you process trauma, get un-stuck and move forward.";
+
     return (
         <>
             <Helmet>
+                <title>{ titleString }</title>
+                <meta name="description" content={ descriptionString } />
+
                 <meta property="og:url" content="https://www.groundedminds.ca/trauma" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content=" Therapy for Trauma and PTSD | Grounded Minds " />
+                <meta property="og:title" content={ titleString } />
                 {/* Description might be too long, 212 characters */}
-                <meta property="og:description" content="Are you struggling to regain your life after a traumatic event? Therapy can help you process trauma, get un-stuck and move forward." />
+                <meta property="og:description" content={ descriptionString } />
                 <meta property="og:image" content="https://www.groundedminds.ca/static/assets/trauma.jpeg" />
-                <meta property="og:image:alt" content="Are you struggling to regain your life after a traumatic event? Therapy can help you process trauma, get un-stuck and move forward." />
+                <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
             </Helmet>
