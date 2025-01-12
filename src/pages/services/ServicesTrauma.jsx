@@ -90,7 +90,7 @@ const ServicesTrauma = () => {
                                 <p className="pb10 aaa">
                                     One of the most effective treatments for PTSD is Cognitive Processing Therapy (CPT). CPT is a trauma-focused talk therapy. It teaches you to identify, examine, and change negative thoughts. We can't directly change how we feel. Think about this: if someone told you to "just feel better" you'd probably laugh- it's not an effective strategy! By changing our thoughts, we can actually improve how we feel (and research backs this up). CPT is an evidence-based treatment for PTSD. To read more about CPT, click <a className="rate" href="https://cptforptsd.com/about-cpt/" target="_blank">here.</a>
                                     <br /><br />
-                                    Moonsun Jang and Angie Blandford are trained CPT providers. All of our therapists offer trauma-informed practices to support you in healing from difficult experiences. During the assessment, you and your therapist will talk about what approach is the best fit for you.
+                                    Moonsun Jang, Anka Krivokuca and Angie Blandford are trained CPT providers. All of our therapists offer trauma-informed practices to support you in healing from difficult experiences. During the assessment, you and your therapist will talk about what approach is the best fit for you.
                                 </p>
                                 <br />
                                 <a className="booknow" href="https://groundedmindstherapy.janeapp.com/" target="blank">

@@ -84,7 +84,7 @@ const FAQ = () => {
                     Will therapy sessions be covered by my extended health insurance plan?
                 </p>
                 <p className="answer">
-                    Many benefit plans cover psychotherapy and counselling services provided by a therapist with a Masters of Social Work (MSW) degree. Please contact your insurance provider to confirm coverage. Grounded Minds does not offer direct billing, but receipts will be provided for you to submit to your insurance.
+                    Many benefit plans cover psychotherapy and counselling services provided by a therapist with a Masters of Social Work (MSW) or Master of Arts in Counselling Psychology (MACP) degree. Please contact your insurance provider to confirm coverage. Grounded Minds does not offer direct billing, but receipts will be provided for you to submit to your insurance.
                 </p>
                 <br/>
                 <p className="question">

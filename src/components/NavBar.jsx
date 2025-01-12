@@ -171,14 +171,7 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
   /**
    * DESKTOP HOVER HANDLERS
    */
-  useEffect(() => {
-    console.log('About Hover Menu Ref:', aboutHoverMenuRef.current);
-    console.log('About Hover Trigger Ref:', aboutHoverTriggerRef.current);
-    console.log('Services Hover Menu Ref:', servicesHoverMenuRef.current);
-    console.log('Services Hover Trigger Ref:', servicesHoverTriggerRef.current);
-  }, []);
   const showAboutHoverMenu = () => {
-    console.log("show about hover menu")
     setServicesHoverOpen(false);
     setAboutHoverOpen(true);
 
@@ -328,6 +321,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             <div className="nav-about-hovermenu">
               <Link to="/moonsunjang" className="nav-about-hovermenu-cta">Moonsun Jang</Link>
             </div>
+            <div className="nav-about-hovermenu">
+              <Link to="/rafeyashami" className="nav-about-hovermenu-cta">Rafeya Shami</Link>
+            </div>
           </div>
 
           {/* SERVICES */}
@@ -465,6 +461,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               </div>
               <div className="mobile-nav-about-submenu">
                 <Link to="/moonsunjang" className="mobile-nav-about-submenu-cta">Moonsun Jang</Link>
+              </div>
+              <div className="mobile-nav-about-submenu">
+                <Link to="/rafeyashami" className="mobile-nav-about-submenu-cta">Rafeya Shami</Link>
               </div>
             </div>
 

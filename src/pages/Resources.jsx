@@ -273,20 +273,6 @@ function Resources() {
                   >
                     <li>PsychologyToday Profile - Grounded Minds</li>
                   </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.psychologytoday.com/ca/therapists/angie-blandford-whitchurch-stouffville-on/782873"
-                  >
-                    <li>PsychologyToday Profile - Angie Blandford</li>
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.psychologytoday.com/ca/therapists/moonsun-jang-vaughan-on/1016960"
-                  >
-                    <li>PsychologyToday Profile - Moonsun Jang</li>
-                  </a>
                 </ul>
               </div>
               <br />

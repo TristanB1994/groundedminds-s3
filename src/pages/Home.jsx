@@ -29,10 +29,10 @@ const Home = () => {
                 <section className="content hfit widemb">    
                     <div id="homer">           
                         <p className="caps" id="stretchhome">
-                            Let's work together to kick anxiety out of the driver's seat.
+                            It's time for anxiety to exit the building.
                         </p>
                         <p className="caps">               
-                            Let's work together to kick anxiety out of the driver's seat.    
+                            It's time for anxiety to exit the building.    
                         </p>
                     </div>
                 </section>
@@ -50,7 +50,7 @@ const Home = () => {
                     <div className="homedivert">           
                         <div className="card">              
                             <p>                    
-                                Are you looking to start counselling for an anxiety disorder or OCD? You're in the right place.  
+                                Are you looking to start therapy for an anxiety disorder or OCD? You're in the right place.  
                             </p>
                             <a className="booknow caps" href="/about">
                                 Meet our team

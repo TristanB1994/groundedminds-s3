@@ -37,7 +37,7 @@ const ServicesIndividualTherapy = () => {
                         </div>           
                         <br/><br/>           
                         <p className="pb30">        
-                            <span className="rate">Fee</span>: $160 per 50 minute therapy session
+                            <span className="rate">Fee</span>: $180 per 50 minute therapy session
                         </p>            
                         <br/><br/>      
                         <div id="anotherbanner">          

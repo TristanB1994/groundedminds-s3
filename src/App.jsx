@@ -15,6 +15,7 @@ import AboutAngieBlandford from './pages/about/About-angie-blandford';
 import AboutAnkaKrivokuca from './pages/about/About-anka-krivokuca';
 import AboutDanielleKirshenbaum from './pages/about/About-danielle-kirshenbaum';
 import AboutMoonsunJang from './pages/about/About-moonsun-jang';
+import AboutRafeyaShami from './pages/about/About-rafeya-shami';
 import Resources from './pages/Resources';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/ankakrivokuca" element={<AboutAnkaKrivokuca />} />
         <Route path="/daniellekirshenbaum" element={<AboutDanielleKirshenbaum />} />
         <Route path="/moonsunjang" element={<AboutMoonsunJang />} />
+        <Route path="/rafeyashami" element={<AboutRafeyaShami />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/services" element={<ServicesAll />} />

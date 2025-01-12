@@ -45,7 +45,7 @@ const ServicesAll = () => {
                                     <p className="pb10">             
                                         Grounded Minds specializes in providing therapy to individuals who are struggling with anxiety and OCD. Although this is our primary focus, several of our therapists have a great deal of experience working with other concerns as well. You can read more about our therapists, their specialties and approaches <a className="rate" href="/about">here</a>.
                                         <br/><br/>
-                                        Not sure which of our therapists is the best fit for you? E-mail <u>hello@groundedminds.ca</u> and we'd be happy to make a suggestion. Once you set an appointment, you will meet virtually by telephone or secure video.
+                                       Reach out to <u>hello@groundedminds.ca</u> and we'll match you with a therapist. Once you set an appointment, you will meet virtually by telephone or secure video.
                                         <br/><br/>
                                     </p>
                                     {/* <!-- Using secure video conferencing software or telephone, we will be able to see and hear one another. --> */}
@@ -53,7 +53,7 @@ const ServicesAll = () => {
                                 </div>
                                 <div>
                                     <p className="pb30">
-                                        <span className="rate">Rate</span>: $160 per 50 minute therapy session     
+                                        <span className="rate">Rate</span>: $180 per 50 minute therapy session     
                                     </p>
                                     {/* <!-- Hidden JUL 8 --> */}
                                     {/* <!-- <a className="booknow" href="/contact">                        Book Now                    </a> -->  */}
@@ -93,8 +93,7 @@ const ServicesAll = () => {
                                 Clinical Consultation for Therapists
                             </h3>
                             <p className="pb30">              
-                                Angie Blandford (MSW, RSW) offers clinical consultation to fellow therapists on the following topics: <i> working with individuals who have OCD or OCD symptoms, supporting friends/family members of folks with OCD, implementing Exposure and Response Prevention (ERP) for OCD, and CBT for anxiety disorders. </i> Angie founded Grounded Minds and specializes in treating OCD and anxiety disorders. 
-                                <br/><br/>
+                                Angie Blandford (MSW, RSW) and Anka Krivokuca (MSW, RSW) offer clinical consultation to fellow therapists on the following topics: <i> working with individuals who have OCD or OCD symptoms, supporting friends/family members of folks with OCD, implementing Exposure and Response Prevention (ERP) for OCD, and CBT for anxiety disorders. </i> 
                                 To learn more about clinical consultation, please click <a className="rate" href="/consultation">here</a>. There are a limited number of therapists providing ERP for OCD, and we are passionate about supporting you in doing this important work with your clients. 
                                 <br/><br/>
                                 Please get in touch for scheduling, rates and questions.        
@@ -112,10 +111,10 @@ const ServicesAll = () => {
                     <p className="coverage pb10">     
                         <i><u>Note on Therapy Coverage:</u></i>
                         <br/><br/>
-                        Many extended health care plans cover services provided by a Registered Social Worker (RSW) with their MSW. Please contact your insurance provider to confirm coverage.    
+                        Many extended health care plans cover services provided by a Registered Social Worker (RSW) with their Masters in Social Work (MSW) or a Registered Psychotherapist (RP or RP qualifying) with their Master of Arts in Counselling Psychology (MACP). Please contact your insurance provider to confirm coverage.    
                     </p>
                     <p className="coverage pb10">            
-                        Grounded Minds does not offer direct billing and cannot guarantee that services will be covered under your insurance plan. Receipts will be provided for you to submit for reimbursement, if applicable. Services provided by an RSW are tax deductible as a medical expense.       
+                        Grounded Minds does not offer direct billing and cannot guarantee that services will be covered under your insurance plan. Receipts will be provided for you to submit for reimbursement, if applicable. Services provided are tax deductible as a medical expense.       
                     </p>
                     <p className="coverage pb10">           
                         If you are looking for OHIP-covered or free mental health services, please see our <a className="rate" href="/resources">resources page</a>.
