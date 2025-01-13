@@ -69,32 +69,6 @@ const ServicesIndividualTherapy = () => {
                                 alt={member.alt}
                             />
                         ))}
-                        {/* <!-- Therapist Cards Positioned by grid -->             */}
-                        {/* <div className="team_portrait moonsun">                
-                            <img alt="moonsun jang therapist" data-profile="{{ url_for('moonsun') }}" id="MJ-REDIRECT-PROFILE-THUMB" src="/moonsun_thumbnail.jpeg"/>               
-                            <button className="teamthumbs" data-profile="{{ url_for('moonsun') }}" id="MJ-REDIRECT-PROFILE-CTA">                    
-                                Meet Moonsun
-                            </button>            
-                        </div>
-                        <div className="team_portrait danielle">               
-                            <img alt="danielle Kirshenbaum therapist" data-profile="{{ url_for('danielle') }}" id="DK-REDIRECT-PROFILE-THUMB" src="/thumbnaildk.png"/>                
-                            <button className="teamthumbs" data-profile="{{ url_for('danielle') }}" id="DK-REDIRECT-PROFILE-CTA">               
-                                Meet Danielle
-                            </button>
-                        </div>
-                        <div className="team_portrait angie">                
-                            <img alt="angie blandford therapist" data-profile="{{ url_for('angie') }}" id="ALB-REDIRECT-PROFILE-THUMB" src="/ang_thumbnail.jpeg"/>            
-                            <button className="teamthumbs" data-profile="{{ url_for('angie') }}" id="ALB-REDIRECT-PROFILE-CTA">            
-                                Meet Angie 
-                            </button>
-                        </div>
-                        <div className="team_portrait anka">              
-                            <img alt="anka krivokuca therapist" data-profile="{{ url_for('anka') }}" id="AK-REDIRECT-PROFILE-THUMB" src="/ANKA_OurTeamPage.png"/>      
-                            <button className="teamthumbs" data-profile="{{ url_for('anka') }}" id="AK-REDIRECT-PROFILE-CTA">               
-                                Meet Anka            
-                            </button>
-                        </div>  */}
-
                     </div>    
                 </section>     
                 {/* Therapist Gallery      */}
