@@ -101,6 +101,12 @@ const About = () => {
                                 Meet Anka                
                             </button>
                         </div>
+                        <div className="team_portrait rafeya">               
+                            <img alt="rafeya shami therapist" src="/ang_thumbnail.jpeg"/>  
+                            <button className="teamthumbs">                    
+                                Meet Rafeya                
+                            </button>
+                        </div>
                     </div> 
                 </section>
                 <br/><br/> 

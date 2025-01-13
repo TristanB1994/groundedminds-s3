@@ -32,21 +32,13 @@ function Resources() {
           </section>
 
           <section className="availability">
-            <p>
               Canada's Suicide Crisis Hotline: 
-            </p>
             <br />
-            <CenteredRow>
-              <p key="1">Call or Text 988 |&nbsp;</p>
-              <a key="2" target="_blank" rel="noopener noreferrer" className="rate" href="https://988.ca">www.988.ca</a>
-            </CenteredRow>
+            Call or Text 988 | www.988.ca
             <br />
             <br />
-            <p>
-              Distress and Crisis Ontario:
-            </p>
+            Distress and Crisis Ontario:
             <br />
-            <CenteredRow>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -55,17 +47,11 @@ function Resources() {
               >
                 www.dcontario.org
               </a>          
-            </CenteredRow>
             <br />
             <br />
-            <p>
-              Assaulted Women's Helpline:
-            </p>
+            Assaulted Women's Helpline:
             <br />
-            
-            <CenteredRow>
-              <p>1-866-863-0511 |&nbsp;</p><a target="_blank" rel="noopener noreferrer" className="rate" href="https://www.awhl.org/index.html">www.awhl.org</a>
-            </CenteredRow>
+            <p>1-866-863-0511 |&nbsp;</p><a target="_blank" rel="noopener noreferrer" className="rate" href="https://www.awhl.org/index.html">www.awhl.org</a>
             <br />
             <br />
             <p>Seniors Safety Line:</p>
@@ -248,7 +234,7 @@ function Resources() {
             <br />
             <br />
             <br />
-            <section className="content">
+            <section className="content" style={{ minHeight: 0 }}>
               <p className="question">Links</p>
               <div className="links">
                 <ul>
@@ -275,8 +261,6 @@ function Resources() {
                   </a>
                 </ul>
               </div>
-              <br />
-              <br />
             </section>
             <p className="caps">
               <span style={{ color: 'rgb(112, 145, 99)', fontSize: '20px' }}>
