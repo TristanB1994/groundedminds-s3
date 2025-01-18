@@ -1,33 +1,40 @@
-# New Web Project
+Grounded Minds
 
-A modern web project template using React, Vite, and Material-UI.
+Grounded Minds is a therapy-focused web application designed to provide users with resources, tools, and interactive features to support mental well-being. The project is built with modern web technologies and is containerized for ease of deployment and scalability.
 
-## Features
-- ⚡ Vite for fast development
-- ⚛️ React 18
-- 🎨 Material-UI with a customizable theme
-- 🌐 React Router for routing
-- 🔐 JWT authentication setup
+Features
+	•	Therapy Resources: Provides a library of curated content to assist users with mental health challenges.
+	•	Responsive Design: Optimized for use across various devices.
 
-## Getting Started
+Development Setup
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+Prerequisites
+	•	Docker
+	•	Docker Compose
+	•	Basic knowledge of terminal commands.
 
-2. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+Running the Project Locally
+	1.	Clone the repository:
 
-3. **Build for production:**
-   ```bash
-   npm run build
-   ```
+`git clone https://github.com/TristanB1994/groundedminds-s3.git
+cd groundedminds-s3`
 
-## License
 
-[MIT](LICENSE)
+	2.	Start the application using Docker Compose:
 
-# groundedminds-s3
+`docker-compose up`
+
+
+	3.	Access the application in your browser:
+	•	URL: http://localhost:5173
+	4.	To stop the application:
+
+`docker-compose down`
+
+Folder Structure
+	•	.autopr/: Contains triggers and automation configurations.
+	•	docker/: Docker-related scripts and configuration files.
+	•	src/: Source code for the application.
+	•	public/: Static assets, including images and other public-facing content.
+	•	terraform/: Infrastructure as code for deployment automation.
+	•	dist/: Production build files.
