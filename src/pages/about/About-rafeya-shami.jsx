@@ -7,7 +7,7 @@ const AboutRafeyaShami = () => {
 
     const bannerLabel = "Meet Rafeya";
     const titleString = "Rafeya Shami | Grounded Minds Therapy";
-    const descriptionString = "Rafeya Shami is a RPQ who TODO.";
+    const descriptionString = "Rafeya Shami is a RPQ who treats Anxiety disorders, relationship anxiety, panic disorder, phobias, OCD, depression, PTSD, grief, career concerns, perinatal/postpartum, BPD, ADHD, self-esteem/body image.";
 
     return (
         <>
