@@ -32,10 +32,10 @@
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
-    "AK   "
-    "DK   "
     "MJang"
     "RS   "
+    "AK   "
+    "DK   "
     "AB   "
     ;
 
@@ -52,12 +52,22 @@
     display: grid;
     /* THIS SHOULD MATCH PROFILE ORDER */
     grid-template-areas: 
-    "AK   "
-    "DK   "
     "MJang"
     "RS   "
+    "AK   "
+    "DK   "
     "AB   "
     ;
+}
+
+.consultation_thumbnail_grid {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "AK"
+    "AB"
+    ;
+    grid-template-columns: minmax(300px, 1fr);
 }
 
 .teamthumbs
@@ -95,24 +105,38 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-        "AK DK"
-        "MJang AB"
-        "RS RS"
+            "MJang RS"
+            "AK DK   "
+            "AB AB   "
         ;
-
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
+
+    .consultation_thumbnail_grid {
+        grid-template-areas:
+            "AK AB"
+        ;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+    
 }
 
 @media(min-width: 940px)
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "AK DK"
-            "MJang AB"
-            "RS RS"
-        ;
+            "MJang RS"
+            "AK DK   "
+            "AB AB   "
+            ;
 
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
+    .consultation_thumbnail_grid {
+        grid-template-areas:
+            "AK AB"
+        ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
 
@@ -129,13 +153,20 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . AK DK . "
-            " . MJang AB . "
-            " . RS RS . "
-        ;
+            " . MJang RS . "
+            " . AK DK    . "
+            " . AB AB    . "
+            ;
 
         grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;
         column-gap: 150px;
+    }
+
+    .consultation_thumbnail_grid {
+        grid-template-areas:
+            " . AK AB . "
+        ;
+        grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;
     }
 
     .teamthumbs

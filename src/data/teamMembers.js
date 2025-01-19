@@ -26,7 +26,7 @@ const teamMembers = [
     },
     {
         name: "Rafeya",
-        image: "/ang_thumbnail.jpeg",
+        image: "/rafeya_thumbnail.png",
         profileUrl: "/rafeyashami",
         alt: "rafeya shmi therapist",
     },

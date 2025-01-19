@@ -45,7 +45,7 @@ const ServicesAll = () => {
                                     <p className="pb10">             
                                         Grounded Minds specializes in providing therapy to individuals who are struggling with anxiety and OCD. Although this is our primary focus, several of our therapists have a great deal of experience working with other concerns as well. You can read more about our therapists, their specialties and approaches <a className="rate" href="/about">here</a>.
                                         <br/><br/>
-                                       Reach out to <u>hello@groundedminds.ca</u> and we'll match you with a therapist. Once you set an appointment, you will meet virtually by telephone or secure video.
+                                      Not sure which therapist would be the best fit? No problem! Send us an e-mail (<u>hello@groundedminds.ca</u>) and we will match you with one of our skilled therapists.
                                         <br/><br/>
                                     </p>
                                     {/* <!-- Using secure video conferencing software or telephone, we will be able to see and hear one another. --> */}
@@ -65,7 +65,7 @@ const ServicesAll = () => {
                                 {/* ADDED during react convertion */}
                                 {/* <div> */}
                                 <p className="coverage sliding-scale">        
-                                    <i>Note:</i> We offer a limited number of appointments at a sliding scale rate. If this is something you are interested in, please contact us <a className="rate" href="/contact">here</a>.
+                                    <i>Note:</i> Several of our therapists offer a limited number of appointments at a sliding scale rate. If this is something you are interested in, please contact us <a className="rate" href="/contact">here</a>.
                                     <br/>
                                 </p>
                             </div>           
@@ -74,7 +74,7 @@ const ServicesAll = () => {
                                     Initial Consultation Calls    
                                 </h3>
                                 <p className="pb30">                   
-                                    15 minute telephone meetings are available to help you determine whether one of our therapists might be a good fit to support you. Research consistently shows that a good relationship with your therapist is one of the best predictors of successful therapy. These meetings are free of charge.     
+                                    15 minute telephone meetings are available if you'd like to learn more about a particular therapist's approach, chat about how they can help you, and ask any questions you have before starting therapy. Research consistently shows that a good relationship with your therapist is one of the best predictors of successful therapy. These meetings are free of charge.     
                                 </p>
                                 {/* <!-- Hidden JUL 8 -->        */}
                                 {/* <!-- <a className="booknow" href="/contact">                    Book Now                </a> -->      */}
@@ -93,7 +93,7 @@ const ServicesAll = () => {
                                 Clinical Consultation for Therapists
                             </h3>
                             <p className="pb30">              
-                                Angie Blandford (MSW, RSW) and Anka Krivokuca (MSW, RSW) offer clinical consultation to fellow therapists on the following topics: <i> working with individuals who have OCD or OCD symptoms, supporting friends/family members of folks with OCD, implementing Exposure and Response Prevention (ERP) for OCD, and CBT for anxiety disorders. </i> 
+                                Angie Blandford (MSW, RSW) and Anka Krivokuca (MSW, RSW) offer clinical consultation to fellow therapists on the following topics: <i> working with individuals who have OCD or OCD symptoms, supporting friends/family members of folks with OCD, implementing Exposure and Response Prevention (ERP) for OCD, CBT for anxiety disorders and more. </i> 
                                 To learn more about clinical consultation, please click <a className="rate" href="/consultation">here</a>. There are a limited number of therapists providing ERP for OCD, and we are passionate about supporting you in doing this important work with your clients. 
                                 <br/><br/>
                                 Please get in touch for scheduling, rates and questions.        
