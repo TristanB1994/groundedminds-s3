@@ -30,7 +30,7 @@ const AboutMoonsunJang = () => {
                 </div>
                 <section className="content">
                     <div className="portrait">
-                        <img alt="Therapist picture" id="MJ-SECTION" src="/headshotmj.jpeg" />
+                        <img alt="Therapist picture" id="MJ-SECTION" src="/headshotm.png" />
                         <div className="ownertexts">
                             <p id="ownertext">pronouns: she/they<br /><br />MSW, RSW | Psychotherapist</p>
                         </div>

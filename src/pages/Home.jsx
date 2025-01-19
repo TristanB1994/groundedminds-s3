@@ -29,10 +29,10 @@ const Home = () => {
                 <section className="content hfit widemb">    
                     <div id="homer">           
                         <p className="caps" id="stretchhome">
-                            It's time for anxiety to exit the building.
+                            let's break up with anxiety
                         </p>
                         <p className="caps">               
-                            It's time for anxiety to exit the building.    
+                        let's break up with anxiety    
                         </p>
                     </div>
                 </section>
@@ -50,7 +50,7 @@ const Home = () => {
                     <div className="homedivert">           
                         <div className="card">              
                             <p>                    
-                                Are you looking to start therapy for an anxiety disorder or OCD? You're in the right place.  
+                                Are you looking for OCD therapy or anxiety disorder treatment? You're in the right place.  
                             </p>
                             <a className="booknow caps" href="/about">
                                 Meet our team
@@ -58,7 +58,7 @@ const Home = () => {
                         </div>
                         <div className="card">   
                             <p>                   
-                                Our therapists help people manage and overcome anxiety. Meet with a therapist from anywhere in Ontario.              
+                                Our therapists help people overcome anxiety, OCD and trauma. Meet with a therapist from anywhere in Ontario.              
                             </p>
                             <a className="booknow caps" href="/services">
                                 Virtual Therapy

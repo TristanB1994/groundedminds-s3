@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 
 const AboutDanielleKirshenbaum = () => {
     
-    const bannerLabel = "Meet Daniel";
+    const bannerLabel = "Meet Danielle";
     const titleString = "Danielle Kirshenbaum | Grounded Minds Therapy";
     const descriptionString = "Danielle Kirshenbaum is a Registered Social Worker who specializes in anxiety  disorders, OCD, perinatal mental health and psychosis.";
 
@@ -71,7 +71,7 @@ const AboutDanielleKirshenbaum = () => {
                     </p>
                     <p className="question">Availability</p>
                     <p className="pb10 aaa">
-                        Accepting new clients. Please send me an e-mail or click "Book with Danielle" to schedule an appointment.
+                        Limited availability for new clients. Please send me an e-mail or click "Book with Danielle" to schedule an appointment.
                     </p>
                     <p className="question">Contact</p>
                     <p className="deets">
