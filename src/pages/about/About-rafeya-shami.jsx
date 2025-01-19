@@ -43,21 +43,19 @@ const AboutRafeyaShami = () => {
                         SPECIALTIES:
                     </p>
                     <ul className="aaa aaaL" id="ocdsubtypes" style={{ width: 'fit-content', marginLeft: 'auto', marginRight: 'auto' }}>
-                    <ul className="aaa aaaL">                
-                                <li>anxiety disorders</li>  
-                                <li>relationship anxiety + other relationship concerns</li>              
-                                <li>panic disorder + panic attacks</li>                              
-                                <li>phobias</li>                
-                                <li>obsessive-compulsive disorder</li>                 
-                                <li>depression</li>                
-                                <li>trauma + PTSD</li>  
-                                <li>grief and loss</li>  
-                                <li>career counselling</li>  
-                                <li>perinatal and postpartum concerns</li> 
-                                <li>borderline personality disorder</li>  
-                                <li>ADHD</li>      
-                                <li>self-esteem and body image</li>      
-                            </ul>
+                        <li>anxiety disorders</li>  
+                        <li>relationship anxiety + other relationship concerns</li>              
+                        <li>panic disorder + panic attacks</li>                              
+                        <li>phobias</li>                
+                        <li>obsessive-compulsive disorder</li>                 
+                        <li>depression</li>                
+                        <li>trauma + PTSD</li>  
+                        <li>grief and loss</li>  
+                        <li>career counselling</li>  
+                        <li>perinatal and postpartum concerns</li> 
+                        <li>borderline personality disorder</li>  
+                        <li>ADHD</li>      
+                        <li>self-esteem and body image</li>      
                     </ul>
                     <br /><br />
                     <p className="pb10 aaa">

@@ -207,7 +207,7 @@ const About = () => {
                                 Registered Psychotherapist (Qualifying) 
                             </p>            
                         </div>
-                        <img alt="Therapist picture" id="ALB-SECTION" src="/rafeya.png"/>    
+                        <img alt="Therapist picture" id="RAF-SECTION" src="/rafeya.png"/>    
                     </div>
                     <br/>
                 </section>   
