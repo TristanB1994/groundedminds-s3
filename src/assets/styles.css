@@ -97,6 +97,11 @@
     font-weight: 600;
 }
 
+.flex-reverse
+{
+    flex-direction: row-reverse !important;
+}
+
 .flexspread
 {
     display: flex;
@@ -483,7 +488,8 @@
 
     .portrait
     {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
+        flex-direction: column;
     }
 
     #homer
@@ -979,7 +985,7 @@ body
 {
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .ANKA-portrait-image

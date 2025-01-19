@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../../assets/styles.css';
 import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
@@ -8,6 +8,13 @@ const ServicesClinicalConsult = () => {
     const bannerLabel = "Consultation";
     const titleString = "Clinical Consultation | Grounded Minds Therapy";
     const descriptionString = "Grounded Minds offers clinical consultation to fellow therapists. There is a  growing need for clinicians with expertise in OCD and anxiety disorders. We are passionate  about supporting you in doing this important work.";
+
+    const AnkaSectionRef = useRef(null);
+    const AngieSectionRef = useRef(null);
+
+    const scrollToSection = (sectionRef) => {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <>
@@ -30,9 +37,10 @@ const ServicesClinicalConsult = () => {
                     <p className="question">
                         Meet Our Consultants        
                     </p>
-                </div>    
-                <section className="content">        
-                    <div className="team_thumbnails">            
+                </div>
+                <section className="content consultation_thumbnail_grid">
+                    {/* Anka's Consultation Section */}
+                    <div onClick={() => scrollToSection(AnkaSectionRef)} className="team_thumbnails anka">            
                         <div className="team_portrait">                
                             <img alt="angie blandford therapist" id="AK-SECTION-THUMB" src="/aboutanka.jpeg"/>        
                                 <button className="teamthumbs" id="AK-SECTION-CTA">                    
@@ -40,11 +48,8 @@ const ServicesClinicalConsult = () => {
                                 </button>           
                         </div>        
                     </div>
-                    <br/><br/>   
-                </section>    
-                  {/* Angie Consultation Section */}
-                  <section className="content">        
-                    <div className="team_thumbnails">            
+                    {/* Angie Consultation Section */}
+                    <div onClick={() => scrollToSection(AngieSectionRef)} className="team_thumbnails angie">            
                         <div className="team_portrait">                
                             <img alt="angie blandford therapist" id="ALB-CONSULTATION-THUMB" src="/ang_thumbnail.jpeg"/>        
                                 <button className="teamthumbs" id="ALB-CONSULTATION-CTA">                    
@@ -52,8 +57,8 @@ const ServicesClinicalConsult = () => {
                                 </button>           
                         </div>        
                     </div>
-                    <br/><br/>   
-                </section>    
+                </section>
+                <br/><br/>
                 <section className="content">        
                     <p className="question">             
                         Consultation topics may include:        
@@ -85,7 +90,8 @@ const ServicesClinicalConsult = () => {
                         <br/><br/><br/><br/>    
                     </div>
                 </section>
-                    <section className="content">    
+                {/* Anka START */}
+                <section ref={AnkaSectionRef} className="content">    
                     <p className="question" id="ALB-CONSULTATION-TARGET">      
                         Anka Krivokuca, MSW, RSW
                         <br/>
@@ -97,13 +103,15 @@ const ServicesClinicalConsult = () => {
                     </p>    
                 </section>   
                 <br></br> <br></br>
-                    <a className="booknow" href="https://groundedmindstherapy.janeapp.com/#/staff_member/7">     
-                        BOOK WITH ANKA        
-                    </a>
-                    <br/><br/>    
+                <a className="booknow" href="https://groundedmindstherapy.janeapp.com/#/staff_member/7">     
+                    BOOK WITH ANKA        
+                </a>
+                <br/><br/>    
                 </section>
                 <br></br>
-                <section className="content">    
+                {/* Anka END */}
+                {/* Angie START */}
+                <section ref={AngieSectionRef} className="content">    
                     <p className="question" id="ALB-CONSULTATION-TARGET">      
                         Angie Blandford, MSW, RSW
                         <br/>
@@ -120,6 +128,7 @@ const ServicesClinicalConsult = () => {
                         BOOK WITH ANGIE        
                     </a> 
                 </section>    
+                {/* Angie END */}
             </Layout>
         </>
     );
