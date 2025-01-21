@@ -2,6 +2,7 @@ import React, { useRef }from 'react';
 import '../../assets/styles.css'; // Adjust the path as necessary
 import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
+import rafeya_thumbnail from '../../../public/rafeya.png';
 
 const About = () => {
 
@@ -193,7 +194,7 @@ const About = () => {
                 {/* Rafeya Start */}
                 <section className="content" ref={RafeyaSectionRef}>        
                     {/* <div className="portrait portrait-reverse">             */}
-                    <div className="portrait flex-reverse">            
+                    <div className="portrait-reverse">            
                         <div className="ownertexts">   
                             <p className="fancy">       
                                 <br/>
@@ -207,7 +208,7 @@ const About = () => {
                                 Registered Psychotherapist (Qualifying) 
                             </p>            
                         </div>
-                        <img alt="Therapist picture" id="RAF-SECTION" src="/rafeya.png"/>    
+                        <img alt="Therapist picture" id="RAF-SECTION" src={rafeya_thumbnail}/>    
                     </div>
                     <br/>
                 </section>   
@@ -329,7 +330,7 @@ const About = () => {
                 {/* Danielle Start   */}
                 <section className="content" ref={DanielleSectionRef}>
                     <br/>
-                    <div className="portrait flex-reverse">      
+                    <div className="portrait-reverse">      
                         <div className="ownertexts">                
                             <p className="fancy">                   
                                 <br/>

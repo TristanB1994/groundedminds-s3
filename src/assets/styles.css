@@ -97,11 +97,6 @@
     font-weight: 600;
 }
 
-.flex-reverse
-{
-    flex-direction: row-reverse !important;
-}
-
 .flexspread
 {
     display: flex;
@@ -1107,6 +1102,7 @@ body
     letter-spacing: 1px;
 }
 
+.portrait-reverse img,
 .portrait img
 {
     width: 100%;
@@ -1840,7 +1836,10 @@ input[type=text], select, textarea {
 
     .portrait-reverse
     {
+        display: flex;
         flex-direction: row-reverse;
+        width: 80%;
+        margin: 0px auto;
     }
 
     .portrait div
