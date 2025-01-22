@@ -1,7 +1,7 @@
-# terraform/modules/acm/main.tf
 resource "aws_acm_certificate" "cert" {
-  domain_name       = var.domain_name
-  validation_method = var.validation_method
+  domain_name               = var.domain_name
+  subject_alternative_names = var.alternative_name != "" ? [var.alternative_name] : null
+  validation_method         = var.validation_method
 
   lifecycle {
     create_before_destroy = true
