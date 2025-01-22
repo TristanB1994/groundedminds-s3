@@ -18,7 +18,7 @@ resource "aws_cloudfront_distribution" "cdn" {
   comment             = "CloudFront distribution for ${var.origin_domain_name}"
   default_root_object = "index.html"
 
-  aliases = var.aliases
+  # aliases = var.aliases
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]

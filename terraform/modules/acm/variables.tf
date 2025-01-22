@@ -4,6 +4,12 @@ variable "domain_name" {
   type        = string
 }
 
+variable "alternative_name" {
+  description = "Alternative domain names for the certificate."
+  type        = string
+  default     = ""
+}
+
 variable "validation_method" {
   description = "The method to validate the certificate."
   type        = string
