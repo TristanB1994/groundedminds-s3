@@ -12,6 +12,7 @@ module "acm" {
   source = "../../modules/acm"
 
   domain_name               = "www.${var.domain_name}"
+  alternative_name          = var.domain_name 
   validation_method         = var.certificate_validation_method
   route53_zone_id           = module.route53.zone_id
   # route53_records           = module.acm.txt_records
@@ -28,7 +29,7 @@ module "cloudfront" {
   origin_access_identity_path = module.s3.origin_access_identity_path
   bucket_arn                  = module.s3.bucket_arn 
   acm_certificate_arn         = module.acm.certificate_arn
-  aliases                     = ["www.${var.domain_name}"]#, "${var.domain_name}"]
+  aliases                     = ["www.${var.domain_name}", "${var.domain_name}"]
   tags                        = var.tags
 }
 
@@ -39,8 +40,8 @@ module "route53" {
   source                 = "../../modules/route53"
   domain_name            = var.domain_name
   aliases                = {
-   "www" = "${var.domain_name}"
-  #  "@"   = var.domain_name
+   "www" = "www.${var.domain_name}"
+   "@"   = var.domain_name
   }
   cloudfront_domain_name = module.cloudfront.cloudfront_domain_name
   cloudfront_zone_id     = "Z2FDTNDATAQYW2"
