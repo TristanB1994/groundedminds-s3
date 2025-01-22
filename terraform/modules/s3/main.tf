@@ -26,13 +26,7 @@ data "aws_iam_policy_document" "s3_policy" {
 
     principals {
       identifiers = ["*"]
-      type        = "AWS"
-    }
-
-    condition {
-      test     = "StringEquals"
-      variable = "aws:PrincipalOrgID"
-      values   = ["*"]
+      type        = "*"
     }
   }
 }
