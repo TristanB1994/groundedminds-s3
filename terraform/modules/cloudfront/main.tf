@@ -18,7 +18,7 @@ resource "aws_cloudfront_distribution" "cdn" {
   comment             = "CloudFront distribution for ${var.origin_domain_name}"
   default_root_object = "index.html"
 
-  # aliases = var.aliases
+  aliases = var.aliases
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
@@ -35,8 +35,8 @@ resource "aws_cloudfront_distribution" "cdn" {
 
     viewer_protocol_policy = "redirect-to-https"
     min_ttl                = 0
-    default_ttl            = 3600
-    max_ttl                = 86400
+    default_ttl            = 30
+    max_ttl                = 30
   }
 
   custom_error_response {
@@ -50,8 +50,8 @@ resource "aws_cloudfront_distribution" "cdn" {
 
   viewer_certificate {
     acm_certificate_arn      = var.acm_certificate_arn
-    minimum_protocol_version = "TLSv1.2_2021"
     ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   restrictions {
