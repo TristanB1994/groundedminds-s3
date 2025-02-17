@@ -43,6 +43,6 @@ module "route53" {
   }
   cloudfront_domain_name = module.cloudfront.cloudfront_domain_name
   cloudfront_zone_id     = "Z2FDTNDATAQYW2"
-  txt_records            = module.acm.txt_records
+  # txt_records            = module.acm.txt_records
   tags                   = var.tags
 }

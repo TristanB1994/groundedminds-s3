@@ -20,7 +20,7 @@ const ServicesTrauma = () => {
                 <meta property="og:title" content={ titleString } />
                 {/* Description might be too long, 212 characters */}
                 <meta property="og:description" content={ descriptionString } />
-                <meta property="og:image" content="https://www.groundedminds.ca/static/assets/trauma.jpeg" />
+                <meta property="og:image" content="https://www.groundedminds.ca/trauma.jpeg" />
                 <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />

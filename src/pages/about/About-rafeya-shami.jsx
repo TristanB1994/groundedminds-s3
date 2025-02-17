@@ -20,7 +20,7 @@ const AboutRafeyaShami = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={titleString} />
                 <meta property="og:description" content={descriptionString} />
-                <meta property="og:image" content="https://www.groundedminds.ca/static/assets/rafeya.jpeg" />
+                <meta property="og:image" content="https://www.groundedminds.ca/rafeya.jpeg" />
                 <meta property="og:image:alt" content="Rafeya Shami" />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />
