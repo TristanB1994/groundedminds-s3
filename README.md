@@ -1,5 +1,7 @@
 Grounded Minds
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/900a24e2-2f91-4c4b-9be8-bb4c9a76aa23/deploy-status?branch=dev)](https://app.netlify.com/sites/groundedminds-dev/deploys)
+
 Grounded Minds is a therapy-focused web application designed to provide users with resources, tools, and interactive features to support mental well-being. The project is built with modern web technologies and is containerized for ease of deployment and scalability.
 
 Features
