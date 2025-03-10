@@ -30,6 +30,12 @@ const teamMembers = [
         profileUrl: "/rafeyashami",
         alt: "rafeya shmi therapist",
     },
+    {
+        name: "Lianne",
+        image: "/lianne-team-page.jpeg",
+        profileUrl: "/liannesaxon",
+        alt: "lianne saxon therapist",
+    },
 ];
 
 export default teamMembers;
