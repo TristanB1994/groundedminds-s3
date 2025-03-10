@@ -25,6 +25,8 @@ resource "aws_cloudfront_distribution" "cdn" {
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = "S3-${var.origin_domain_name}"
 
+    viewer_protocol_policy = "redirect-to-https"
+    
     forwarded_values {
       query_string = false
 
@@ -33,7 +35,6 @@ resource "aws_cloudfront_distribution" "cdn" {
       }
     }
 
-    viewer_protocol_policy = "redirect-to-https"
     min_ttl                = 0
     default_ttl            = 30
     max_ttl                = 30
