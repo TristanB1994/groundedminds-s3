@@ -101,7 +101,7 @@ const AboutLianneSaxon = () => {
                     <p className="question">Contact</p>
                     <p className="deets">
                         <a href="mailto:lianne@groundedminds.ca">lianne@groundedminds.ca</a> <br />
-                        <a href="tel:2892126486">289-212-6486</a>
+                        {/* <a href="tel:2892126486">289-212-6486</a> */}
                     </p>
                     <br />
                 </section>
