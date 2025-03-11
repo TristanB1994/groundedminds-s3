@@ -1097,7 +1097,8 @@ body
     margin: 0px auto;
 }
 
-.portrait p
+.portrait p,
+.portrait-reverse p
 {
     font-size: 22px;
     letter-spacing: 1px;
