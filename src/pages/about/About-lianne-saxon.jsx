@@ -67,12 +67,11 @@ const AboutLianneSaxon = () => {
                     {/* <p className="pb10 aaa">
                         TODO: I statement about skills and focus
                     </p> */}
+                    {/* Introduction */}
+                    <p className='pb10 aaa'>
+                        I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
+                    </p>
                 </section>
-
-                {/* Introduction */}
-                <p className='pb10 aaa'>
-                    I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
-                </p>
 
                 {/* Description */}
                 <section className="content">
