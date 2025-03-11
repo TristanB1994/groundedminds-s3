@@ -324,6 +324,8 @@ const About = () => {
                     <section className="availability"></section>
                     <br/><br/>
                 </section> */}
+                <br/>
+                <br/>
                 {/* AVAILABILITY END */}
                 <section id="aboutBannermiddle">      
                     <div className="mb40 mt40 raise">         
