@@ -450,7 +450,7 @@ const About = () => {
                                 <li>trauma + PTSD + complex trauma</li>
                                 <li>health anxiety</li>
                                 <li>ADHD</li>
-                                <li>Grief</li>
+                                <li>grief</li>
                                 <li>body-focused repetitive behaviours (BFRBs)</li>
                                 <li>depression</li>
                             </ul>
