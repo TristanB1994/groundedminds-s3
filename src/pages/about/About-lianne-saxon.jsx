@@ -10,13 +10,6 @@ const AboutLianneSaxon = () => {
     const titleString = "Lianne Saxon | Grounded Minds Therapy";
     const descriptionString = ""
 
-    /* Lianne Onboarding Content
-    I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
-
-    I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include “taboo” themes, and I’m comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them. 
-
-    Together, we’ll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.
-    */
     return (
         <>
             <Helmet>
@@ -63,10 +56,6 @@ const AboutLianneSaxon = () => {
                         <li>depression</li>
                     </ul>
                     <br />
-                    {/* <br /> */}
-                    {/* <p className="pb10 aaa">
-                        TODO: I statement about skills and focus
-                    </p> */}
                     {/* Introduction */}
                     <p className='pb10 aaa'>
                         I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
@@ -78,21 +67,18 @@ const AboutLianneSaxon = () => {
                     <p className="question">        
                             Lianne’s Approach      
                     </p>
-                    {/* <p className='pb10 aaa'>
-                        I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
-                    </p> */}
                     <p className='pb10 aaa'>
                         I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include “taboo” themes, and I’m comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them.                        
                     </p>
                     <p className='pb10 aaa'>
                         Together, we’ll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.                            
                     </p>
-                    {/* Add last paragraph under approaches just like mine - EMDR, ERP, I-CBT, CBT, ACT, self-compassion, CPT, inner child work, EFT Tapping, grief counselling, ADHD coaching. */}
                     <p className="pb10 aaa">
                         I incorporate elements from the following evidence-based therapies in my practice: <em><span style={{ color: 'rgb(112, 145, 99)' }}>EMDR, ERP, I-CBT, CBT, ACT, self-compassion, CPT, inner child work, EFT Tapping, grief counselling, ADHD coaching.</span></em>
                     </p>
                 </section>
                 <section className="content">
+                    {/* ADD education when shes qualified */}
                     {/* <p className="question">Education</p>
                         <p className="pb10 aaa">
                             TODO: Statement about credentials
@@ -111,7 +97,6 @@ const AboutLianneSaxon = () => {
                     <p className="question">Contact</p>
                     <p className="deets">
                         <a href="mailto:lianne@groundedminds.ca">lianne@groundedminds.ca</a> <br />
-                        {/* <a href="tel:2892126486">289-212-6486</a> */}
                     </p>
                     <br />
                 </section>
