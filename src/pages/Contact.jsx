@@ -19,7 +19,7 @@ const Contact = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={ titleString } />
                 <meta property="og:description" content={descriptionString} />
-                <meta property="og:image" content="https://www.groundedminds.ca/static/assets/contact_banner.jpg" />
+                <meta property="og:image" content="https://www.groundedminds.ca/contact_banner.jpg" />
                 <meta property="og:image:alt" content={descriptionString} />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />

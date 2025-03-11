@@ -137,6 +137,7 @@
 .fancy
 {
     font-family: 'Petit Formal Script', cursive;
+    font-size: 20px;
 }
 
 .font600
@@ -1096,7 +1097,8 @@ body
     margin: 0px auto;
 }
 
-.portrait p
+.portrait p,
+.portrait-reverse p
 {
     font-size: 22px;
     letter-spacing: 1px;
@@ -1832,6 +1834,7 @@ input[type=text], select, textarea {
         flex-direction: row;
         width: 80%;
         margin: 0px auto;
+        justify-content: space-between;
     }
 
     .portrait-reverse
@@ -1845,7 +1848,8 @@ input[type=text], select, textarea {
     .portrait div
     {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
+        justify-content: center
     }
 
     #aboutbanner
@@ -2341,14 +2345,14 @@ input[type=text], select, textarea {
     .portrait
     {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
     }
 
     .portrait p
     {
-        margin-left: 70px;
+        margin-left: 0px;
         font-size: 20px;
         letter-spacing: 4px;
     }

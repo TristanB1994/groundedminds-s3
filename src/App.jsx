@@ -18,6 +18,8 @@ import AboutMoonsunJang from './pages/about/About-moonsun-jang';
 import AboutRafeyaShami from './pages/about/About-rafeya-shami';
 import Resources from './pages/Resources';
 import ScrollToTop from './components/ScrollToTop';
+import AboutLianneSaxon from './pages/about/About-lianne-saxon';
+
 
 const App = () => {
   return (
@@ -32,6 +34,7 @@ const App = () => {
         <Route path="/daniellekirshenbaum" element={<AboutDanielleKirshenbaum />} />
         <Route path="/moonsunjang" element={<AboutMoonsunJang />} />
         <Route path="/rafeyashami" element={<AboutRafeyaShami />} />
+        <Route path="/liannesaxon" element={<AboutLianneSaxon />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/services" element={<ServicesAll />} />

@@ -17,7 +17,7 @@ const ServicesOcd = () => {
                 <meta property="og:title" content={ titleString } />
                 {/* Description might be too long, 212 characters */}
                 <meta property="og:description" content={ descriptionString } />
-                <meta property="og:image" content="https://www.groundedminds.ca/static/assets/aboutmidbanner.jpg" />
+                <meta property="og:image" content="https://www.groundedminds.ca/aboutmidbanner.jpg" />
                 <meta property="og:image:alt" content={ descriptionString } />
                 <meta property="og:image:height" content="300" />
                 <meta property="og:image:width" content="300" />

@@ -11,5 +11,21 @@ services:
     volumes:
       - $PWD:/app
       # - /app/node_modules # Exclude node_modules to avoid permission issues
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
+          ignore:
+            - node_modules/
+            # - dist
+            # - src/ # Don't rebuild for source changes
+        # - action: rebuild
+        #   path: package.json
+        #   ignore:
+        #     - node_modules/
+        #     - src/ # Don't rebuild for source changes
     environment:
-      - NODE_ENV=development
+      NODE_ENV: development
+    # environment:
+    #   - NODE_ENV=development
