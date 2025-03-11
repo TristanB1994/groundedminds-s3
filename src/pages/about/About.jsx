@@ -527,7 +527,7 @@ const About = () => {
                         <p className="availability"></p>
                         <br/>
                     </section>
-                    <section id="aboutbanner">     
+                    <section id="aboutBannermiddle">
                         <div className="mb40 mt40 raise">  
                             <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/10" id="lianne-about-banner-cta" target="_blank">
                                 Book with Lianne

@@ -46,6 +46,11 @@ const AboutLianneSaxon = () => {
                             </p>
                         </div>
                     </div>
+                {/* Introduction */}
+                <p className='pb10 aaa'>
+                    I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
+                </p>
+
                 {/* SPECIALTIES */}
                 <p className="question" style={{ width: 'fit-content', marginLeft: 'auto', marginRight: 'auto' }}>
                         SPECIALTIES:
@@ -58,39 +63,44 @@ const AboutLianneSaxon = () => {
                         <li>trauma + PTSD + complex trauma</li>
                         <li>health anxiety</li>
                         <li>ADHD</li>
-                        <li>Grief</li>
+                        <li>grief</li>
                         <li>body-focused repetitive behaviours (BFRBs)</li>
                         <li>depression</li>
                     </ul>
-                    <br /><br />
-                    <p className="pb10 aaa">
+                    <br />
+                    {/* <br /> */}
+                    {/* <p className="pb10 aaa">
                         TODO: I statement about skills and focus
-                    </p>
+                    </p> */}
                 </section>
                 {/* Description */}
                 <section className="content">
                     <p className="question">        
-                            Liannes's Approach      
+                            Lianne’s Approach      
                     </p>
-                    <p className='pb10 aaa'>
+                    {/* <p className='pb10 aaa'>
                         I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
-                    </p>
+                    </p> */}
                     <p className='pb10 aaa'>
                         I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include “taboo” themes, and I’m comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them.                        
                     </p>
                     <p className='pb10 aaa'>
                         Together, we’ll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.                            
                     </p>
+                    {/* Add last paragraph under approaches just like mine - EMDR, ERP, I-CBT, CBT, ACT, self-compassion, CPT, inner child work, EFT Tapping, grief counselling, ADHD coaching. */}
+                    <p className="pb10 aaa">
+                        I incorporate elements from the following evidence-based therapies in my practice: <em><span style={{ color: 'rgb(112, 145, 99)' }}>EMDR, ERP, I-CBT, CBT, ACT, self-compassion, CPT, inner child work, EFT Tapping, grief counselling, ADHD coaching.</span></em>
+                    </p>
                 </section>
                 <section className="content">
-                    <p className="question">Education</p>
-                    <p className="pb10 aaa">
-                        TODO: Statement about credentials
-                    </p>
-                    <p className="pb10 aaa">
-                        TODO: Statement about credentials
-                    </p>
-
+                    {/* <p className="question">Education</p>
+                        <p className="pb10 aaa">
+                            TODO: Statement about credentials
+                        </p>
+                        <p className="pb10 aaa">
+                            TODO: Statement about credentials
+                        </p>
+                    */}
                     {/* Availability */}
                     <p className="question">Availability</p>
                     {/* Copied from Moonsug page */}

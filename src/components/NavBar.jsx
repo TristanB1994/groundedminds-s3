@@ -319,13 +319,13 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               <Link to="/daniellekirshenbaum" className="nav-about-hovermenu-cta">Danielle Kirshenbaum</Link>
             </div>
             <div className="nav-about-hovermenu">
+              <Link to="/liannesaxon" className="nav-about-hovermenu-cta">Lianne Saxon</Link>
+            </div>
+            <div className="nav-about-hovermenu">
               <Link to="/moonsunjang" className="nav-about-hovermenu-cta">Moonsun Jang</Link>
             </div>
             <div className="nav-about-hovermenu">
               <Link to="/rafeyashami" className="nav-about-hovermenu-cta">Rafeya Shami</Link>
-            </div>
-            <div className="nav-about-hovermenu">
-              <Link to="/liannesaxon" className="nav-about-hovermenu-cta">Lianne Saxon</Link>
             </div>
           </div>
 
@@ -463,13 +463,13 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
                 <Link to="/daniellekirshenbaum" className="mobile-nav-about-submenu-cta">Danielle Kirshenbaum</Link>
               </div>
               <div className="mobile-nav-about-submenu">
+                <Link to="/liannesaxon" className="mobile-nav-about-submenu-cta">Lianne Saxon</Link>
+              </div>
+              <div className="mobile-nav-about-submenu">
                 <Link to="/moonsunjang" className="mobile-nav-about-submenu-cta">Moonsun Jang</Link>
               </div>
               <div className="mobile-nav-about-submenu">
                 <Link to="/rafeyashami" className="mobile-nav-about-submenu-cta">Rafeya Shami</Link>
-              </div>
-              <div className="mobile-nav-about-submenu">
-                <Link to="/liannesaxon" className="mobile-nav-about-submenu-cta">Lianne Saxon</Link>
               </div>
             </div>
 
