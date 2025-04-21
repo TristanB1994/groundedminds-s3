@@ -1,5 +1,5 @@
-import React, { useRef }from 'react';
-import '../../assets/styles.css'; // Adjust the path as necessary
+import React, { useRef } from 'react';
+// Global CSS imports removed - now handled in _app.js
 import Layout from '../../components/Layout';
 import { Helmet } from 'react-helmet';
 import rafeya_thumbnail from '../../../public/rafeya.png';

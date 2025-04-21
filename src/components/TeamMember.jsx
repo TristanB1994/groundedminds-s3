@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const TeamMember = ({ name, image, profileUrl, alt }) => (
     <div className={`team_portrait ${name.toLowerCase()}`}>
-        <Link to={profileUrl}>
+        <Link href={profileUrl}>
             <img
                 src={image}
                 alt={alt}
                 style={{ cursor: 'pointer' }}
             />
         </Link>
-        <Link to={profileUrl}>
+        <Link href={profileUrl}>
             <button className="teamthumbs">
                 Meet {name}
             </button>
