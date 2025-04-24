@@ -530,7 +530,7 @@ const About = () => {
 
 export default About;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       navOptions: { 

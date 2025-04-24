@@ -111,6 +111,6 @@ const Home = () => {
 
 export default Home;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     return { props: { navOptions: { isHome: true } } };
 }
