@@ -25,7 +25,7 @@ const AboutMoonsunJang = () => {
                 <p className="question">Moonsun Jang</p>
             </div>
             <section className="content">
-                <div className="portrait">
+                <div className="portrait-reverse">
                     <img alt="Therapist picture" id="MJ-SECTION" src="/headshotm.png" />
                     <div className="ownertexts">
                         <p id="ownertext">pronouns: she/they<br /><br />MSW, RSW | Psychotherapist</p>

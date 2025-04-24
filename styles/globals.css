@@ -976,6 +976,7 @@ body
     background-image: none !important;
 }
 
+/* .portrait-reverse, */
 .portrait
 {
     margin-bottom: 20px;
@@ -1096,12 +1097,14 @@ body
     margin: 0px auto;
 }
 
+.portrait-reverse p,
 .portrait p
 {
     font-size: 22px;
     letter-spacing: 1px;
 }
 
+.portrait-reverse img,
 .portrait img
 {
     width: 100%;
@@ -1798,6 +1801,7 @@ input[type=text], select, textarea {
 
     /* About */
 
+    .portrait-reverse img,
     .portrait img
     {
         max-width: 400px;
@@ -1838,6 +1842,7 @@ input[type=text], select, textarea {
         flex-direction: row-reverse;
     }
 
+    .portrait-reverse div,
     .portrait div
     {
         display: flex;
@@ -2067,7 +2072,7 @@ input[type=text], select, textarea {
 
     .menu-links
     {
-        display: flex;
+        display: flex !important; /* Force display at desktop breakpoint */
         background-color: rgba(0,0,0,0);
         grid-area: links;
         position: relative;
@@ -2334,6 +2339,7 @@ input[type=text], select, textarea {
         margin-top: 30px;
     }
 
+    .portrait-reverse, /* should this be here? */
     .portrait
     {
         display: flex;
@@ -2342,6 +2348,7 @@ input[type=text], select, textarea {
         margin-bottom: 40px;
     }
 
+    .portrait-reverse p,
     .portrait p
     {
         margin-left: 70px;

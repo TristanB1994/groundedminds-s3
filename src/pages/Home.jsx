@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import '../assets/styles.css'; // Adjust the path as necessary
 import { Helmet } from 'react-helmet';
 
 

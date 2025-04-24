@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../src/components/Layout';
 import '../styles/globals.css';
-import '../src/assets/styles.css'; // Import the original React app styles
 
 function MyApp({ Component, pageProps }) {
   // Get the layout props from the page component
