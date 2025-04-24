@@ -45,7 +45,7 @@ const Footer = () => {
                         </div>
                         <div className="fb mb20">
                             <a href="https://www.facebook.com/groundedmindstherapy" target="_blank">
-                                <img alt="facebook logo" src="FB-icon.png"/>
+                                <img alt="facebook logo" src="/FB-icon.png"/>
                             </a>                
                             <a href="https://www.facebook.com/groundedmindstherapy" target="_blank">
                                 groundedmindstherapy

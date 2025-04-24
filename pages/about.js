@@ -272,7 +272,7 @@ const About = () => {
                             MSW, RSW | Psychotherapist
                         </p>
                     </div>
-                    <div className="ANKA-portrait-image" id="AK-SECTION"></div>         
+                    <div className="ANKA-portrait-image mt20" id="AK-SECTION"></div>         
                 </div>   
                 <br></br>
             </section>

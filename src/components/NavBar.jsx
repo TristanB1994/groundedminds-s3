@@ -49,8 +49,8 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
     setTimeout(() => {
       setMobileNavOpen(false);
       // Force-close submenus
-      setAboutSubmenuOpen(false);
-      setServicesSubmenuOpen(false);
+      closeAboutSubmenu();
+      closeServicesSubmenu();
     }, 300); // This matches the CSS transition time
   };
 
