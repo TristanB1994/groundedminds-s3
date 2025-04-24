@@ -7,11 +7,9 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      # - "5173:5173"
       - "3000:3000"
     volumes:
       - $PWD:/app
-      # - /app/node_modules # Exclude node_modules to avoid permission issues
     develop:
       watch:
         - action: sync
@@ -28,5 +26,3 @@ services:
         #     - src/ # Don't rebuild for source changes
     environment:
       NODE_ENV: development
-    # environment:
-    #   - NODE_ENV=development

@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Output as static site if needed
-  // output: 'export',
-  // Configure image domains if needed
+  // Output as static site
+  output: 'export',
+  // Configure images for static export
   images: {
     unoptimized: true,
   },

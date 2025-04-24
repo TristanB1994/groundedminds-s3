@@ -87,7 +87,7 @@ const AboutDanielleKirshenbaum = () => {
 
 export default AboutDanielleKirshenbaum;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

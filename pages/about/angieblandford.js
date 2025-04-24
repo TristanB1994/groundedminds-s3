@@ -99,7 +99,7 @@ const AboutAngieBlandford = () => {
 
 export default AboutAngieBlandford;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

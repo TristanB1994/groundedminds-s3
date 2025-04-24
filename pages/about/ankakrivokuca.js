@@ -99,7 +99,7 @@ const AboutAnkaKrivokuca = () => {
 
 export default AboutAnkaKrivokuca;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

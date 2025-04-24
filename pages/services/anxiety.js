@@ -135,7 +135,7 @@ const ServicesAnxiety = () => {
 
 export default ServicesAnxiety;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

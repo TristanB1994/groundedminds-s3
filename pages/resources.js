@@ -287,7 +287,7 @@ function Resources() {
 
 export default Resources;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

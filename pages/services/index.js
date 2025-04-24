@@ -112,7 +112,7 @@ const ServicesAll = () => {
 
 export default ServicesAll;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

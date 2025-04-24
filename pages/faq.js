@@ -122,7 +122,7 @@ const FAQ = () => {
 
 export default FAQ;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

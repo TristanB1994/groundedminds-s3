@@ -131,7 +131,7 @@ const ServicesClinicalConsult = () => {
 
 export default ServicesClinicalConsult;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

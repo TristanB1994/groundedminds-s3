@@ -86,7 +86,7 @@ const ServicesIndividualTherapy = () => {
 
 export default ServicesIndividualTherapy;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

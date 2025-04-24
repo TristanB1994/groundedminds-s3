@@ -93,7 +93,7 @@ const Contact = () => {
 
 export default Contact;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 

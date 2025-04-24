@@ -98,7 +98,7 @@ const AboutRafeyaShami = () => {
 
 export default AboutRafeyaShami;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {
       navOptions: { 
