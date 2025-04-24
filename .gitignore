@@ -47,3 +47,6 @@ dist/
 .vscode/
 .DS_Store
 .env
+
+.next
+out

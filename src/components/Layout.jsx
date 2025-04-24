@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import '../assets/styles.css';
+// Global CSS should only be imported in _app.js
 
 const Layout = ({ navOptions = {}, children }) => {
     return (

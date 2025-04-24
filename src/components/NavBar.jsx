@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const NavBar = ({ isHome = false, bannerLabel = "" }) => {
+  const router = useRouter();
+  const [isFading, setIsFading] = useState(false);
   /**
    * MOBILE NAV STATES
    */
@@ -41,12 +44,14 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
     setMobileNavOpen(true);
   };
 
-  const handleCloseMobileNav = (e) => {
-    e.preventDefault();
-    setMobileNavOpen(false);
-    // Force-close submenus
-    setAboutSubmenuOpen(false);
-    setServicesSubmenuOpen(false);
+  const handleCloseMobileNav = (e) => {    
+    // Use setTimeout to delay the actual closing
+    setTimeout(() => {
+      setMobileNavOpen(false);
+      // Force-close submenus
+      closeAboutSubmenu();
+      closeServicesSubmenu();
+    }, 300); // This matches the CSS transition time
   };
 
   /**
@@ -274,7 +279,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
         {/* Logo and menu button */}
         <div className="heading">
           <div className="flexspread">                
-            <Link to="/" className="logohome">Grounded Minds</Link>
+            <Link href="/" className="logohome" passHref>
+              Grounded Minds
+            </Link>
             {/* Mobile Toggler */}
             <button id="mobile-nav-open-btn" className="togglerbtn" onClick={handleOpenMobileNav}>
               <i className="fa-solid fa-bars fa-lg" style={{ color: '#000000' }}></i>
@@ -287,7 +294,8 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
           {/* ABOUT */}
           <Link
             id="about-hover-trigger"
-            to="/about"
+            href="/about"
+            passHref
             ref={aboutHoverTriggerRef}
             onMouseEnter={showAboutHoverMenu}
             onMouseLeave={hideAboutHoverMenu}
@@ -307,32 +315,35 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             aria-expanded={aboutHoverOpen}
           >
             <div className="nav-about-hovermenu">
-              <Link to="/about" className="nav-about-hovermenu-cta">Our Team</Link>
+              <Link href="/about" passHref className="nav-about-hovermenu-cta">
+                Our Team
+              </Link>
             </div>
             <div className="nav-about-hovermenu">
-              <Link to="/angieblandford" className="nav-about-hovermenu-cta">Angie Blandford</Link>
+              <Link href="/about/angieblandford" className="nav-about-hovermenu-cta">Angie Blandford</Link>
             </div>
             <div className="nav-about-hovermenu">
-              <Link to="/ankakrivokuca" className="nav-about-hovermenu-cta">Anka Krivokuca</Link>
+              <Link href="/about/ankakrivokuca" className="nav-about-hovermenu-cta">Anka Krivokuca</Link>
             </div>
             <div className="nav-about-hovermenu">
-              <Link to="/daniellekirshenbaum" className="nav-about-hovermenu-cta">Danielle Kirshenbaum</Link>
+              <Link href="/about/daniellekirshenbaum" className="nav-about-hovermenu-cta">Danielle Kirshenbaum</Link>
             </div>
             <div className="nav-about-hovermenu">
-              <Link to="/liannesaxon" className="nav-about-hovermenu-cta">Lianne Saxon</Link>
+              <Link href="/about/liannesaxon" className="nav-about-hovermenu-cta">Lianne Saxon</Link>
             </div>
             <div className="nav-about-hovermenu">
-              <Link to="/moonsunjang" className="nav-about-hovermenu-cta">Moonsun Jang</Link>
+              <Link href="/about/moonsunjang" className="nav-about-hovermenu-cta">Moonsun Jang</Link>
             </div>
             <div className="nav-about-hovermenu">
-              <Link to="/rafeyashami" className="nav-about-hovermenu-cta">Rafeya Shami</Link>
+              <Link href="/about/rafeyashami" className="nav-about-hovermenu-cta">Rafeya Shami</Link>
             </div>
           </div>
 
           {/* SERVICES */}
           <Link
             id="services-hover-trigger"
-            to="/services"
+            href="/services"
+            passHref
             ref={servicesHoverTriggerRef}
             onMouseEnter={showServicesHoverMenu}
             onMouseLeave={hideServicesHoverMenu}
@@ -350,34 +361,35 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             onMouseLeave={hideServicesHoverMenu}
           >
             <div className="nav-services-hovermenu">
-              <Link to="/services" className="nav-services-hovermenu-cta">All Services</Link>
+              <Link href="/services" className="nav-services-hovermenu-cta">All Services</Link>
             </div>
             <div className="nav-services-hovermenu">
-              <Link to="/individualtherapy" className="nav-services-hovermenu-cta">Individual Therapy</Link>
+              <Link href="/services/individual-therapy" className="nav-services-hovermenu-cta">Individual Therapy</Link>
             </div>
             <div className="nav-services-hovermenu">
-              <Link to="/ocd" className="nav-services-hovermenu-cta">Therapy for OCD</Link>
+              <Link href="/services/ocd" className="nav-services-hovermenu-cta">Therapy for OCD</Link>
             </div>
             <div className="nav-services-hovermenu">
-              <Link to="/anxiety" className="nav-services-hovermenu-cta">Therapy for Anxiety</Link>
+              <Link href="/services/anxiety" className="nav-services-hovermenu-cta">Therapy for Anxiety</Link>
             </div>
             <div className="nav-services-hovermenu">
-              <Link to="/trauma" className="nav-services-hovermenu-cta">Therapy for Trauma</Link>
+              <Link href="/services/trauma" className="nav-services-hovermenu-cta">Therapy for Trauma</Link>
             </div>
             <div className="nav-services-hovermenu">
-              <Link to="/consultation" className="nav-services-hovermenu-cta">Clinical Consultation</Link>
+              <Link href="/services/consultation" className="nav-services-hovermenu-cta">Clinical Consultation</Link>
             </div>
           </div>
 
           {/* Other menu links */}
-          <Link to="/faq">FAQ</Link>
-          <Link to="/resources">Resources</Link>
-          <Link to="/contact">Contact</Link>
+          <Link href="/faq" passHref >FAQ</Link>
+          <Link href="/resources" passHref >Resources</Link>
+          <Link href="/contact" passHref >Contact</Link>
           <Link
+            href="https://groundedmindstherapy.janeapp.com/"
+            passHref
             className="bookwow"
-            to="https://groundedmindstherapy.janeapp.com/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Book Now
           </Link>
@@ -387,7 +399,7 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
         {isHome && (
           <section className="banner">
             <p id="pp">
-              <Link className="homebanner" to="/services">
+              <Link href="/services" passHref className="homebanner">
                 Virtual Therapy for Anxiety + OCD
               </Link>
             </p>
@@ -404,19 +416,22 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
       {/* MOBILE NAV */}
       <div
         id="mobile-nav-anchor"
-        className="mobile-nav-container"
+        className={`mobile-nav-container`}
         style={{ top: mobileNavOpen ? '0' : '-100vh' }}
       >
         <div className="mobile-menu-links-section">
           {/* Logo / Close btn */}
           <div className="mobile-menu-logo-section">
-            <Link className="logohome" to="/home">
+            <Link className="logohome" href="/">
               GROUNDED MINDS
             </Link>
             <button
               id="mobile-nav-close-btn"
               className="mobile-menu-close-btn"
-              onClick={handleCloseMobileNav}
+              onClick={(e) => {
+                e.preventDefault(); // It's OK to prevent default for the close button
+                handleCloseMobileNav(e);
+              }}
             >
               <i className="fa-solid fa-xmark fa-xl" style={{ color: '#000000' }}></i>
             </button>
@@ -451,25 +466,25 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               ref={mobileNavAboutSubmenuContainerRef}
             >
               <div className="mobile-nav-about-submenu">
-                <Link to="/about" className="mobile-nav-about-submenu-cta">Our Team</Link>
+                <Link href="/about" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Our Team</Link>
               </div>
               <div className="mobile-nav-about-submenu">
-                <Link to="/angieblandford" className="mobile-nav-about-submenu-cta">Angie Blandford</Link>
+                <Link href="/about/angieblandford" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Angie Blandford</Link>
               </div>
               <div className="mobile-nav-about-submenu">
-                <Link to="/ankakrivokuca" className="mobile-nav-about-submenu-cta">Anka Krivokuca</Link>
+                <Link href="/about/ankakrivokuca" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Anka Krivokuca</Link>
               </div>
               <div className="mobile-nav-about-submenu">
-                <Link to="/daniellekirshenbaum" className="mobile-nav-about-submenu-cta">Danielle Kirshenbaum</Link>
+                <Link href="/about/daniellekirshenbaum" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Danielle Kirshenbaum</Link>
               </div>
               <div className="mobile-nav-about-submenu">
-                <Link to="/liannesaxon" className="mobile-nav-about-submenu-cta">Lianne Saxon</Link>
+                <Link href="/about/liannesaxon" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Lianne Saxon</Link>
               </div>
               <div className="mobile-nav-about-submenu">
-                <Link to="/moonsunjang" className="mobile-nav-about-submenu-cta">Moonsun Jang</Link>
+                <Link href="/about/moonsunjang" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Moonsun Jang</Link>
               </div>
               <div className="mobile-nav-about-submenu">
-                <Link to="/rafeyashami" className="mobile-nav-about-submenu-cta">Rafeya Shami</Link>
+                <Link href="/about/rafeyashami" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Rafeya Shami</Link>
               </div>
             </div>
 
@@ -501,22 +516,22 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               ref={mobileNavServicesSubmenuContainerRef}
             >
               <div className="mobile-nav-services-submenu">
-                <Link to="/services" className="mobile-nav-services-submenu-cta">All Services</Link>
+                <Link href="/services" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>All Services</Link>
               </div>
               <div className="mobile-nav-services-submenu">
-                <Link to="/individualtherapy" className="mobile-nav-services-submenu-cta">Individual Therapy</Link>
+                <Link href="/services/individual-therapy" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Individual Therapy</Link>
               </div>
               <div className="mobile-nav-services-submenu">
-                <Link to="/ocd" className="mobile-nav-services-submenu-cta">Therapy for OCD</Link>
+                <Link href="/services/ocd" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Therapy for OCD</Link>
               </div>
               <div className="mobile-nav-services-submenu">
-                <Link to="/anxiety" className="mobile-nav-services-submenu-cta">Therapy for Anxiety</Link>
+                <Link href="/services/anxiety" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Therapy for Anxiety</Link>
               </div>
               <div className="mobile-nav-services-submenu">
-                <Link to="/trauma" className="mobile-nav-services-submenu-cta">Therapy for Trauma</Link>
+                <Link href="/services/trauma" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Therapy for Trauma</Link>
               </div>
               <div className="mobile-nav-services-submenu">
-                <Link to="/consultation" className="mobile-nav-services-submenu-cta">Clinical Consultation</Link>
+                <Link href="/services/consultation" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Clinical Consultation</Link>
               </div>
             </div>
 
@@ -525,21 +540,21 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               className="nav-link-cta-container"
               style={{ opacity: mobileNavOpen ? 1 : 0, transitionDelay: mobileNavOpen ? '0.825s' : '0s' }}
             >
-              <Link to="/faq" className="nav-link-cta">FAQ</Link>
+              <Link href="/faq" className="nav-link-cta" onClick={handleCloseMobileNav}>FAQ</Link>
             </div>
             {/* Resources */}
             <div
               className="nav-link-cta-container"
               style={{ opacity: mobileNavOpen ? 1 : 0, transitionDelay: mobileNavOpen ? '1.10s' : '0s' }}
             >
-              <Link to="/resources" className="nav-link-cta">RESOURCES</Link>
+              <Link href="/resources" className="nav-link-cta" onClick={handleCloseMobileNav}>RESOURCES</Link>
             </div>
             {/* Contact */}
             <div
               className="nav-link-cta-container"
               style={{ opacity: mobileNavOpen ? 1 : 0, transitionDelay: mobileNavOpen ? '1.375s' : '0s' }}
             >
-              <Link to="/contact" className="nav-link-cta">CONTACT</Link>
+              <Link href="/contact" className="nav-link-cta" onClick={handleCloseMobileNav}>CONTACT</Link>
             </div>
             {/* Book Now */}
             <div
@@ -547,10 +562,11 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               style={{ opacity: mobileNavOpen ? 1 : 0, transitionDelay: mobileNavOpen ? '1.65s' : '0s' }}
             >
               <Link
-                to="https://groundedmindstherapy.janeapp.com/"
+                href="https://groundedmindstherapy.janeapp.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="nav-link-book-now-cta"
+                onClick={handleCloseMobileNav}
               >
                 BOOK NOW
               </Link>
@@ -563,7 +579,7 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               <Link
                 target="_blank"
                 rel="noreferrer"
-                to="https://www.instagram.com/groundedmindstherapy/"
+                href="https://www.instagram.com/groundedmindstherapy/"
                 className="socials-handle-link"
               >
                 @GROUNDEDMINDSTHERAPY
@@ -571,7 +587,7 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             </div>
             <div className="socials-logo-container">
               <div className="socials-linkout-icon-container">
-                <Link target="_blank" rel="noreferrer" to="https://www.instagram.com/groundedmindstherapy/">
+                <Link target="_blank" rel="noreferrer" href="https://www.instagram.com/groundedmindstherapy/">
                   <img
                     src="/Insta-icon.png"
                     alt="instagram logo"
@@ -580,7 +596,7 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
                 </Link>
               </div>
               <div className="socials-linkout-icon-container">
-                <Link target="_blank" rel="noreferrer" to="https://www.facebook.com/groundedmindstherapy">
+                <Link target="_blank" rel="noreferrer" href="https://www.facebook.com/groundedmindstherapy">
                   <img
                     src="/FB-icon.png"
                     alt="Facebook Icon"
@@ -589,7 +605,7 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
                 </Link>
               </div>
               <div className="socials-linkout-icon-container">
-                <Link target="_blank" rel="noreferrer" to="https://www.tiktok.com/@groundedmindstherapy">
+                <Link target="_blank" rel="noreferrer" href="https://www.tiktok.com/@groundedmindstherapy">
                   <img
                     src="/TicTok-icon.png"
                     alt="TikTok Icon"
