@@ -48,5 +48,5 @@ dist/
 .DS_Store
 .env
 
-.next 
+.next
 out
