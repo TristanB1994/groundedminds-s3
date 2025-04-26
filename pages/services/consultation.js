@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Head from 'next/head';
+import SEO from '../../src/components/SEO';
 
 const ServicesClinicalConsult = () => {
     const bannerLabel = "Consultation";
@@ -15,19 +15,12 @@ const ServicesClinicalConsult = () => {
 
     return (
         <>
-            <Head>
-                <title>{ titleString }</title>
-                <meta name="description" content={ descriptionString } />
-
-                <meta property="og:url" content="https://www.groundedminds.ca/consultation" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={ titleString } />
-                <meta property="og:description" content={ descriptionString } />
-                <meta property="og:image" content="https://www.groundedminds.ca/homepage.jpeg" />
-                <meta property="og:image:alt" content={ descriptionString } />
-                <meta property="og:image:height" content="300" />
-                <meta property="og:image:width" content="300" />
-            </Head>
+            <SEO
+                title={titleString}
+                description={descriptionString}
+                image="https://www.groundedminds.ca/homepage.jpeg"
+                imageAlt={descriptionString}
+            />
             <div>
                 {/* <!-- Jump Angie's Picture to Angie's title -->  */}
                 <p className="question">

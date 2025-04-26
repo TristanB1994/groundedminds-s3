@@ -1,6 +1,6 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
+import SEO from '../src/components/SEO';
 
 const FAQ = () => {
   const bannerText = "FAQ";
@@ -9,19 +9,12 @@ const FAQ = () => {
 
   return (
     <>
-        <Head>
-            <title>{titleString}</title>
-            <meta name="description" content={descriptionString} />
-
-            <meta property="og:url" content="https://www.groundedminds.ca/faq" />
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content={ titleString } />
-            <meta property="og:description" content={descriptionString} />
-            <meta property="og:image" content="https://www.groundedminds.ca/consultation.jpeg" />
-            <meta property="og:image:alt" content={descriptionString} />
-            <meta property="og:image:height" content="300" />
-            <meta property="og:image:width" content="300" />
-        </Head>
+        <SEO 
+          title={titleString}
+          description={descriptionString}
+          image="https://www.groundedminds.ca/consultation.jpeg"
+          imageAlt={descriptionString}
+        />
         <section className="content">
             <p className="question">
                 I'm new to therapy, what can I expect?

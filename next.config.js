@@ -7,6 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Add trailingSlash to ensure proper path mapping in CloudFront
+  trailingSlash: true,
   // To ensure proper handling of assets
   webpack: (config) => {
     config.module.rules.push({
