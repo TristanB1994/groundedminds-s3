@@ -1,3 +1,10 @@
+resource "aws_cloudfront_function" "redirect_profiles" {
+  name    = "redirect-angieblandford"
+  runtime = "cloudfront-js-1.0"
+  publish = true
+  code    = file("${path.module}/cloudfront_function_redirect_profiles.js.js")
+}
+
 resource "aws_cloudfront_distribution" "cdn" {
 
   origin {
@@ -38,6 +45,11 @@ resource "aws_cloudfront_distribution" "cdn" {
     min_ttl                = 0
     default_ttl            = 30
     max_ttl                = 30
+
+    function_association {
+      event_type   = "viewer-request"
+      function_arn = aws_cloudfront_function.redirect_profiles.arn
+    }
   }
 
   custom_error_response {

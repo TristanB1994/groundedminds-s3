@@ -13,6 +13,7 @@ resource "aws_s3_bucket_website_configuration" "website" {
   error_document {
     key = "index.html"
   }
+
 }
 
 resource "aws_cloudfront_origin_access_identity" "oai" {
