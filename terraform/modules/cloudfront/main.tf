@@ -1,5 +1,5 @@
 resource "aws_cloudfront_function" "redirect_profiles" {
-  name    = "redirect-angieblandford"
+  name    = "redirect-profiles"
   runtime = "cloudfront-js-1.0"
   publish = true
   code    = file("${path.module}/cloudfront_function_redirect_profiles.js")
