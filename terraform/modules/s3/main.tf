@@ -14,17 +14,6 @@ resource "aws_s3_bucket_website_configuration" "website" {
     key = "index.html"
   }
 
-  routing_rules = jsonencode([
-    {
-      Condition = {
-        KeyPrefixEquals = "angieblandford"
-      }
-      Redirect = {
-        ReplaceKeyWith = "about/angieblandford"
-        HttpRedirectCode = "301"
-      }
-    }
-  ])
 }
 
 resource "aws_cloudfront_origin_access_identity" "oai" {
