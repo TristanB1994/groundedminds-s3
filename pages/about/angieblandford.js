@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import SEO from '../../src/components/SEO';
 
 const AboutAngieBlandford = () => {
     const bannerLabel = "Meet Angie";
@@ -8,19 +8,12 @@ const AboutAngieBlandford = () => {
 
     return (
         <>
-            <Head>
-                <title>{titleString}</title>
-                <meta name="description" content={descriptionString} />
-
-                <meta property="og:url" content="https://www.groundedminds.ca/angieblandford" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={titleString} />
-                <meta property="og:description" content={descriptionString} />
-                <meta property="og:image" content="https://www.groundedminds.ca/portrait.jpeg" />
-                <meta property="og:image:alt" content="Angie Blandford OCD, PTSD and anxiety Specialist" />
-                <meta property="og:image:height" content="300" />
-                <meta property="og:image:width" content="300" />
-            </Head>
+            <SEO
+                title={titleString}
+                description={descriptionString}
+                image="https://www.groundedminds.ca/portrait.jpeg"
+                imageAlt="Angie Blandford OCD, PTSD and anxiety Specialist"
+            />
             <div>
                 <p className="question">Angie Blandford</p>
             </div>

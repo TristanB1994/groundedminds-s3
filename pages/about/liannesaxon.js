@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import SEO from '../../src/components/SEO';
 
 const AboutLianneSaxon = () => {
     const bannerLabel = "Meet Lianne";
@@ -8,19 +8,12 @@ const AboutLianneSaxon = () => {
 
     return (
         <>
-            <Head>
-                <title>{titleString}</title>
-                <meta name="description" content={descriptionString} />
-
-                <meta property="og:url" content="https://www.groundedminds.ca/liannesaxon" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={titleString} />
-                <meta property="og:description" content={descriptionString} />
-                <meta property="og:image" content="https://www.groundedminds.ca/lianne-profile.jpeg" />
-                <meta property="og:image:alt" content="Lianne Saxon - Anxiety, OCD, Trauma, Depression and Grief Therapist" />
-                <meta property="og:image:height" content="300" />
-                <meta property="og:image:width" content="300" />
-            </Head>
+            <SEO
+                title={titleString}
+                description={descriptionString}
+                image="https://www.groundedminds.ca/lianne-profile.jpeg"
+                imageAlt="Lianne Saxon - Anxiety, OCD, Trauma, Depression and Grief Therapist"
+            />
             <div>
                 <p className="question">Lianne Saxon</p>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import SEO from '../src/components/SEO';
 
 const Contact = () => {
     const bannerText = "Get In Touch"
@@ -8,19 +8,12 @@ const Contact = () => {
 
     return (
         <>
-            <Head>
-                <title>{titleString}</title>
-                <meta name="description" content={descriptionString} />
-
-                <meta property="og:url" content="https://www.groundedminds.ca/contact" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={ titleString } />
-                <meta property="og:description" content={descriptionString} />
-                <meta property="og:image" content="https://www.groundedminds.ca/contact_banner.jpg" />
-                <meta property="og:image:alt" content={descriptionString} />
-                <meta property="og:image:height" content="300" />
-                <meta property="og:image:width" content="300" />
-            </Head>
+            <SEO
+                title={titleString}
+                description={descriptionString}
+                image="https://www.groundedminds.ca/contact_banner.jpg"
+                imageAlt={descriptionString}
+            />
             <section className="content mb32">         
                 <div className="touchlayout">            
                     <div className="verticle">                

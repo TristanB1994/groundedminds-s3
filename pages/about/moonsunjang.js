@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import SEO from '../../src/components/SEO';
 
 const AboutMoonsunJang = () => {
     const bannerLabel = "Meet Moonsun";
@@ -8,19 +8,12 @@ const AboutMoonsunJang = () => {
 
     return (
         <>
-            <Head>
-                <title>{titleString}</title>
-                <meta name="description" content={descriptionString} />
-
-                <meta property="og:url" content="https://www.groundedminds.ca/moonsunjang" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={titleString} />
-                <meta property="og:description" content={descriptionString} />
-                <meta property="og:image" content="https://www.groundedminds.ca/headshotm.png" />
-                <meta property="og:image:alt" content="Moonsun Jang therapist specialized in anxiety, OCD, PTSD, eating disorders and borderline personality disorder" />
-                <meta property="og:image:height" content="300" />
-                <meta property="og:image:width" content="300" />
-            </Head>
+            <SEO
+                title={titleString}
+                description={descriptionString}
+                image="https://www.groundedminds.ca/headshotm.png"
+                imageAlt="Moonsun Jang therapist specialized in anxiety, OCD, PTSD, eating disorders and borderline personality disorder"
+            />
             <div>
                 <p className="question">Moonsun Jang</p>
             </div>
