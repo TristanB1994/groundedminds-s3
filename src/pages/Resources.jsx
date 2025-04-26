@@ -1,8 +1,7 @@
 import React from 'react';
 import '../assets/team.css';
-import '../assets/styles.css';
 import Layout from '../components/Layout';
-import CenteredRow from '../components/CenteredRow';
+// import CenteredRow from '../components/CenteredRow';
 import { Helmet } from 'react-helmet';
 
 function Resources() {
