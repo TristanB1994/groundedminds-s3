@@ -5,6 +5,13 @@ resource "aws_cloudfront_function" "redirect_profiles" {
   code    = file("${path.module}/cloudfront_function_redirect_profiles.js")
 }
 
+resource "aws_cloudfront_function" "redirect_angieblandford" {
+  name    = "redirect-angieblandford"
+  runtime = "cloudfront-js-1.0"
+  publish = true
+  code    = file("${path.module}/cloudfront_function_redirect_angieblandford.js")
+}
+
 resource "aws_cloudfront_distribution" "cdn" {
 
   origin {
