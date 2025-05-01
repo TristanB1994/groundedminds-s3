@@ -21,10 +21,10 @@ const ServicesOcd = () => {
                 <p className="pb10 aaa">OCD is a chronic mental health disorder. It consists of two distinct parts: obsessions and compulsions. Obsessions are repeated, persistent and unwanted thoughts, urges or images that are intrusive and cause fear, anxiety or disgust. Compulsions are repetitive actions, rituals or routines (either overt or mental) that the individual feels an urge to perform in order to get rid of obsessions or reduce distress.
                     <br/><br/>
                 </p>
-                <p className="pb10 aaa rate" style={{ width: "fitContent", marginLeft: "auto", marginRight: "auto" }}>
+                <p className="pb10 aaa rate" style={{ width: "fit-content", marginLeft: "auto", marginRight: "auto" }}>
                     Common OCD Subtypes or Themes Include:
                 </p>
-                <ul className="aaa aaaL" id="ocdsubtypes" style={{ width: "fitContent", marginLeft: "auto", marginRight: "auto" }}>            
+                <ul className="aaa aaaL" id="ocdsubtypes" style={{ width: "fit-content", marginLeft: "auto", marginRight: "auto" }}>            
                     <li>-Contamination OCD</li>            
                     <li>-Harm OCD</li>            
                     <li>-Sexual Orientation OCD</li>            

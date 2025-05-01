@@ -298,12 +298,12 @@ const About = () => {
                     </p>
                     {/* Description END */}
                     {/* SPECIALTIES */}
-                    <p className="question" style={{ "width": "fitContent", "marginLeft": "auto", "marginRight": "auto" }}>
+                    <p className="question" style={{ "width": "fit-content", "marginLeft": "auto", "marginRight": "auto" }}>
                         SPECIALTIES  
                     </p>
-                    {/* <ul className="aaa aaaL" id="ocdsubtypes" style={{ "width": "fitContent", "marginLeft": "auto", "marginRight": "auto" }}>   */}
+                    {/* <ul className="aaa aaaL" id="ocdsubtypes" style={{ "width": "fit-content", "marginLeft": "auto", "marginRight": "auto" }}>   */}
                     <div className="pb10 specialtiesli">  
-                        <ul className="aaa aaaL" id="ocdsubtypes" style={{ "width": "fitContent", "marginLeft": "auto", "marginRight": "auto" }}>  
+                        <ul className="aaa aaaL" id="ocdsubtypes" style={{ "width": "fit-content", "marginLeft": "auto", "marginRight": "auto" }}>  
                             <li>generalized anxiety</li>       
                             <li>social anxiety</li>     
                             <li>health anxiety</li>    
