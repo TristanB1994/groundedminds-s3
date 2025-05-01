@@ -976,44 +976,11 @@ body
     background-image: none !important;
 }
 
-/* .portrait-reverse, */
 .portrait
 {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column-reverse;
-}
-
-.ANKA-portrait-image
-{
-    background-image: url(/ANKA_Headshot.png);
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.ANKA-portrait-text
-{
-    margin-bottom: 30px;
-}
-
-@media(min-width: 600px)
-{
-    .ANKA-portrait-image
-    {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .ANKA-portrait-text
-    {
-        margin-bottom: unset;
-    }
 }
 
 .aboutportraits
@@ -1582,15 +1549,6 @@ input[type=text], select, textarea {
     padding-bottom: 40px;
 }
 
-@media(min-width: 420px)
-{
-    .ANKA-portrait-image
-    {
-        height: 400px;
-        width: 400px;
-    }
-}
-
 @media(min-width: 400px)
 {
     .menu-links
@@ -1839,7 +1797,10 @@ input[type=text], select, textarea {
 
     .portrait-reverse
     {
+        display: flex;
         flex-direction: row-reverse;
+        width: 80%;
+        margin: 0px auto;
     }
 
     .portrait-reverse div,
@@ -2339,7 +2300,7 @@ input[type=text], select, textarea {
         margin-top: 30px;
     }
 
-    .portrait-reverse, /* should this be here? */
+    .portrait-reverse,
     .portrait
     {
         display: flex;
@@ -2592,9 +2553,6 @@ input[type=text], select, textarea {
     grid-area: AB;
 }
 
-.anka {
-    grid-area: AK;
-}
 
 .danielle {
     grid-area: DK;
@@ -2604,9 +2562,6 @@ input[type=text], select, textarea {
     grid-area: MJang;
 }
 
-.rafeya {
-    grid-area: RS;
-}
 
 .lianne {
     grid-area: LS;
@@ -2626,11 +2581,9 @@ input[type=text], select, textarea {
     display: grid;
     grid-template-areas:
     "MJang"
-    "RS   "
-    "AK   "
-    "DK   "
-    "LS   "
-    "AB   "
+    "DK"
+    "LS"
+    "AB"
     ;
 
     grid-gap: 20px;
@@ -2647,8 +2600,6 @@ input[type=text], select, textarea {
     /* THIS SHOULD MATCH PROFILE ORDER */
     grid-template-areas: 
     "MJang"
-    "RS   "
-    "AK   "
     "DK   "
     "LS   "
     "AB   "
@@ -2659,7 +2610,6 @@ input[type=text], select, textarea {
     display: grid;
     width: 100%;
     grid-template-areas:
-    "AK"
     "AB"
     ;
     grid-template-columns: minmax(300px, 1fr);
@@ -2700,8 +2650,7 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "MJang RS"
-            "AK DK   "
+            "MJang DK"
             "LS AB   "
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -2709,9 +2658,9 @@ input[type=text], select, textarea {
 
     .consultation_thumbnail_grid {
         grid-template-areas:
-            "AK AB"
+            "AB"
         ;
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: minmax(300px, 1fr);
     }
     
 }
@@ -2720,8 +2669,7 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "MJang RS"
-            "AK DK   "
+            "MJang DK"
             "LS AB   "
             ;
 
@@ -2730,9 +2678,9 @@ input[type=text], select, textarea {
 
     .consultation_thumbnail_grid {
         grid-template-areas:
-            "AK AB"
+            "AB"
         ;
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: minmax(300px, 1fr);
     }
 
     .teamthumbs
@@ -2748,8 +2696,7 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . MJang RS . "
-            " . AK DK    . "
+            " . MJang DK . "
             " . LS AB    . "
             ;
 
@@ -2759,9 +2706,9 @@ input[type=text], select, textarea {
 
     .consultation_thumbnail_grid {
         grid-template-areas:
-            " . AK AB . "
+            " . AB . "
         ;
-        grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;
+        grid-template-columns: auto minmax(300px, 1fr) auto;
     }
 
     .teamthumbs

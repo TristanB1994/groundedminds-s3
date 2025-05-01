@@ -75,12 +75,12 @@ const ServicesAll = () => {
                     <div className="serviceimg" id="serviceupperhope">    
                         <img alt="Online therapy setting" src="/aboutmidbanner.jpg"/>     
                     </div>
-                    <div className="pb30" id="consult">    
+                    {/* <div className="pb30" id="consult">    
                         <h3 className="sessions caps up"> 
                             Clinical Consultation for Therapists
                         </h3>
                         <p className="pb30">              
-                            Angie Blandford (MSW, RSW) and Anka Krivokuca (MSW, RSW) offer clinical consultation to fellow therapists on the following topics: <i> working with individuals who have OCD or OCD symptoms, supporting friends/family members of folks with OCD, implementing Exposure and Response Prevention (ERP) for OCD, CBT for anxiety disorders and more. </i> 
+                            Angie Blandford (MSW, RSW) offer clinical consultation to fellow therapists on the following topics: <i> working with individuals who have OCD or OCD symptoms, supporting friends/family members of folks with OCD, implementing Exposure and Response Prevention (ERP) for OCD, CBT for anxiety disorders and more. </i> 
                             To learn more about clinical consultation, please click <Link href="/services/consultation" className="rate">here</Link>. There are a limited number of therapists providing ERP for OCD, and we are passionate about supporting you in doing this important work with your clients. 
                             <br/><br/>
                             Please get in touch for scheduling, rates and questions.        
@@ -88,11 +88,11 @@ const ServicesAll = () => {
                         <a className="booknow" href="https://groundedminds.ca/contact">                
                             GET IN TOUCH           
                         </a>
-                    </div>
+                    </div> */}
                 </div>       
-                <div className="serviceimg" id="servicesupperlaptop">            
+                {/* <div className="serviceimg" id="servicesupperlaptop">            
                     <img alt="Online therapy setting" src="/services_page_banner.jpeg"/>   
-                </div>       
+                </div>        */}
                 <br/>        
                 <p className="coverage pb10">     
                     <i><u>Note on Therapy Coverage:</u></i>

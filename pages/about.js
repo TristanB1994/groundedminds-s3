@@ -1,7 +1,5 @@
 import React, { useRef } from 'react';
 import SEO from '../src/components/SEO';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const About = () => {
     const bannerLabel = "Experts in Anxiety & OCD Treatment";
@@ -9,8 +7,6 @@ const About = () => {
     const descriptionString = "Our team specializes in supporting individuals with obsessive-compulsive disorder and anxiety disorders. With extensive training and experience, we welcome the opportunity to work with you.";
 
     const MoonsunSectionRef = useRef(null);
-    const RafeyaSectionRef = useRef(null);
-    const AnkaSectionRef = useRef(null);
     const DanielleSectionRef = useRef(null);
     const AngieSectionRef = useRef(null);
     const LianneSectionRef = useRef(null);
@@ -86,18 +82,6 @@ const About = () => {
                             Meet Moonsun
                         </button>
                     </div> 
-                    <div className="team_portrait rafeya">               
-                        <img onClick={() => scrollToSection(RafeyaSectionRef)} alt="rafeya shami therapist" id="RAF-SECTION-THUMB" src="/rafeya_thumbnail.png"/>  
-                        <button onClick={() => scrollToSection(RafeyaSectionRef)} className="teamthumbs" id="RAF-SECTION-CTA">                    
-                            Meet Rafeya                
-                        </button>
-                    </div>
-                    <div className="team_portrait anka">               
-                        <img onClick={() => scrollToSection(AnkaSectionRef)} alt="anka krivokuca therapist" id="AK-SECTION-THUMB" src="/ANKA_OurTeamPage.png"/>  
-                        <button onClick={() => scrollToSection(AnkaSectionRef)} className="teamthumbs" id="AK-SECTION-CTA">                    
-                            Meet Anka                
-                        </button>
-                    </div>
                     <div className="team_portrait danielle">             
                         <img onClick={() => scrollToSection(DanielleSectionRef)} alt="danielle Kirshenbaum therapist" id="DK-SECTION-THUMB" src="/thumbnaildk.png"/>      
                         <button onClick={() => scrollToSection(DanielleSectionRef)} className="teamthumbs" id="DK-SECTION-CTA">                   
@@ -188,134 +172,6 @@ const About = () => {
                 </div>
             </section>
             {/* Moonsun End */}
-            {/* Rafeya Start */}
-            <section className="content" ref={RafeyaSectionRef}>        
-                <div className="portrait-reverse">            
-                    <div className="ownertexts">   
-                        <p className="fancy">       
-                            <br/>
-                            Rafeya Shami
-                            <span id="bigabout">
-                                <br/>
-                            </span>           
-                        </p>
-                        <p id="ownertext">pronouns: she/her
-                            <br/><br/>
-                            Registered Psychotherapist (Qualifying) 
-                        </p>            
-                    </div>
-                    <img alt="Therapist picture" id="RAF-SECTION" src="/rafeya.png"/>    
-                </div>
-                <br/>
-            </section>   
-            <section className="content">     
-                <p className="question">        
-                    Rafeya's Approach      
-                </p>       
-                <p className="pb10 aaa">   
-                I create a supportive, judgment-free space where clients feel safe to explore their challenges, intrusive thoughts and work towards meaningful change. My approach is flexible and tailored to your unique needs, whether you prefer a structured, directive therapy or an open-ended, exploratory style. Together, we'll collaborate to identify your goals and navigate the difficulties that brought you to therapy.
-                </p> 
-                <p className="pb10 aaa">    
-                    Living with OCD, depression, anxiety, or grief can feel overwhelming and isolating, but there is a way forward. Obsessions and intrusive thoughts in OCD can take many forms, often leading to significant distress and shame and I understand how lonely that can feel. I am here to provide a safe space for us to explore your intrusive thoughts together – without shame and fear of judgement. 
-                </p>
-            </section>
-            <p className="question">        
-                Specialties
-            </p>
-            <section className="content">   
-                <div className="pb10 specialtiesli">     
-                    <ul className="aaa aaaL">                
-                        <li>anxiety disorders</li>  
-                        <li>relationship anxiety + other relationship concerns</li>              
-                        <li>panic disorder + panic attacks</li>                              
-                        <li>phobias</li>                
-                        <li>obsessive-compulsive disorder</li>                 
-                        <li>depression</li>                
-                        <li>trauma + PTSD</li>  
-                        <li>grief and loss</li>  
-                        <li>career counselling</li>              
-                        <li>self-esteem and body image</li>      
-                    </ul>
-                </div>
-                <p className="availability"></p>
-                <br/>
-            </section>
-            <section id="aboutBannermid">   
-                <div className="mb40 mt40 raise">      
-                    <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/9" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
-                        Book with Rafeya
-                    </a>
-                </div>
-            </section>
-            {/* Rafeya End */}
-            {/* Anka Start     */}
-            <section className="content" ref={AnkaSectionRef}>    
-                <div className="portrait">          
-                    <div className="ownertexts ANKA-portrait-text">             
-                        <p className="fancy">                  
-                            <br/>
-                            Anka Krivokuca
-                            <span id="bigabout">
-                                <br/>
-                            </span>
-                        </p>                
-                        <p id="ownertext">
-                            pronouns: she/her
-                            <br/><br/>
-                            MSW, RSW | Psychotherapist
-                        </p>
-                    </div>
-                    <div className="ANKA-portrait-image mt20" id="AK-SECTION"></div>         
-                </div>   
-                <br></br>
-            </section>
-            {/* Description START */}
-            <section className="content">   
-                <p className="question">            
-                    Anka's Approach
-                </p>
-                <p className="pb10 aaa">     
-                    I primarily work with OCD, anxiety disorders, relationship anxiety, BFRBs, trauma and body dysmorphia. I love helping people learn how to break free from anxiety, worry, OCD and trauma.
-                </p>
-                <p className="pb10 aaa">          
-                    I foster a "zero judgement" environment and work collaboratively to help my clients navigate the issues that are bringing them to therapy. My approach is very flexible and person-centered. I am able to provide directive, manualized therapy or more open-ended talk therapy depending on your needs and goals. Struggling with OCD or anxiety can result in a lot of distress and shame, but there is a way through these uncomfortable emotions. Obsessions in OCD can vary widely. Regardless of the "theme," I have years of experience and training successfully helping people manage OCD.             
-                    <br/><br/>
-                    Whatever brings you here, I am humbled by each opportunity to use my training and experience to help you reach your goals and live a fulfilling life. Let's work together to break the cycle of OCD, worry or anxiety.            
-                    <br/><br/>
-                </p>
-                {/* Description END */}
-                {/* SPECIALTIES */}
-                <p className="question" style={{ "width": "fitContent", "marginLeft": "auto", "marginRight": "auto" }}>
-                    SPECIALTIES  
-                </p>
-                <div className="pb10 specialtiesli">  
-                    <ul className="aaa aaaL" id="ocdsubtypes" style={{ "width": "fitContent", "marginLeft": "auto", "marginRight": "auto" }}>  
-                        <li>generalized anxiety</li>       
-                        <li>social anxiety</li>     
-                        <li>health anxiety</li>    
-                        <li>phobias</li>     
-                        <li>panic disorder</li>       
-                        <li>obsessive-compulsive disorder (OCD)</li>       
-                        <li>perinatal and postpartum OCD</li>        
-                        <li>relationship obsessions</li>        
-                        <li>body-focused repetitive behaviours (BFRBs)</li>        
-                        <li>body dysmorphic disorder (BDD)</li>        
-                        <li>depression</li>    
-                    </ul>
-                </div>
-            </section>
-            {/* SPECIALTIES END */}
-            <br/>
-            <br/>
-            {/* AVAILABILITY END */}
-            <section id="aboutBannermiddle">      
-                <div className="mb40 mt40 raise">         
-                    <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/7" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
-                        Book with Anka
-                    </a>
-                </div> 
-            </section>
-            {/* Anka End  */}
             {/* Danielle Start   */}
             <section className="content" ref={DanielleSectionRef}>
                 <br/>
