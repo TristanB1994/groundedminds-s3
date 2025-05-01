@@ -1,11 +1,13 @@
-resource "aws_cloudfront_function" "redirect_profiles" {
-  name    = "redirect-profiles-${replace(var.aliases[0], ".", "-")}"
+resource "aws_cloudfront_function" "redirections" {
+  name    = "redirections-${replace(var.aliases[0], ".", "-")}"
   runtime = "cloudfront-js-1.0"
   publish = true
-  code    = file("${path.module}/cloudfront_function_redirect_profiles.js")
+  code    = file("${path.module}/cloudfront_function_redirections.js")
 }
 
 resource "aws_cloudfront_distribution" "cdn" {
+
+  depends_on = [ aws_cloudfront_function.redirections ]
 
   origin {
       domain_name = var.origin_domain_name
@@ -48,7 +50,7 @@ resource "aws_cloudfront_distribution" "cdn" {
 
     function_association {
       event_type   = "viewer-request"
-      function_arn = aws_cloudfront_function.redirect_profiles.arn
+      function_arn = aws_cloudfront_function.redirections.arn
     }
   }
 
