@@ -12,7 +12,7 @@ const TeamMember = ({ name, image, profileUrl, alt }) => (
             />
         </Link>
         <Link href={profileUrl}>
-            <button className="teamthumbs">
+            <button className="teamthumbs fancy">
                 Meet {name}
             </button>
         </Link>

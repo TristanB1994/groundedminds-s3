@@ -77,26 +77,26 @@ const About = () => {
                 <div className="team-thumbnails-grid">         
                     {/* <!-- Therapist Cards Positioned by grid -->           */}
                     <div className="team_portrait moonsun">                
-                        <img onClick={() => scrollToSection(MoonsunSectionRef)} alt="moonsun jang therapist" id="MJ-SECTION-THUMB" src="/moonsun_thumbnail.jpeg"/>        
-                        <button onClick={() => scrollToSection(MoonsunSectionRef)} className="teamthumbs" id="MJ-SECTION-CTA">                
+                        <img onClick={() => scrollToSection(MoonsunSectionRef)} alt="moonsun jang therapist" src="/moonsun_thumbnail.jpeg"/>        
+                        <button onClick={() => scrollToSection(MoonsunSectionRef)} className="teamthumbs fancy">                
                             Meet Moonsun
                         </button>
                     </div> 
                     <div className="team_portrait danielle">             
-                        <img onClick={() => scrollToSection(DanielleSectionRef)} alt="danielle Kirshenbaum therapist" id="DK-SECTION-THUMB" src="/thumbnaildk.png"/>      
-                        <button onClick={() => scrollToSection(DanielleSectionRef)} className="teamthumbs" id="DK-SECTION-CTA">                   
+                        <img onClick={() => scrollToSection(DanielleSectionRef)} alt="danielle Kirshenbaum therapist" src="/thumbnaildk.png"/>      
+                        <button onClick={() => scrollToSection(DanielleSectionRef)} className="teamthumbs fancy">                   
                             Meet Danielle
                         </button>
                     </div>
                     <div className="team_portrait lianne">       
-                        <img onClick={() => scrollToSection(LianneSectionRef)} alt="lianne saxon therapist" id="LS-SECTION-THUMB" src="/lianne-team-page.jpeg"/>      
-                        <button onClick={() => scrollToSection(LianneSectionRef)} className="teamthumbs" id="LS-SECTION-CTA">                   
+                        <img onClick={() => scrollToSection(LianneSectionRef)} alt="lianne saxon therapist" src="/lianne-team-page.jpeg"/>      
+                        <button onClick={() => scrollToSection(LianneSectionRef)} className="teamthumbs fancy">                   
                             Meet Lianne
                         </button>
                     </div>
                     <div className="team_portrait angie">       
-                        <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" id="ALB-SECTION-THUMB" src="/ang_thumbnail.jpeg"/>      
-                        <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs" id="ALB-SECTION-CTA">                   
+                        <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" src="/ang_thumbnail.jpeg"/>      
+                        <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs fancy">                   
                             Meet Angie
                         </button>
                     </div>
@@ -242,7 +242,7 @@ const About = () => {
 
                 {/* Lianne Start */}
                 <section className="content" ref={LianneSectionRef}>        
-                    <div className="portrait">            
+                    <div className="portrait team_portrait">            
                         <div className="ownertexts">   
                             <p className="fancy">       
                                 <br/>
@@ -256,7 +256,7 @@ const About = () => {
                                 MA | Registered Psychotherapist (Qualifying) 
                             </p>            
                         </div>
-                        <img alt="Therapist picture" id="ALB-SECTION" src="/lianne-profile.jpeg"/>    
+                        <img alt="Therapist picture" id="LS-SECTION" src="/lianne-profile.jpeg"/>    
                     </div>
                     <br/>
                 </section>   
@@ -319,7 +319,7 @@ const About = () => {
                                 MSW, RSW | Clinical Director 
                             </p>            
                         </div>
-                        <img alt="Therapist picture" id="ALB-SECTION" src="/portrait.jpeg"/>    
+                        <img alt="Therapist picture" src="/portrait.jpeg"/>    
                     </div>
                     <br/>
                 </section>   
