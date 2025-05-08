@@ -85,7 +85,7 @@ export async function getStaticProps() {
     props: {
       navOptions: { 
         isHome: false, 
-        bannerLabel: "Services" 
+        bannerLabel: "Therapy" 
       }
     }
   };

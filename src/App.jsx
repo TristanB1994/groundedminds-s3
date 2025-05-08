@@ -12,7 +12,6 @@ import ServicesIndividualTherapy from './pages/services/ServicesIndividualTherap
 import ServicesOcd from './pages/services/ServicesOcd';
 import ServicesTrauma from './pages/services/ServicesTrauma';
 import AboutAngieBlandford from './pages/about/About-angie-blandford';
-import AboutAnkaKrivokuca from './pages/about/About-anka-krivokuca';
 import AboutDanielleKirshenbaum from './pages/about/About-danielle-kirshenbaum';
 import AboutMoonsunJang from './pages/about/About-moonsun-jang';
 import AboutRafeyaShami from './pages/about/About-rafeya-shami';

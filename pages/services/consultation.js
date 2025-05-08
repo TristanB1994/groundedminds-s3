@@ -6,7 +6,6 @@ const ServicesClinicalConsult = () => {
     const titleString = "Clinical Consultation | Grounded Minds Therapy";
     const descriptionString = "Grounded Minds offers clinical consultation to fellow therapists. There is a growing need for clinicians with expertise in OCD and anxiety disorders. We are passionate about supporting you in doing this important work.";
 
-    const AnkaSectionRef = useRef(null);
     const AngieSectionRef = useRef(null);
 
     const scrollToSection = (sectionRef) => {
@@ -28,15 +27,6 @@ const ServicesClinicalConsult = () => {
                 </p>
             </div>
             <section className="content consultation_thumbnail_grid">
-                {/* Anka's Consultation Section */}
-                <div onClick={() => scrollToSection(AnkaSectionRef)} className="team_thumbnails anka">            
-                    <div className="team_portrait">                
-                        <img alt="angie blandford therapist" id="AK-SECTION-THUMB" src="/aboutanka.jpeg"/>        
-                            <button className="teamthumbs" id="AK-SECTION-CTA">                    
-                                View Anka's Bio               
-                            </button>           
-                    </div>        
-                </div>
                 {/* Angie Consultation Section */}
                 <div onClick={() => scrollToSection(AngieSectionRef)} className="team_thumbnails angie">            
                     <div className="team_portrait">                
@@ -70,35 +60,16 @@ const ServicesClinicalConsult = () => {
                 </div>     
                 <br></br>   <br></br>
                 <section className="content">              
-                <div className="serviceimg">
-                    <img alt="Online therapy setting" src="/consultation.jpeg"/>   
-                    <div className="sidesplt">
+                    <div className="serviceimg">
+                        <img alt="Online therapy setting" src="/consultation.jpeg"/>   
+                        <div className="sidesplt">
+                        </div>
+                        <br/>
+                        <i>Please note that Grounded Minds does not offer formal supervision services that may be required for licensure.</i>        
+                        <br/><br/><br/><br/>    
                     </div>
-                    <br/>
-                    <i>Please note that Grounded Minds does not offer formal supervision services that may be required for licensure.</i>        
-                    <br/><br/><br/><br/>    
-                </div>
+                </section>
             </section>
-            {/* Anka START */}
-            <section ref={AnkaSectionRef} className="content">    
-                <p className="question" id="ALB-CONSULTATION-TARGET">      
-                    Anka Krivokuca, MSW, RSW
-                    <br/>
-                    (she/her)
-                </p>
-                <p className="pb10 aaa">    
-                    Anka Krivokuca is a Registered Social Worker with her Masters in Social Work. Anka has many years of experience treating anxiety disorders, obsessive compulsive disorder, body dysmorphia, body-focused repetitive behaviours and depression. She also works with trauma and PTSD. Her primary therapeutic modalities include CBT, ERP, CPT and PE. Anka works full time offering structured CBT for anxiety disorders, depression, OCD and PTSD. She also works in private practice offering therapy and consultation services.
-                    <br/><br/> Anka offers virtual clinical consultation to fellow therapists who are looking for support implementing ERP for OCD or CBT for anxiety disorders. She can also offer support when treating BFRBs or body dysmorphia. Anka has been formally trained in CBT for depression, generalized anxiety disorder, panic disorder, agoraphobia, specific fears and phobias, OCD, and PTSD. She has specialized training in ERP for OCD and CPT and PE for PTSD.   
-                </p>    
-            </section>   
-            <br></br> <br></br>
-            <a className="booknow" href="https://groundedmindstherapy.janeapp.com/#/staff_member/7" target="_blank" rel="noopener noreferrer">     
-                BOOK WITH ANKA        
-            </a>
-            <br/><br/>    
-            </section>
-            <br></br>
-            {/* Anka END */}
             {/* Angie START */}
             <section ref={AngieSectionRef} className="content">    
                 <p className="question" id="ALB-CONSULTATION-TARGET">      

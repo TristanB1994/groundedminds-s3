@@ -19,18 +19,6 @@ const teamMembers = [
         alt: "angie blandford therapist",
     },
     {
-        name: "Anka",
-        image: "/ANKA_OurTeamPage.png",
-        profileUrl: "/ankakrivokuca",
-        alt: "anka krivokuca therapist",
-    },
-    {
-        name: "Rafeya",
-        image: "/rafeya_thumbnail.png",
-        profileUrl: "/rafeyashami",
-        alt: "rafeya shmi therapist",
-    },
-    {
         name: "Lianne",
         image: "/lianne-team-page.jpeg",
         profileUrl: "/liannesaxon",

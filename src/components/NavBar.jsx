@@ -322,9 +322,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             <div className="nav-about-hovermenu">
               <Link href="/about/angieblandford" className="nav-about-hovermenu-cta">Angie Blandford</Link>
             </div>
-            <div className="nav-about-hovermenu">
+            {/* <div className="nav-about-hovermenu">
               <Link href="/about/ankakrivokuca" className="nav-about-hovermenu-cta">Anka Krivokuca</Link>
-            </div>
+            </div> */}
             <div className="nav-about-hovermenu">
               <Link href="/about/daniellekirshenbaum" className="nav-about-hovermenu-cta">Danielle Kirshenbaum</Link>
             </div>
@@ -334,9 +334,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             <div className="nav-about-hovermenu">
               <Link href="/about/moonsunjang" className="nav-about-hovermenu-cta">Moonsun Jang</Link>
             </div>
-            <div className="nav-about-hovermenu">
+            {/* <div className="nav-about-hovermenu">
               <Link href="/about/rafeyashami" className="nav-about-hovermenu-cta">Rafeya Shami</Link>
-            </div>
+            </div> */}
           </div>
 
           {/* SERVICES */}
@@ -375,9 +375,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             <div className="nav-services-hovermenu">
               <Link href="/services/trauma" className="nav-services-hovermenu-cta">Therapy for Trauma</Link>
             </div>
-            <div className="nav-services-hovermenu">
+            {/* <div className="nav-services-hovermenu">
               <Link href="/services/consultation" className="nav-services-hovermenu-cta">Clinical Consultation</Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Other menu links */}
@@ -471,9 +471,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               <div className="mobile-nav-about-submenu">
                 <Link href="/about/angieblandford" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Angie Blandford</Link>
               </div>
-              <div className="mobile-nav-about-submenu">
+              {/* <div className="mobile-nav-about-submenu">
                 <Link href="/about/ankakrivokuca" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Anka Krivokuca</Link>
-              </div>
+              </div> */}
               <div className="mobile-nav-about-submenu">
                 <Link href="/about/daniellekirshenbaum" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Danielle Kirshenbaum</Link>
               </div>
@@ -483,9 +483,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               <div className="mobile-nav-about-submenu">
                 <Link href="/about/moonsunjang" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Moonsun Jang</Link>
               </div>
-              <div className="mobile-nav-about-submenu">
+              {/* <div className="mobile-nav-about-submenu">
                 <Link href="/about/rafeyashami" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Rafeya Shami</Link>
-              </div>
+              </div> */}
             </div>
 
             {/* SERVICES TRIGGER */}
@@ -530,9 +530,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               <div className="mobile-nav-services-submenu">
                 <Link href="/services/trauma" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Therapy for Trauma</Link>
               </div>
-              <div className="mobile-nav-services-submenu">
+              {/* <div className="mobile-nav-services-submenu">
                 <Link href="/services/consultation" className="mobile-nav-services-submenu-cta" onClick={handleCloseMobileNav}>Clinical Consultation</Link>
-              </div>
+              </div> */}
             </div>
 
             {/* FAQ */}

@@ -24,7 +24,7 @@ const AboutMoonsunJang = () => {
                         <p id="ownertext">pronouns: she/they<br /><br />MSW, RSW | Psychotherapist</p>
                     </div>
                 </div>
-                <p className="question" style={{ width: 'fit-content', margin: 'auto' }}>SPECIALTIES</p>
+                <p className="question" style={{ width: 'fit-content', marginLeft: 'auto', marginRight: 'auto'}}>SPECIALTIES</p>
                 <ul className="aaa aaaL" id="ocdsubtypes" style={{ width: 'fit-content', margin: 'auto' }}>
                     <li>anxiety disorders</li>
                     <li>obsessive-compulsive (OCD) and related disorders</li>

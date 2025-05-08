@@ -14,6 +14,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet" />
         {/* Include fontawesome */}
         <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
         <link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
