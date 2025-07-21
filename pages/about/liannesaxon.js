@@ -4,7 +4,7 @@ import SEO from '../../src/components/SEO';
 const AboutLianneSaxon = () => {
     const bannerLabel = "Meet Lianne";
     const titleString = "Lianne Saxon | Grounded Minds Therapy";
-    const descriptionString = "Lianne Saxon is a Registered Psychotherapist (Qualifying) who specializes in anxiety disorders, OCD, trauma, depression and grief.";
+    const descriptionString = "Lianne Saxon is a Registered Psychotherapist who specializes in anxiety disorders, OCD, trauma, depression and grief.";
 
     return (
         <>
@@ -23,7 +23,7 @@ const AboutLianneSaxon = () => {
                     <div className="ownertexts">
                         <p id="ownertext">
                             pronouns: she/her<br /><br />
-                            MA | Registered Psychotherapist (Qualifying)
+                            MA | Registered Psychotherapist
                         </p>
                     </div>
                 </div>
