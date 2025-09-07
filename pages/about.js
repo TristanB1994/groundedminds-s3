@@ -184,7 +184,7 @@ const About = () => {
                             </p>
                             <p id="ownertext">pronouns: she/her
                                 <br/><br/>
-                                MA | Registered Psychotherapist (Qualifying) 
+                                MA | Registered Psychotherapist 
                             </p>            
                         </div>
                         <img alt="Therapist picture" id="LS-SECTION" src="/lianne-profile.jpeg"/>    
