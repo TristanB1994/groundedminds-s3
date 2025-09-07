@@ -6,7 +6,6 @@ const About = () => {
     const titleString = "Our Team | Grounded Minds Therapy";
     const descriptionString = "Our team specializes in supporting individuals with obsessive-compulsive disorder and anxiety disorders. With extensive training and experience, we welcome the opportunity to work with you.";
 
-    const MoonsunSectionRef = useRef(null);
     const DanielleSectionRef = useRef(null);
     const AngieSectionRef = useRef(null);
     const LianneSectionRef = useRef(null);
@@ -76,12 +75,6 @@ const About = () => {
             <section className="team-gallery-container">       
                 <div className="team-thumbnails-grid">         
                     {/* <!-- Therapist Cards Positioned by grid -->           */}
-                    <div className="team_portrait moonsun">                
-                        <img onClick={() => scrollToSection(MoonsunSectionRef)} alt="moonsun jang therapist" src="/moonsun_thumbnail.jpeg"/>        
-                        <button onClick={() => scrollToSection(MoonsunSectionRef)} className="teamthumbs fancy">                
-                            Meet Moonsun
-                        </button>
-                    </div> 
                     <div className="team_portrait danielle">             
                         <img onClick={() => scrollToSection(DanielleSectionRef)} alt="danielle Kirshenbaum therapist" src="/thumbnaildk.png"/>      
                         <button onClick={() => scrollToSection(DanielleSectionRef)} className="teamthumbs fancy">                   
@@ -110,68 +103,6 @@ const About = () => {
                 </p>
                 <br></br><br></br>
             </div>
-            {/* Moonsun Start */}
-            <section className="content" ref={MoonsunSectionRef}>     
-                <br/>       
-                <div className="portrait team_portrait">      
-                    <div className="ownertexts">               
-                        <p className="fancy">                  
-                            <br/>
-                            Moonsun Jang
-                            <span id="bigabout">
-                                <br/>
-                            </span>
-                        </p>      
-                        <p id="ownertext">pronouns: she/they
-                            <br/><br/>
-                            MSW, RSW | Psychotherapist
-                        </p>            
-                    </div>
-                    <img alt="Therapist picture" id="MJ-SECTION" src="/headshotm.png"/>    
-                </div>
-                <section className="content">           
-                    <p className="question">
-                        Moonsun's Approach    
-                    </p>         
-                    <p className="pb10 aaa">       
-                    
-                        I am passionate about supporting adults with anxiety, OCD, and PTSD. Together, we will explore your concerns, address your symptoms, and help you find relief. 
-                        <br/>             
-                        We will work collaboratively to identify goals that matter to you and achieve powerful change through evidence-based techniques that align with your needs, goals, and strengths.
-                    </p>      
-                    <p className="pb10 aaa">    
-                        You may be experiencing crippling anxiety, sticky intrusive thoughts, compulsions that you can't resist doing, or having trouble moving past a traumatic event. You can overcome the things that are keeping you stuck and move forward.
-                        <br/><br/>                
-                        The way we view and deal with mental health challenges are influenced by so many factors including our own life experiences, family, culture, and religion. Guided by this understanding, I take an inclusive, culturally-humble, and trauma-informed approach to therapy.
-                        <br/>           
-                    </p>
-                </section>
-                <p className="question">            
-                    Specialties
-                </p>
-                <div className="pb10 specialtiesli"> 
-                    <ul className="aaa aaaL">                
-                        <li>obsessive-compulsive and related disorders</li>                
-                        <li>anxiety disorders</li>                 
-                        <li>PTSD and trauma-related disorders</li>                
-                        <li>substances and addictions</li>                
-                        <li>ADHD</li>               
-                        <li>eating disorders</li>                
-                        <li>borderline personality disorder</li>               
-                        <li>stress and life changes</li>                
-                        <li>personal growth and relationship concerns</li>         
-                    </ul>
-                </div>
-            </section>
-            <br/><br/>
-            <section id="aboutBannermiddle">     
-                <div className="mb40 mt40 raise">   
-                    <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/4" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
-                        Book with Moonsun
-                    </a>
-                </div>
-            </section>
-            {/* Moonsun End */}
             {/* Danielle Start   */}
             <section className="content" ref={DanielleSectionRef}>
                 <br/>

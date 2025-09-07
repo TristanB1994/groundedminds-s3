@@ -12,8 +12,6 @@ function handler(event) {
         "/daniellekirshenbaum/": "/about/daniellekirshenbaum",
         "/liannesaxon": "/about/liannesaxon",
         "/liannesaxon/": "/about/liannesaxon",
-        "/moonsunjang": "/about/moonsunjang",
-        "/moonsunjang/": "/about/moonsunjang",
         "/rafeyashami": "/about/rafeyashami",
         "/rafeyashami/": "/about/rafeyashami",
         // Service redirections

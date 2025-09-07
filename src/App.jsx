@@ -13,7 +13,6 @@ import ServicesOcd from './pages/services/ServicesOcd';
 import ServicesTrauma from './pages/services/ServicesTrauma';
 import AboutAngieBlandford from './pages/about/About-angie-blandford';
 import AboutDanielleKirshenbaum from './pages/about/About-danielle-kirshenbaum';
-import AboutMoonsunJang from './pages/about/About-moonsun-jang';
 import AboutRafeyaShami from './pages/about/About-rafeya-shami';
 import Resources from './pages/Resources';
 import ScrollToTop from './components/ScrollToTop';
@@ -31,7 +30,6 @@ const App = () => {
         <Route path="/angieblandford" element={<AboutAngieBlandford />} />
         <Route path="/ankakrivokuca" element={<AboutAnkaKrivokuca />} />
         <Route path="/daniellekirshenbaum" element={<AboutDanielleKirshenbaum />} />
-        <Route path="/moonsunjang" element={<AboutMoonsunJang />} />
         <Route path="/rafeyashami" element={<AboutRafeyaShami />} />
         <Route path="/liannesaxon" element={<AboutLianneSaxon />} />
         <Route path="/contact" element={<Contact />} />
