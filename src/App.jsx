@@ -13,7 +13,7 @@ import ServicesOcd from './pages/services/ServicesOcd';
 import ServicesTrauma from './pages/services/ServicesTrauma';
 import AboutAngieBlandford from './pages/about/About-angie-blandford';
 import AboutDanielleKirshenbaum from './pages/about/About-danielle-kirshenbaum';
-import AboutRafeyaShami from './pages/about/About-rafeya-shami';
+import AboutNatashaSudenis from './pages/about/natashasudenis';
 import Resources from './pages/Resources';
 import ScrollToTop from './components/ScrollToTop';
 import AboutLianneSaxon from './pages/about/About-lianne-saxon';
@@ -28,9 +28,8 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/angieblandford" element={<AboutAngieBlandford />} />
-        <Route path="/ankakrivokuca" element={<AboutAnkaKrivokuca />} />
+        <Route path="/natashasudenis" element={<AboutAnkaKrivokuca />} />
         <Route path="/daniellekirshenbaum" element={<AboutDanielleKirshenbaum />} />
-        <Route path="/rafeyashami" element={<AboutRafeyaShami />} />
         <Route path="/liannesaxon" element={<AboutLianneSaxon />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />

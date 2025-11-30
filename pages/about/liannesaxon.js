@@ -67,8 +67,7 @@ const AboutLianneSaxon = () => {
             <section className="content">
                 <p className="question">Availability</p>
                 <p className="pb10 aaa">
-                    Accepting new clients! Please send me an e-mail or click "Book with Lianne" to schedule a complimentary consultation call. I also have some limited availability for sliding scale clients.
-                    <br />
+                    Unfortunately I do not have space for new clients at this time. Please send an e-mail to inquire about availability or referrals to available therapists.
                 </p>
                 <p className="question">Contact</p>
                 <p className="deets">

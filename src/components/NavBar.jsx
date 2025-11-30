@@ -322,9 +322,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             <div className="nav-about-hovermenu">
               <Link href="/about/angieblandford" className="nav-about-hovermenu-cta">Angie Blandford</Link>
             </div>
-            {/* <div className="nav-about-hovermenu">
-              <Link href="/about/ankakrivokuca" className="nav-about-hovermenu-cta">Anka Krivokuca</Link>
-            </div> */}
+            <div className="nav-about-hovermenu">
+              <Link href="/about/natashasudenis" className="nav-about-hovermenu-cta">Natasha Sudenis</Link>
+            </div>
             <div className="nav-about-hovermenu">
               <Link href="/about/daniellekirshenbaum" className="nav-about-hovermenu-cta">Danielle Kirshenbaum</Link>
             </div>
@@ -465,9 +465,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               <div className="mobile-nav-about-submenu">
                 <Link href="/about/angieblandford" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Angie Blandford</Link>
               </div>
-              {/* <div className="mobile-nav-about-submenu">
-                <Link href="/about/ankakrivokuca" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Anka Krivokuca</Link>
-              </div> */}
+              <div className="mobile-nav-about-submenu">
+                <Link href="/about/natashasudenis" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Natasha Sudenis</Link>
+              </div>
               <div className="mobile-nav-about-submenu">
                 <Link href="/about/daniellekirshenbaum" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Danielle Kirshenbaum</Link>
               </div>

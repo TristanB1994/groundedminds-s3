@@ -1,22 +1,27 @@
-// src/data/teamMembers.js
 const teamMembers = [
     {
         name: "Danielle",
         image: "/thumbnaildk.png",
-        profileUrl: "/daniellekirshenbaum",
+        profileUrl: "/about/daniellekirshenbaum",
         alt: "danielle Kirshenbaum therapist",
     },
     {
         name: "Angie",
         image: "/ang_thumbnail.jpeg",
-        profileUrl: "/angieblandford",
+        profileUrl: "/about/angieblandford",
         alt: "angie blandford therapist",
     },
     {
         name: "Lianne",
         image: "/lianne-team-page.jpeg",
-        profileUrl: "/liannesaxon",
+        profileUrl: "/about/liannesaxon",
         alt: "lianne saxon therapist",
+    },
+    {
+        name: "Natasha",
+        image: "/natasha_sudenis_team_page.jpeg",
+        profileUrl: "/about/natashasudenis",
+        alt: "Natasha Sudenis therapist",
     },
 ];
 

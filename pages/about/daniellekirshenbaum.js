@@ -60,7 +60,7 @@ const AboutDanielleKirshenbaum = () => {
                 </p>
                 <p className="question">Availability</p>
                 <p className="pb10 aaa">
-                    Limited availability for new clients. Please send me an e-mail or click "Book with Danielle" to schedule an appointment.
+                    Limited availability for new clients. Please send me an e-mail to schedule an appointment.
                 </p>
                 <p className="question">Contact</p>
                 <p className="deets">

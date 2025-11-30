@@ -6,14 +6,10 @@ function handler(event) {
         // Profile redirections
         "/angieblandford": "/about/angieblandford",
         "/angieblandford/": "/about/angieblandford",
-        "/ankakrivokuca": "/about/ankakrivokuca",
-        "/ankakrivokuca/": "/about/ankakrivokuca",
         "/daniellekirshenbaum": "/about/daniellekirshenbaum",
         "/daniellekirshenbaum/": "/about/daniellekirshenbaum",
         "/liannesaxon": "/about/liannesaxon",
         "/liannesaxon/": "/about/liannesaxon",
-        "/rafeyashami": "/about/rafeyashami",
-        "/rafeyashami/": "/about/rafeyashami",
         // Service redirections
         "/anxiety": "/services/anxiety",
         "/anxiety/": "/services/anxiety",
