@@ -11,10 +11,6 @@
     grid-area: DK;
 }
 
-.moonsun {
-    grid-area: MJang;
-}
-
 .rafeya {
     grid-area: RS;
 }
@@ -36,8 +32,6 @@
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
-    "MJang"
-    "RS   "
     "AK   "
     "DK   "
     "LS   "
@@ -57,8 +51,6 @@
     display: grid;
     /* THIS SHOULD MATCH PROFILE ORDER */
     grid-template-areas: 
-    "MJang"
-    "RS   "
     "AK   "
     "DK   "
     "LS   "
@@ -111,7 +103,6 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "MJang RS"
             "AK DK   "
             "LS AB   "
         ;
@@ -131,7 +122,6 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "MJang RS"
             "AK DK   "
             "LS AB   "
             ;
@@ -159,7 +149,6 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . MJang RS . "
             " . AK DK    . "
             " . LS AB    . "
             ;

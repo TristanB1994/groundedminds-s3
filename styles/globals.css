@@ -1037,17 +1037,6 @@ body
     background-image: url(/maria_thumbnail.jpeg);
 }
 
-#moonsun_thumb
-{
-    max-width: 400px;
-    max-height: 400px;
-    height: 100%;
-    padding: 42px 0px;
-    margin: 0px auto;
-    width: 50%;
-    background-image: url(/moonsun_thumbnail.jpeg);
-}
-
 .team_portrait
 {
     margin-bottom: 20px;
@@ -1203,22 +1192,6 @@ body
 #abouttopbanner
 {
     background-image: url(/bannertop.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#moonsunbookingbanner
-{
-    background-image: url(/floral.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2558,13 +2531,12 @@ input[type=text], select, textarea {
     grid-area: DK;
 }
 
-.moonsun {
-    grid-area: MJang;
-}
-
-
 .lianne {
     grid-area: LS;
+}
+
+.natasha {
+    grid-area: NS;
 }
 
 .team-gallery-container {
@@ -2580,7 +2552,7 @@ input[type=text], select, textarea {
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
-    "MJang"
+    "NS"
     "DK"
     "LS"
     "AB"
@@ -2599,7 +2571,7 @@ input[type=text], select, textarea {
     display: grid;
     /* THIS SHOULD MATCH PROFILE ORDER */
     grid-template-areas: 
-    "MJang"
+    "NS   "
     "DK   "
     "LS   "
     "AB   "
@@ -2650,8 +2622,8 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "MJang DK"
-            "LS AB   "
+            "NS DK "
+            "LS AB "
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
@@ -2669,8 +2641,8 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "MJang DK"
-            "LS AB   "
+            "NS DK "
+            "LS AB "
             ;
 
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -2696,7 +2668,7 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . MJang DK . "
+            " . NS DK . "
             " . LS AB    . "
             ;
 

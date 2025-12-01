@@ -10,7 +10,6 @@ const About = () => {
     const titleString = "Our Team | Grounded Minds Therapy";
     const descriptionString = "Our team specializes in supporting individuals with obsessive-compulsive disorder and anxiety disorders. With extensive training and experience, we welcome the opportunity to work with you.";
 
-    const MoonsunSectionRef = useRef(null);
     const RafeyaSectionRef = useRef(null);
     const AnkaSectionRef = useRef(null);
     const DanielleSectionRef = useRef(null);
@@ -89,12 +88,6 @@ const About = () => {
                 <section className="team-gallery-container">       
                     <div className="team-thumbnails-grid">         
                         {/* <!-- Therapist Cards Positioned by grid -->           */}
-                        <div className="team_portrait moonsun">                
-                            <img onClick={() => scrollToSection(MoonsunSectionRef)} alt="moonsun jang therapist" id="MJ-SECTION-THUMB" src="/moonsun_thumbnail.jpeg"/>        
-                            <button onClick={() => scrollToSection(MoonsunSectionRef)} className="teamthumbs" id="MJ-SECTION-CTA">                
-                                Meet Moonsun
-                            </button>
-                        </div> 
                         <div className="team_portrait rafeya">               
                             <img onClick={() => scrollToSection(RafeyaSectionRef)} alt="rafeya shami therapist" id="RAF-SECTION-THUMB" src="/rafeya_thumbnail.png"/>  
                             <button onClick={() => scrollToSection(RafeyaSectionRef)} className="teamthumbs" id="RAF-SECTION-CTA">                    
@@ -135,130 +128,6 @@ const About = () => {
                     </p>
                     <br></br><br></br>
                 </div>
-                {/* Moonsun Start */}
-                <section className="content" ref={MoonsunSectionRef}>     
-                    <br/>       
-                    <div className="portrait team_portrait">      
-                        {/* <img alt="Therapist picture" id="MJ-SECTION" src="/headshotm.png"/>     */}
-                        <div className="ownertexts">               
-                            <p className="fancy">                  
-                                <br/>
-                                Moonsun Jang
-                                <span id="bigabout">
-                                    <br/>
-                                </span>
-                            </p>      
-                            <p id="ownertext">pronouns: she/they
-                                <br/><br/>
-                                MSW, RSW | Psychotherapist
-                            </p>            
-                        </div>
-                        <img alt="Therapist picture" id="MJ-SECTION" src="/headshotm.png"/>    
-                    </div>
-                    <section className="content">           
-                        <p className="question">
-                            Moonsun's Approach    
-                        </p>         
-                        <p className="pb10 aaa">       
-                        
-                            I am passionate about supporting adults with anxiety, OCD, and PTSD. Together, we will explore your concerns, address your symptoms, and help you find relief. 
-                            <br/>             
-                            We will work collaboratively to identify goals that matter to you and achieve powerful change through evidence-based techniques that align with your needs, goals, and strengths.
-                        </p>      
-                        <p className="pb10 aaa">    
-                            You may be experiencing crippling anxiety, sticky intrusive thoughts, compulsions that you can't resist doing, or having trouble moving past a traumatic event. You can overcome the things that are keeping you stuck and move forward.
-                            <br/><br/>                
-                            The way we view and deal with mental health challenges are influenced by so many factors including our own life experiences, family, culture, and religion. Guided by this understanding, I take an inclusive, culturally-humble, and trauma-informed approach to therapy.
-                            <br/>           
-                        </p>
-                    </section>
-                    <p className="question">            
-                        Specialties
-                    </p>
-                    <div className="pb10 specialtiesli"> 
-                        <ul className="aaa aaaL">                
-                            <li>obsessive-compulsive and related disorders</li>                
-                            <li>anxiety disorders</li>                 
-                            <li>PTSD and trauma-related disorders</li>                
-                            <li>substances and addictions</li>                
-                            <li>ADHD</li>               
-                            <li>eating disorders</li>                
-                            <li>borderline personality disorder</li>               
-                            <li>stress and life changes</li>                
-                            <li>personal growth and relationship concerns</li>         
-                        </ul>
-                    </div>
-                </section>
-                <br/><br/>
-                <section id="aboutBannermiddle">     
-                    <div className="mb40 mt40 raise">   
-                        <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/4" id="about-banner-cta" target="_blank">
-                            Book with Moonsun
-                        </a>
-                    </div>
-                </section>
-                {/* Moonsun End */}
-                {/* Rafeya Start */}
-                <section className="content" ref={RafeyaSectionRef}>        
-                    {/* <div className="portrait portrait-reverse">             */}
-                    <div className="portrait-reverse">            
-                        <div className="ownertexts">   
-                            <p className="fancy">       
-                                <br/>
-                                Rafeya Shami
-                                <span id="bigabout">
-                                    <br/>
-                                </span>           
-                            </p>
-                            <p id="ownertext">pronouns: she/her
-                                <br/><br/>
-                                Registered Psychotherapist (Qualifying) 
-                            </p>            
-                        </div>
-                        <img alt="Therapist picture" id="RAF-SECTION" src={rafeya_thumbnail}/>    
-                    </div>
-                    <br/>
-                </section>   
-                <section className="content">     
-                    <p className="question">        
-                        Rafeya's Approach      
-                    </p>       
-                    <p className="pb10 aaa">   
-                    I create a supportive, judgment-free space where clients feel safe to explore their challenges, intrusive thoughts and work towards meaningful change. My approach is flexible and tailored to your unique needs, whether you prefer a structured, directive therapy or an open-ended, exploratory style. Together, we’ll collaborate to identify your goals and navigate the difficulties that brought you to therapy.
-                    </p> 
-                    <p className="pb10 aaa">    
-                        Living with OCD, depression, anxiety, or grief can feel overwhelming and isolating, but there is a way forward. Obsessions and intrusive thoughts in OCD can take many forms, often leading to significant distress and shame and I understand how lonely that can feel. I am here to provide a safe space for us to explore your intrusive thoughts together – without shame and fear of judgement. 
-                    </p>
-                </section>
-                <p className="question">        
-                    Specialties
-                </p>
-                <section className="content">   
-                    <div className="pb10 specialtiesli">     
-                        <ul className="aaa aaaL">                
-                            <li>anxiety disorders</li>  
-                            <li>relationship anxiety + other relationship concerns</li>              
-                            <li>panic disorder + panic attacks</li>                              
-                            <li>phobias</li>                
-                            <li>obsessive-compulsive disorder</li>                 
-                            <li>depression</li>                
-                            <li>trauma + PTSD</li>  
-                            <li>grief and loss</li>  
-                            <li>career counselling</li>              
-                            <li>self-esteem and body image</li>      
-                        </ul>
-                    </div>
-                    <p className="availability"></p>
-                    <br/>
-                </section>
-                <section id="aboutBannermid">   
-                    <div className="mb40 mt40 raise">      
-                        <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/9" id="about-banner-cta" target="_blank">
-                            Book with Rafeya
-                        </a>
-                    </div>
-                </section>
-                {/* Rafeya End */}
                 {/* Anka Start     */}
                 <section className="content" ref={AnkaSectionRef}>    
                     <div className="portrait">          
