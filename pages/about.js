@@ -10,6 +10,7 @@ const About = () => {
     const AngieSectionRef = useRef(null);
     const LianneSectionRef = useRef(null);
     const NatashaSectionRef = useRef(null);
+    const NeenaSectionRef = useRef(null);
 
     const scrollToSection = (sectionRef) => {
         sectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -76,7 +77,7 @@ const About = () => {
             <section className="team-gallery-container">       
                 <div className="team-thumbnails-grid">         
                     {/* <!-- Therapist Cards Positioned by grid -->           */}
-                    <div className="team_portrait natasha">             
+                    <div className="team_portrait natasha">
                         <img onClick={() => scrollToSection(NatashaSectionRef)} alt="natasha sudenis therapist" src="/natasha_sudenis_team_page.jpeg"/>      
                         <button onClick={() => scrollToSection(NatashaSectionRef)} className="teamthumbs fancy">                   
                             Meet Natasha
@@ -94,13 +95,19 @@ const About = () => {
                             Meet Lianne
                         </button>
                     </div>
-                    <div className="team_portrait angie">       
-                        <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" src="/ang_thumbnail.jpeg"/>      
-                        <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs fancy">                   
+                    <div className="team_portrait angie">
+                        <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" src="/ang_thumbnail.jpeg"/>
+                        <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs fancy">
                             Meet Angie
                         </button>
                     </div>
-                </div> 
+                    <div className="team_portrait neena">
+                        <img onClick={() => scrollToSection(NeenaSectionRef)} alt="Neena Malhotra therapist" src="/neena-team.jpeg"/>
+                        <button onClick={() => scrollToSection(NeenaSectionRef)} className="teamthumbs fancy">
+                            Meet Neena
+                        </button>
+                    </div>
+                </div>
             </section>
             <br/><br/> 
             {/* Therapist Gallery */}
@@ -384,15 +391,63 @@ const About = () => {
                 <p className="availability"></p>
                 <br/>
             </section>
-            <section id="aboutbanner">     
-                <div className="mb40 mt40 raise">  
+            <section id="aboutbanner">
+                <div className="mb40 mt40 raise">
                     <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/1" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
                         Book with Angie
                     </a>
                 </div>
             </section>
             {/* Angie End */}
-        </>        
+            {/* Neena Start */}
+            <section className="content" ref={NeenaSectionRef}>
+                <br/>
+                <div className="portrait">
+                    <div className="ownertexts">
+                        <p className="fancy">
+                            <br/>
+                            Neena Malhotra
+                        </p>
+                        <p id="ownertext">pronouns: [pronouns]
+                            <br/><br/>
+                            [Credentials]
+                        </p>
+                    </div>
+                    <img alt="Therapist picture" id="NM-SECTION" src="/neena-profile.jpeg"/>
+                </div>
+                <br/>
+            </section>
+            <section className="content">
+                <p className="question">
+                    Neena's Approach
+                </p>
+                <p className="pb10 aaa">
+                    [Approach description]
+                </p>
+            </section>
+            <p className="question">
+                Specialties
+            </p>
+            <section className="content">
+                <div className="pb10 specialtiesli">
+                    <ul className="aaa aaaL">
+                        <li>[Specialty 1]</li>
+                        <li>[Specialty 2]</li>
+                        <li>[Specialty 3]</li>
+                    </ul>
+                </div>
+                <p className="availability"></p>
+                <br/>
+            </section>
+            <section id="neenabanner">
+                <div className="mb40 mt40 raise">
+                    <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/12" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
+                        Book with Neena
+                    </a>
+                </div>
+            </section>
+            {/* Neena End */}
+        </>
     );
 };
 

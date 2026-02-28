@@ -1163,7 +1163,22 @@ body
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#neenabanner
+{
+    background-image: url(/bannertop.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -2539,6 +2554,10 @@ input[type=text], select, textarea {
     grid-area: NS;
 }
 
+.neena {
+    grid-area: NM;
+}
+
 .team-gallery-container {
     display: block;
     min-height: 40vh;
@@ -2556,6 +2575,7 @@ input[type=text], select, textarea {
     "DK"
     "LS"
     "AB"
+    "NM"
     ;
 
     grid-gap: 20px;
@@ -2570,11 +2590,12 @@ input[type=text], select, textarea {
     width: 100%;
     display: grid;
     /* THIS SHOULD MATCH PROFILE ORDER */
-    grid-template-areas: 
+    grid-template-areas:
     "NS   "
     "DK   "
     "LS   "
     "AB   "
+    "NM   "
     ;
 }
 
@@ -2624,6 +2645,7 @@ input[type=text], select, textarea {
         grid-template-areas:
             "NS DK "
             "LS AB "
+            "NM NM "
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
@@ -2643,6 +2665,7 @@ input[type=text], select, textarea {
         grid-template-areas:
             "NS DK "
             "LS AB "
+            "NM NM "
             ;
 
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -2669,7 +2692,8 @@ input[type=text], select, textarea {
     .team-thumbnails-grid {
         grid-template-areas:
             " . NS DK . "
-            " . LS AB    . "
+            " . LS AB . "
+            " . NM NM . "
             ;
 
         grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;

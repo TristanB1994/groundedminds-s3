@@ -331,6 +331,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
             <div className="nav-about-hovermenu">
               <Link href="/about/liannesaxon" className="nav-about-hovermenu-cta">Lianne Saxon</Link>
             </div>
+            <div className="nav-about-hovermenu">
+              <Link href="/about/neenamalhotra" className="nav-about-hovermenu-cta">Neena Malhotra</Link>
+            </div>
           </div>
 
           {/* SERVICES */}
@@ -473,6 +476,9 @@ const NavBar = ({ isHome = false, bannerLabel = "" }) => {
               </div>
               <div className="mobile-nav-about-submenu">
                 <Link href="/about/liannesaxon" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Lianne Saxon</Link>
+              </div>
+              <div className="mobile-nav-about-submenu">
+                <Link href="/about/neenamalhotra" className="mobile-nav-about-submenu-cta" onClick={handleCloseMobileNav}>Neena Malhotra</Link>
               </div>
             </div>
 
