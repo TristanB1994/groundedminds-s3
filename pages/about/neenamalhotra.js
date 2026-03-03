@@ -29,17 +29,17 @@ const AboutNeenaMalhotra = () => {
                 </div>
                 <p className="question" style={{ width: 'fit-content', marginLeft: 'auto', marginRight: 'auto' }}>SPECIALTIES:</p>
                 <ul className="aaa aaaL" id="ocdsubtypes" style={{ width: 'fit-content', marginLeft: 'auto', marginRight: 'auto' }}>
-                    <li>Depression</li>
-                    <li>Anxiety disorders</li>
-                    <li>Phobias</li>
-                    <li>Panic disorder and panic attacks</li>
+                    <li>depression</li>
+                    <li>anxiety disorders</li>
+                    <li>phobias</li>
+                    <li>panic disorder and panic attacks</li>
                     <li>OCD</li>
                     <li>BFRBs</li>
-                    <li>Trauma/PTSD</li>
-                    <li>Anger and emotion regulation</li>
-                    <li>Self esteem</li>
-                    <li>Perinatal concerns</li>
-                    <li>Grief and loss</li>
+                    <li>trauma/PTSD</li>
+                    <li>anger and emotion regulation</li>
+                    <li>self esteem</li>
+                    <li>perinatal concerns</li>
+                    <li>grief and loss</li>
                 </ul>
                 <br />
             </section>
