@@ -134,10 +134,10 @@
     background-color: #BED6B3;
 }
 
-.fancy
+/* .fancy
 {
     font-family: 'Petit Formal Script', cursive;
-}
+} */
 
 .font600
 {
@@ -235,7 +235,7 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
-    background-image: url("/homepg.jpeg");
+    background-image: url("/homepagepic.jpeg");
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: 100% 100%;
@@ -1569,7 +1569,7 @@ input[type=text], select, textarea {
         width: 100%;
         align-items: center;
         flex-direction: column;
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         background-repeat: no-repeat;
         background-position: 0px 0px;
         background-size: 100% 100%;
@@ -1610,7 +1610,7 @@ input[type=text], select, textarea {
 
     .navhome
     {
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         background-size: 100% 100%;
         background-position: 0% 75%;
     }
@@ -2073,7 +2073,7 @@ input[type=text], select, textarea {
         background-position-y: -175px;
         background-position-x: center;
         background-size: 100% 100%;
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         height: 60vh;
     }
 
@@ -2081,7 +2081,7 @@ input[type=text], select, textarea {
     {
         height: 70vh;
         grid-template-rows: 12.5vh 57.5vh;
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         background-size: 100% 140%;
         background-position: 0% 40%;
     }

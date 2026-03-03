@@ -102,7 +102,7 @@ const About = () => {
                         </button>
                     </div>
                     <div className="team_portrait neena">
-                        <img onClick={() => scrollToSection(NeenaSectionRef)} alt="Neena Malhotra therapist" src="/neena-team.jpeg"/>
+                        <img onClick={() => scrollToSection(NeenaSectionRef)} alt="Neena Malhotra therapist" src="/Neena-H-Team.jpeg"/>
                         <button onClick={() => scrollToSection(NeenaSectionRef)} className="teamthumbs fancy">
                             Meet Neena
                         </button>
@@ -135,7 +135,7 @@ const About = () => {
                             Registered Psychotherapist (Qualifying) 
                         </p>
                     </div>
-                    <img alt="Therapist picture" id="NS-SECTION" src="/natasha.png"/>     
+                    <img alt="Therapist picture" id="NS-SECTION" src="/natasha.jpeg"/>     
                 </div>
                 <br></br>
                 {/* <!-- Description --> */}
@@ -408,12 +408,12 @@ const About = () => {
                             <br/>
                             Neena Malhotra
                         </p>
-                        <p id="ownertext">pronouns: [pronouns]
+                        <p id="ownertext">pronouns: she/her
                             <br/><br/>
-                            [Credentials]
+                            MSW, RSW, RP
                         </p>
                     </div>
-                    <img alt="Therapist picture" id="NM-SECTION" src="/neena-profile.jpeg"/>
+                    <img alt="Therapist picture" id="NM-SECTION" src="/neena_noshadow.jpeg"/>
                 </div>
                 <br/>
             </section>
@@ -422,7 +422,10 @@ const About = () => {
                     Neena's Approach
                 </p>
                 <p className="pb10 aaa">
-                    [Approach description]
+                    I am a compassionate and empathetic therapist that offers a collaborative approach to help you overcome struggles you may be currently experiencing in your life. Whether it is OCD, anxiety disorders, depression, grief/loss issues or trauma affecting your mood, or physical symptoms presenting in your body, I work jointly with you to gently challenge any current faulty belief system and behaviours.
+                </p>
+                <p className="pb10 aaa">
+                    I have over 25 years experience as a clinical therapist using evidence based therapies like Cognitive Behaviour Therapy to reduce symptoms of anxiety, depression and Exposure and Response Prevention to help with OCD and Cognitive Processing Therapy to help with Post Traumatic Stress Disorder. I am an effective listener, but also give you specific tools and strategies to help you move forward in your life. I am a strong advocate for empowering my clients to live their lives to the fullest.
                 </p>
             </section>
             <p className="question">
@@ -431,9 +434,17 @@ const About = () => {
             <section className="content">
                 <div className="pb10 specialtiesli">
                     <ul className="aaa aaaL">
-                        <li>[Specialty 1]</li>
-                        <li>[Specialty 2]</li>
-                        <li>[Specialty 3]</li>
+                        <li>depression</li>
+                        <li>anxiety disorders</li>
+                        <li>phobias</li>
+                        <li>panic disorder and panic attacks</li>
+                        <li>OCD</li>
+                        <li>BFRBs</li>
+                        <li>trauma/PTSD</li>
+                        <li>anger and emotion regulation</li>
+                        <li>self esteem</li>
+                        <li>perinatal concerns</li>
+                        <li>grief and loss</li>
                     </ul>
                 </div>
                 <p className="availability"></p>

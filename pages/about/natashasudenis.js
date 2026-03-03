@@ -11,7 +11,7 @@ const AboutNatashaSudenis = () => {
             <SEO
                 title={titleString}
                 description={descriptionString}
-                image="https://www.groundedminds.ca/natasha.png"
+                image="https://www.groundedminds.ca/natasha.jpeg"
                 imageAlt="Natasha Sudenis therapist specialized in anxiety, OCD, PTSD, eating disorders and borderline personality disorder"
             />
             <div>
@@ -19,7 +19,7 @@ const AboutNatashaSudenis = () => {
             </div>
             <section className="content pb10">
                 <div className="portrait-reverse">
-                    <img alt="Therapist picture" id="NS-SECTION" src="/natasha.png" />
+                    <img alt="Therapist picture" id="NS-SECTION" src="/natasha.jpeg" />
                     <div className="ownertexts">
                         <p id="ownertext">pronouns: she/her<br /><br />MA | Registered Psychotherapist (Qualifying)</p>
                     </div>
