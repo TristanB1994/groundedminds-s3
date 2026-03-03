@@ -2571,11 +2571,11 @@ input[type=text], select, textarea {
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
+    "NM"
     "NS"
     "DK"
     "LS"
     "AB"
-    "NM"
     ;
 
     grid-gap: 20px;
@@ -2643,9 +2643,9 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "NS DK "
-            "LS AB "
-            "NM NM "
+            "NM NS "
+            "DK LS "
+            "AB AB "
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
@@ -2663,9 +2663,9 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "NS DK "
-            "LS AB "
-            "NM NM "
+            "NM NS "
+            "DK LS "
+            "AB AB "
             ;
 
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -2691,9 +2691,9 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . NS DK . "
-            " . LS AB . "
-            " . NM NM . "
+            " . NM NS . "
+            " . DK LS . "
+            " . AB AB . "
             ;
 
         grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;
