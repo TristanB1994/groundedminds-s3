@@ -23,7 +23,7 @@ const AboutNeenaMalhotra = () => {
                     <div className="ownertexts">
                         <p id="ownertext">
                             pronouns: she/her<br /><br />
-                            MSW, RSW, RP
+                            MSW, RSW, RP | Registered Psychotherapist
                         </p>
                     </div>
                 </div>
