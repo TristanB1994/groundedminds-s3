@@ -6,10 +6,11 @@ const About = () => {
     const titleString = "Our Team | Grounded Minds Therapy";
     const descriptionString = "Our team specializes in supporting individuals with obsessive-compulsive disorder and anxiety disorders. With extensive training and experience, we welcome the opportunity to work with you.";
 
-    const DanielleSectionRef = useRef(null);
-    const AngieSectionRef = useRef(null);
-    const LianneSectionRef = useRef(null);
+    const NeenaSectionRef = useRef(null);
     const NatashaSectionRef = useRef(null);
+    const DanielleSectionRef = useRef(null);
+    const LianneSectionRef = useRef(null);
+    const AngieSectionRef = useRef(null);
 
     const scrollToSection = (sectionRef) => {
         sectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -73,34 +74,40 @@ const About = () => {
                 </p>
             </div>
             {/* Therapist Gallery */}
-            <section className="team-gallery-container">       
-                <div className="team-thumbnails-grid">         
+            <section className="team-gallery-container">
+                <div className="team-thumbnails-grid">
                     {/* <!-- Therapist Cards Positioned by grid -->           */}
-                    <div className="team_portrait natasha">             
-                        <img onClick={() => scrollToSection(NatashaSectionRef)} alt="natasha sudenis therapist" src="/natasha_sudenis_team_page.jpeg"/>      
-                        <button onClick={() => scrollToSection(NatashaSectionRef)} className="teamthumbs fancy">                   
+                    <div className="team_portrait neena">
+                        <img onClick={() => scrollToSection(NeenaSectionRef)} alt="Neena Malhotra therapist" src="/Neena-H-Team.jpeg"/>
+                        <button onClick={() => scrollToSection(NeenaSectionRef)} className="teamthumbs fancy">
+                            Meet Neena
+                        </button>
+                    </div>
+                    <div className="team_portrait natasha">
+                        <img onClick={() => scrollToSection(NatashaSectionRef)} alt="natasha sudenis therapist" src="/natasha_sudenis_team_page.jpeg"/>
+                        <button onClick={() => scrollToSection(NatashaSectionRef)} className="teamthumbs fancy">
                             Meet Natasha
                         </button>
                     </div>
-                    <div className="team_portrait danielle">             
-                        <img onClick={() => scrollToSection(DanielleSectionRef)} alt="danielle Kirshenbaum therapist" src="/thumbnaildk.png"/>      
-                        <button onClick={() => scrollToSection(DanielleSectionRef)} className="teamthumbs fancy">                   
+                    <div className="team_portrait danielle">
+                        <img onClick={() => scrollToSection(DanielleSectionRef)} alt="danielle Kirshenbaum therapist" src="/thumbnaildk.png"/>
+                        <button onClick={() => scrollToSection(DanielleSectionRef)} className="teamthumbs fancy">
                             Meet Danielle
                         </button>
                     </div>
-                    <div className="team_portrait lianne">       
-                        <img onClick={() => scrollToSection(LianneSectionRef)} alt="lianne saxon therapist" src="/lianne-team-page.jpeg"/>      
-                        <button onClick={() => scrollToSection(LianneSectionRef)} className="teamthumbs fancy">                   
+                    <div className="team_portrait lianne">
+                        <img onClick={() => scrollToSection(LianneSectionRef)} alt="lianne saxon therapist" src="/lianne-team-page.jpeg"/>
+                        <button onClick={() => scrollToSection(LianneSectionRef)} className="teamthumbs fancy">
                             Meet Lianne
                         </button>
                     </div>
-                    <div className="team_portrait angie">       
-                        <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" src="/ang_thumbnail.jpeg"/>      
-                        <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs fancy">                   
+                    <div className="team_portrait angie">
+                        <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" src="/ang_thumbnail.jpeg"/>
+                        <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs fancy">
                             Meet Angie
                         </button>
                     </div>
-                </div> 
+                </div>
             </section>
             <br/><br/> 
             {/* Therapist Gallery */}
@@ -110,64 +117,123 @@ const About = () => {
                 </p>
                 <br></br><br></br>
             </div>
+            {/* Neena Start */}
+            <section className="content" ref={NeenaSectionRef}>
+                <br/>
+                <div className="portrait">
+                    <div className="ownertexts">
+                        <p className="fancy">
+                            <br/>
+                            Neena Malhotra
+                        </p>
+                        <p id="ownertext">pronouns: she/her
+                            <br/><br/>
+                            MSW, RSW, RP | Registered Psychotherapist
+                        </p>
+                    </div>
+                    <img alt="Therapist picture" id="NM-SECTION" src="/neena_noshadow.jpeg"/>
+                </div>
+                <br/>
+            </section>
+            <section className="content">
+                <p className="question">
+                    Neena's Approach
+                </p>
+                <p className="pb10 aaa">
+                    I am a compassionate and empathetic therapist that offers a collaborative approach to help you overcome struggles you may be currently experiencing in your life. Whether it is OCD, anxiety disorders, depression, grief/loss issues or trauma affecting your mood, or physical symptoms presenting in your body, I work jointly with you to gently challenge any current faulty belief system and behaviours.
+                </p>
+                <p className="pb10 aaa">
+                    I have over 25 years experience as a clinical therapist using evidence based therapies like Cognitive Behaviour Therapy to reduce symptoms of anxiety, depression and Exposure and Response Prevention to help with OCD and Cognitive Processing Therapy to help with Post Traumatic Stress Disorder. I am an effective listener, but also give you specific tools and strategies to help you move forward in your life. I am a strong advocate for empowering my clients to live their lives to the fullest.
+                </p>
+            </section>
+            <p className="question">
+                Specialties
+            </p>
+            <section className="content">
+                <div className="pb10 specialtiesli">
+                    <ul className="aaa aaaL">
+                        <li>depression</li>
+                        <li>anxiety disorders</li>
+                        <li>phobias</li>
+                        <li>panic disorder and panic attacks</li>
+                        <li>OCD</li>
+                        <li>BFRBs</li>
+                        <li>trauma/PTSD</li>
+                        <li>anger and emotion regulation</li>
+                        <li>self esteem</li>
+                        <li>perinatal concerns</li>
+                        <li>grief and loss</li>
+                    </ul>
+                </div>
+                <p className="availability"></p>
+                <br/>
+            </section>
+            <section id="neenabanner">
+                <div className="mb40 mt40 raise">
+                    <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/12" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
+                        Book with Neena
+                    </a>
+                </div>
+            </section>
+            {/* Neena End */}
             {/* Natasha Start   */}
             <section className="content" ref={NatashaSectionRef}>
                 <br/>
-                <div className="portrait">      
-                    <div className="ownertexts">                
-                        <p className="fancy">                   
+                <div className="portrait">
+                    <div className="ownertexts">
+                        <p className="fancy">
                             <br/>
                             Natasha Sudenis
                             <span id="bigabout">
-                                <br/> 
+                                <br/>
                             </span>
                         </p>
                         <p id="ownertext">
-                            pronouns: she/her 
-                            <br/><br/> 
-                            Registered Psychotherapist (Qualifying) 
+                            pronouns: she/her
+                            <br/><br/>
+                            Registered Psychotherapist (Qualifying)
                         </p>
                     </div>
-                    <img alt="Therapist picture" id="NS-SECTION" src="/natasha.png"/>     
+                    <img alt="Therapist picture" id="NS-SECTION" src="/natasha.jpeg"/>
                 </div>
                 <br></br>
                 {/* <!-- Description --> */}
-                <section className="content">           
-                    <p className="question">               
-                        Natasha's Approach 
+                <section className="content">
+                    <p className="question">
+                        Natasha's Approach
                     </p>
-                    {/* <p className="pb10 aaa">         
+                    {/* <p className="pb10 aaa">
                         Therapy with me often involves:
                     </p>
-                    <div className="pb10 specialtiesli">  
-                        <ul className="aaa aaaL">                
+                    <div className="pb10 specialtiesli">
+                        <ul className="aaa aaaL">
                             <li>Examining the way your mind automatically interprets experiences and how these interpretations shape emotions and behaviour.</li>
                             <li>Noticing recurring patterns-in thoughts, relationships, or self-talk that may keep you feeling stuck.</li>
                             <li>Building tools to navigate difficult emotions and moments of stress, so you can respond rather than react.</li>
                             <li>Clarifying the personal meaning behind your goals, exploring why change matters to you and what it means to live in alignment with your values.</li>
                         </ul>
                     </div> */}
-                     <p className="pb10 aaa">         
-                        I help clients understand the mental loops that keep them caught—those persistent “what if” thoughts, urges to analyze, and rituals that bring short-term relief but strengthen anxiety over time. My approach emphasizes building psychological flexibility and self-trust, helping clients face uncertainty without being pulled back into old mental habits.
+                     <p className="pb10 aaa">
+                        I help clients understand the mental loops that keep them caught—those persistent "what if" thoughts, urges to analyze, and rituals that bring short-term relief but strengthen anxiety over time. My approach emphasizes building psychological flexibility and self-trust, helping clients face uncertainty without being pulled back into old mental habits.
                     </p>
                     <p className="pb10 aaa">
-                        My style is warm, optimistic, and direct. I connect easily with people and aim to create a space that encourages exploration, curiosity, and the discovery of new possibilities. 
+                        My style is warm, optimistic, and direct. I connect easily with people and aim to create a space that encourages exploration, curiosity, and the discovery of new possibilities.
                     </p>
                     <p className="pb10 aaa">
-                        Together, we’ll look at what’s driving your current struggles while developing practical tools for meaningful change.
-                   While therapy is structured and skill-based, it’s also a reflective space to explore identity, purpose, and self-compassion. My goal is to help you not only reduce symptoms but also move toward a richer, more connected life.
+                        Together, we'll look at what's driving your current struggles while developing practical tools for meaningful change.
+                   While therapy is structured and skill-based, it's also a reflective space to explore identity, purpose, and self-compassion. My goal is to help you not only reduce symptoms but also move toward a richer, more connected life.
                     </p>
-                    {/* <p className="pb10 aaa">         
-                        Counselling is not about being fixed, it’s about realizing you were never broken to begin with
+                    {/* <p className="pb10 aaa">
+                        Counselling is not about being fixed, it's about realizing you were never broken to begin with
                     </p> */}
                 </section>
                 {/* <!-- Description END -->    */}
                 {/* <!-- SPECIALTIES -->         */}
-                <p className="question">       
+                <p className="question">
                     Specialties
                 </p>
-                <div className="pb10 specialtiesli">  
-                    <ul className="aaa aaaL">                
+                <div className="pb10 specialtiesli">
+                    <ul className="aaa aaaL">
                         <li>obsessive-compulsive disorder</li>
                         <li>worry and generalized anxiety</li>
                         <li>panic atacks and panic disorder</li>
@@ -180,10 +246,10 @@ const About = () => {
                     </ul>
                 </div>
                 {/* <!-- SPECIALTIES END -->     */}
-            </section>   
+            </section>
             <br/><br/>
-            <section id="aboutBannerBottom">   
-                <div className="mb40 mt40 raise">      
+            <section id="aboutBannerBottom">
+                <div className="mb40 mt40 raise">
                     <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/11" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
                         Book with Natasha
                     </a>
@@ -195,63 +261,63 @@ const About = () => {
             {/* Danielle Start   */}
             <section className="content" ref={DanielleSectionRef}>
                 <br/>
-                <div className="portrait-reverse">      
-                    <div className="ownertexts">                
-                        <p className="fancy">                   
+                <div className="portrait-reverse">
+                    <div className="ownertexts">
+                        <p className="fancy">
                             <br/>
                             Danielle Kirshenbaum
                             <span id="bigabout">
-                                <br/> 
+                                <br/>
                             </span>
                         </p>
                         <p id="ownertext">
-                            pronouns: she/her 
-                            <br/><br/> 
+                            pronouns: she/her
+                            <br/><br/>
                             MSW, RSW | Psychotherapist
                         </p>
                     </div>
-                    <img alt="Therapist picture" id="DK-SECTION" src="/headshotdanielle.png"/>     
+                    <img alt="Therapist picture" id="DK-SECTION" src="/headshotdanielle.png"/>
                 </div>
                 <br></br>
                 {/* <!-- Description --> */}
-                <section className="content">           
-                    <p className="question">               
-                        Danielle's Approach 
+                <section className="content">
+                    <p className="question">
+                        Danielle's Approach
                     </p>
-                    <p className="pb10 aaa">         
-                        I am an empathetic, compassionate, down-to-earth therapist. Whether it is OCD, anxiety, depression, psychosis, or general life stressors affecting your mood and day-to-day functioning, I am here to figure it out with you. 
-                        <br/><br/>  
-                        I will collaboratively and non-judgmentally work with you to uncover your own strengths and employ them (as well as provide you with new tools) to overcome this tough period.                       
+                    <p className="pb10 aaa">
+                        I am an empathetic, compassionate, down-to-earth therapist. Whether it is OCD, anxiety, depression, psychosis, or general life stressors affecting your mood and day-to-day functioning, I am here to figure it out with you.
+                        <br/><br/>
+                        I will collaboratively and non-judgmentally work with you to uncover your own strengths and employ them (as well as provide you with new tools) to overcome this tough period.
                     </p>
-                    <p className="pb10 aaa">        
-                        Through my years of working with individuals experiencing a wide spectrum of challenges, I have come to see that we, as humans, have incredible and unique strengths to overcome adversity - but there are times when intrusive negative thoughts are so loud, or life stressors are so plentiful - that it is very easy to feel completely overwhelmed and lost. You may even worry that these distressing feelings will last forever. Let's get you feeling like yourself again. 
-                        <br/><br/> 
-                        I come from a strengths-based perspective and very much tailor the tools and approach I use to the individual I am working with. This means that while we will no doubt utilize evidence-based approaches to guide us in our work together, my approach with you will very much be centered around your unique history, challenges, needs, and strengths.             
+                    <p className="pb10 aaa">
+                        Through my years of working with individuals experiencing a wide spectrum of challenges, I have come to see that we, as humans, have incredible and unique strengths to overcome adversity - but there are times when intrusive negative thoughts are so loud, or life stressors are so plentiful - that it is very easy to feel completely overwhelmed and lost. You may even worry that these distressing feelings will last forever. Let's get you feeling like yourself again.
+                        <br/><br/>
+                        I come from a strengths-based perspective and very much tailor the tools and approach I use to the individual I am working with. This means that while we will no doubt utilize evidence-based approaches to guide us in our work together, my approach with you will very much be centered around your unique history, challenges, needs, and strengths.
                     </p>
                 </section>
                 {/* <!-- Description END -->    */}
                 {/* <!-- SPECIALTIES -->         */}
-                <p className="question">       
+                <p className="question">
                     Specialties
                 </p>
-                <div className="pb10 specialtiesli">  
-                    <ul className="aaa aaaL">                
-                        <li>obsessive compulsive disorder</li>                
-                        <li>anxiety disorders</li>                 
-                        <li>perinatal and postpartum</li>                
-                        <li>psychosis</li>                
-                        <li>depressive disorders</li>                
-                        <li>eating disorders</li>                
-                        <li>stress and life changes</li>                
-                        <li>personal growth and relationship concerns</li>           
+                <div className="pb10 specialtiesli">
+                    <ul className="aaa aaaL">
+                        <li>obsessive compulsive disorder</li>
+                        <li>anxiety disorders</li>
+                        <li>perinatal and postpartum</li>
+                        <li>psychosis</li>
+                        <li>depressive disorders</li>
+                        <li>eating disorders</li>
+                        <li>stress and life changes</li>
+                        <li>personal growth and relationship concerns</li>
                     </ul>
                 </div>
                 {/* <!-- SPECIALTIES END -->     */}
-            </section>   
+            </section>
             {/* <p className="availability"></p> */}
-            <br/><br/>    
-            <section id="aboutBannermid">   
-                <div className="mb40 mt40 raise">      
+            <br/><br/>
+            <section id="aboutBannermid">
+                <div className="mb40 mt40 raise">
                     <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/6" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
                         Book with Danielle
                     </a>
@@ -260,45 +326,45 @@ const About = () => {
             {/* Danielle End */}
 
             {/* Lianne Start */}
-            <section className="content" ref={LianneSectionRef}>        
-                <div className="portrait team_portrait">            
-                    <div className="ownertexts">   
-                        <p className="fancy">       
+            <section className="content" ref={LianneSectionRef}>
+                <div className="portrait team_portrait">
+                    <div className="ownertexts">
+                        <p className="fancy">
                             <br/>
                                 Lianne Saxon
                             <span id="bigabout">
                                 <br/>
-                            </span>           
+                            </span>
                         </p>
                         <p id="ownertext">pronouns: she/her
                             <br/><br/>
-                            MA | Registered Psychotherapist 
-                        </p>            
+                            MA | Registered Psychotherapist
+                        </p>
                     </div>
-                    <img alt="Therapist picture" id="LS-SECTION" src="/lianne-profile.jpeg"/>    
+                    <img alt="Therapist picture" id="LS-SECTION" src="/lianne-profile.jpeg"/>
                 </div>
                 <br/>
-            </section>   
-            <section className="content">     
-                <p className="question">        
-                    Lianne's Approach      
+            </section>
+            <section className="content">
+                <p className="question">
+                    Lianne's Approach
                 </p>
                 <p className='pb10 aaa'>
-                    I'm an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I'm eager to support you so that you're not dealing with them alone. 
+                    I'm an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I'm eager to support you so that you're not dealing with them alone.
                 </p>
                 <p className='pb10 aaa'>
-                    I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include "taboo" themes, and I'm comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them.                        
+                    I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include "taboo" themes, and I'm comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them.
                 </p>
                 <p className='pb10 aaa'>
-                    Together, we'll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.                            
+                    Together, we'll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.
                 </p>
             </section>
-            <p className="question">        
+            <p className="question">
                 Specialties
             </p>
-            <section className="content">   
-                <div className="pb10 specialtiesli">     
-                    <ul className="aaa aaaL">                
+            <section className="content">
+                <div className="pb10 specialtiesli">
+                    <ul className="aaa aaaL">
                         <li>social anxiety</li>
                         <li>generalized anxiety</li>
                         <li>OCD</li>
@@ -314,7 +380,7 @@ const About = () => {
                 <br/>
             </section>
             <section id="aboutBannermiddle">
-                <div className="mb40 mt40 raise">  
+                <div className="mb40 mt40 raise">
                     <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/10" id="lianne-about-banner-cta" target="_blank" rel="noopener noreferrer">
                         Book with Lianne
                     </a>
@@ -323,76 +389,76 @@ const About = () => {
             {/* Lianne End */}
 
             {/* Angie Start */}
-            <section className="content" ref={AngieSectionRef}>        
-                <div className="portrait-reverse">            
-                    <div className="ownertexts">   
-                        <p className="fancy">       
+            <section className="content" ref={AngieSectionRef}>
+                <div className="portrait-reverse">
+                    <div className="ownertexts">
+                        <p className="fancy">
                             <br/>
                             Angie Blandford
                             <span id="bigabout">
                                 <br/>
-                            </span>           
+                            </span>
                         </p>
                         <p id="ownertext">pronouns: she/her
                             <br/><br/>
-                            MSW, RSW | Clinical Director 
-                        </p>            
+                            MSW, RSW | Clinical Director
+                        </p>
                     </div>
-                    <img alt="Therapist picture" src="/portrait.jpeg"/>    
+                    <img alt="Therapist picture" src="/portrait.jpeg"/>
                 </div>
                 <br/>
-            </section>   
-            <section className="content">     
-                <p className="question">        
-                    Angie's Approach      
-                </p>       
-                <p className="pb10 aaa">   
-                    My goal is to provide a space where you can feel seen, heard and understood. Together, we will explore your symptoms and help you make sense of them. I'll introduce you to a variety of coping strategies that you can use in moments of anxiety as well as your day to day life. 
-                    <br/><br/> 
-                    Anxiety and OCD symptoms are awful, but you don't have to go through them alone. Over time, the tools you learn in therapy can help you feel more confident and less afraid. I love being a therapist because I get to help people 
+            </section>
+            <section className="content">
+                <p className="question">
+                    Angie's Approach
+                </p>
+                <p className="pb10 aaa">
+                    My goal is to provide a space where you can feel seen, heard and understood. Together, we will explore your symptoms and help you make sense of them. I'll introduce you to a variety of coping strategies that you can use in moments of anxiety as well as your day to day life.
+                    <br/><br/>
+                    Anxiety and OCD symptoms are awful, but you don't have to go through them alone. Over time, the tools you learn in therapy can help you feel more confident and less afraid. I love being a therapist because I get to help people
                     <i>
                         just like you
                     </i>
-                    learn how to manage distressing emotions like anxiety.        
-                </p> 
-                <p className="pb10 aaa">    
-                    I am a supportive and compassionate therapist. I enjoy helping people identify their needs, better understand their emotions, and learn meaningful coping strategies in a gentle, easy-going environment.       
+                    learn how to manage distressing emotions like anxiety.
                 </p>
-                <p className="pb10 aaa">           
-                    Working authentically and flexibly are some of my core values as a therapist. I don't believe there is a one-size-fits-all approach to therapy. What works best for you might not work best for someone else. Some folks thrive when doing this work in a structured, guided way. Other people prefer that we take a more exploratory, conversational approach. Some enjoy a mixture of both solution-focused and supportive counselling. 
-                    <br/><br/> 
-                    You are the expert on you. Shortly after beginning therapy, you'll likely get a sense of what's helpful and what's not so helpful. I value your input and strive to tailor my approach to best support you.        
+                <p className="pb10 aaa">
+                    I am a supportive and compassionate therapist. I enjoy helping people identify their needs, better understand their emotions, and learn meaningful coping strategies in a gentle, easy-going environment.
+                </p>
+                <p className="pb10 aaa">
+                    Working authentically and flexibly are some of my core values as a therapist. I don't believe there is a one-size-fits-all approach to therapy. What works best for you might not work best for someone else. Some folks thrive when doing this work in a structured, guided way. Other people prefer that we take a more exploratory, conversational approach. Some enjoy a mixture of both solution-focused and supportive counselling.
+                    <br/><br/>
+                    You are the expert on you. Shortly after beginning therapy, you'll likely get a sense of what's helpful and what's not so helpful. I value your input and strive to tailor my approach to best support you.
                 </p>
             </section>
-            <p className="question">        
+            <p className="question">
                 Specialties
             </p>
-            <section className="content">   
-                <div className="pb10 specialtiesli">     
-                    <ul className="aaa aaaL">                
-                        <li>anxiety disorders</li>                
-                        <li>panic disorder + panic attacks</li>               
-                        <li>agoraphobia</li>                
-                        <li>phobias</li>                
-                        <li>obsessive-compulsive disorder</li>                 
-                        <li>depression</li>                
-                        <li>trauma + PTSD</li>                
-                        <li>sleep</li>               
-                        <li>stress + burnout</li>           
+            <section className="content">
+                <div className="pb10 specialtiesli">
+                    <ul className="aaa aaaL">
+                        <li>anxiety disorders</li>
+                        <li>panic disorder + panic attacks</li>
+                        <li>agoraphobia</li>
+                        <li>phobias</li>
+                        <li>obsessive-compulsive disorder</li>
+                        <li>depression</li>
+                        <li>trauma + PTSD</li>
+                        <li>sleep</li>
+                        <li>stress + burnout</li>
                     </ul>
                 </div>
                 <p className="availability"></p>
                 <br/>
             </section>
-            <section id="aboutbanner">     
-                <div className="mb40 mt40 raise">  
+            <section id="aboutbanner">
+                <div className="mb40 mt40 raise">
                     <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/1" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
                         Book with Angie
                     </a>
                 </div>
             </section>
             {/* Angie End */}
-        </>        
+        </>
     );
 };
 

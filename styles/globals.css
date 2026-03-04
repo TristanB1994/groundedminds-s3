@@ -134,10 +134,10 @@
     background-color: #BED6B3;
 }
 
-.fancy
+/* .fancy
 {
     font-family: 'Petit Formal Script', cursive;
-}
+} */
 
 .font600
 {
@@ -235,7 +235,7 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
-    background-image: url("/homepg.jpeg");
+    background-image: url("/homepagepic.jpeg");
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: 100% 100%;
@@ -1163,7 +1163,22 @@ body
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#neenabanner
+{
+    background-image: url(/bannertop.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -1554,7 +1569,7 @@ input[type=text], select, textarea {
         width: 100%;
         align-items: center;
         flex-direction: column;
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         background-repeat: no-repeat;
         background-position: 0px 0px;
         background-size: 100% 100%;
@@ -1595,7 +1610,7 @@ input[type=text], select, textarea {
 
     .navhome
     {
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         background-size: 100% 100%;
         background-position: 0% 75%;
     }
@@ -2058,7 +2073,7 @@ input[type=text], select, textarea {
         background-position-y: -175px;
         background-position-x: center;
         background-size: 100% 100%;
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         height: 60vh;
     }
 
@@ -2066,7 +2081,7 @@ input[type=text], select, textarea {
     {
         height: 70vh;
         grid-template-rows: 12.5vh 57.5vh;
-        background-image: url(/homepg.jpeg);
+        background-image: url(/homepagepic.jpeg);
         background-size: 100% 140%;
         background-position: 0% 40%;
     }
@@ -2539,6 +2554,10 @@ input[type=text], select, textarea {
     grid-area: NS;
 }
 
+.neena {
+    grid-area: NM;
+}
+
 .team-gallery-container {
     display: block;
     min-height: 40vh;
@@ -2552,6 +2571,7 @@ input[type=text], select, textarea {
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
+    "NM"
     "NS"
     "DK"
     "LS"
@@ -2570,11 +2590,12 @@ input[type=text], select, textarea {
     width: 100%;
     display: grid;
     /* THIS SHOULD MATCH PROFILE ORDER */
-    grid-template-areas: 
+    grid-template-areas:
     "NS   "
     "DK   "
     "LS   "
     "AB   "
+    "NM   "
     ;
 }
 
@@ -2622,8 +2643,9 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "NS DK "
-            "LS AB "
+            "NM NS "
+            "DK LS "
+            "AB AB "
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
@@ -2641,8 +2663,9 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "NS DK "
-            "LS AB "
+            "NM NS "
+            "DK LS "
+            "AB AB "
             ;
 
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -2668,8 +2691,9 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . NS DK . "
-            " . LS AB    . "
+            " . NM NS . "
+            " . DK LS . "
+            " . AB AB . "
             ;
 
         grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;

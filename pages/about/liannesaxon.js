@@ -58,7 +58,7 @@ const AboutLianneSaxon = () => {
                     I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include "taboo" themes, and I'm comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them.                        
                 </p>
                 <p className='pb10 aaa'>
-                    Together, we'll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.                            
+                    Together, we'll use evidence-based  therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.                            
                 </p>
                 <p className="pb10 aaa">
                     I incorporate elements from the following evidence-based therapies in my practice: <em><span style={{ color: 'rgb(112, 145, 99)' }}>EMDR, ERP, I-CBT, CBT, ACT, self-compassion, CPT, inner child work, EFT Tapping, grief counselling, ADHD coaching.</span></em>
