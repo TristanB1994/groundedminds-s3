@@ -1167,21 +1167,6 @@ body
     margin-bottom: 40px;
 }
 
-#neenabanner
-{
-    background-image: url(/bannertop.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
 #about-banner-cta
 {
     display: block;
@@ -2554,10 +2539,6 @@ input[type=text], select, textarea {
     grid-area: NS;
 }
 
-.neena {
-    grid-area: NM;
-}
-
 .team-gallery-container {
     display: block;
     min-height: 40vh;
@@ -2571,7 +2552,6 @@ input[type=text], select, textarea {
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
-    "NM"
     "NS"
     "DK"
     "LS"
@@ -2595,7 +2575,6 @@ input[type=text], select, textarea {
     "DK   "
     "LS   "
     "AB   "
-    "NM   "
     ;
 }
 
@@ -2643,9 +2622,8 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "NM NS "
-            "DK LS "
-            "AB AB "
+            "NS DK"
+            "LS AB"
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
@@ -2663,9 +2641,8 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "NM NS "
-            "DK LS "
-            "AB AB "
+            "NS DK "
+            "LS AB "
             ;
 
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -2691,9 +2668,8 @@ input[type=text], select, textarea {
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . NM NS . "
-            " . DK LS . "
-            " . AB AB . "
+            " . NS DK . "
+            " . LS AB . "
             ;
 
         grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;

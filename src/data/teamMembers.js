@@ -22,13 +22,7 @@ const teamMembers = [
         image: "/natasha_sudenis_team_page.jpeg",
         profileUrl: "/about/natashasudenis",
         alt: "Natasha Sudenis therapist",
-    },
-    {
-        name: "Neena",
-        image: "/Neena-H-team.jpeg",
-        profileUrl: "/about/neenamalhotra",
-        alt: "Neena Malhotra therapist",
-    },
+    }
 ];
 
 export default teamMembers;

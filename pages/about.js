@@ -6,7 +6,6 @@ const About = () => {
     const titleString = "Our Team | Grounded Minds Therapy";
     const descriptionString = "Our team specializes in supporting individuals with obsessive-compulsive disorder and anxiety disorders. With extensive training and experience, we welcome the opportunity to work with you.";
 
-    const NeenaSectionRef = useRef(null);
     const NatashaSectionRef = useRef(null);
     const DanielleSectionRef = useRef(null);
     const LianneSectionRef = useRef(null);
@@ -77,12 +76,6 @@ const About = () => {
             <section className="team-gallery-container">
                 <div className="team-thumbnails-grid">
                     {/* <!-- Therapist Cards Positioned by grid -->           */}
-                    <div className="team_portrait neena">
-                        <img onClick={() => scrollToSection(NeenaSectionRef)} alt="Neena Malhotra therapist" src="/Neena-H-Team.jpeg"/>
-                        <button onClick={() => scrollToSection(NeenaSectionRef)} className="teamthumbs fancy">
-                            Meet Neena
-                        </button>
-                    </div>
                     <div className="team_portrait natasha">
                         <img onClick={() => scrollToSection(NatashaSectionRef)} alt="natasha sudenis therapist" src="/natasha_sudenis_team_page.jpeg"/>
                         <button onClick={() => scrollToSection(NatashaSectionRef)} className="teamthumbs fancy">
@@ -117,65 +110,6 @@ const About = () => {
                 </p>
                 <br></br><br></br>
             </div>
-            {/* Neena Start */}
-            <section className="content" ref={NeenaSectionRef}>
-                <br/>
-                <div className="portrait">
-                    <div className="ownertexts">
-                        <p className="fancy">
-                            <br/>
-                            Neena Malhotra
-                        </p>
-                        <p id="ownertext">pronouns: she/her
-                            <br/><br/>
-                            MSW, RSW, RP | Registered Psychotherapist
-                        </p>
-                    </div>
-                    <img alt="Therapist picture" id="NM-SECTION" src="/neena_noshadow.jpeg"/>
-                </div>
-                <br/>
-            </section>
-            <section className="content">
-                <p className="question">
-                    Neena's Approach
-                </p>
-                <p className="pb10 aaa">
-                    I am a compassionate and empathetic therapist that offers a collaborative approach to help you overcome struggles you may be currently experiencing in your life. Whether it is OCD, anxiety disorders, depression, grief/loss issues or trauma affecting your mood, or physical symptoms presenting in your body, I work jointly with you to gently challenge any current faulty belief system and behaviours.
-                </p>
-                <p className="pb10 aaa">
-                    I have over 25 years experience as a clinical therapist using evidence based therapies like Cognitive Behaviour Therapy to reduce symptoms of anxiety, depression and Exposure and Response Prevention to help with OCD and Cognitive Processing Therapy to help with Post Traumatic Stress Disorder. I am an effective listener, but also give you specific tools and strategies to help you move forward in your life. I am a strong advocate for empowering my clients to live their lives to the fullest.
-                </p>
-            </section>
-            <p className="question">
-                Specialties
-            </p>
-            <section className="content">
-                <div className="pb10 specialtiesli">
-                    <ul className="aaa aaaL">
-                        <li>depression</li>
-                        <li>anxiety disorders</li>
-                        <li>phobias</li>
-                        <li>panic disorder and panic attacks</li>
-                        <li>OCD</li>
-                        <li>BFRBs</li>
-                        <li>trauma/PTSD</li>
-                        <li>anger and emotion regulation</li>
-                        <li>self esteem</li>
-                        <li>perinatal concerns</li>
-                        <li>grief and loss</li>
-                    </ul>
-                </div>
-                <p className="availability"></p>
-                <br/>
-            </section>
-            <section id="neenabanner">
-                <div className="mb40 mt40 raise">
-                    <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/12" id="about-banner-cta" target="_blank" rel="noopener noreferrer">
-                        Book with Neena
-                    </a>
-                </div>
-            </section>
-            {/* Neena End */}
             {/* Natasha Start   */}
             <section className="content" ref={NatashaSectionRef}>
                 <br/>
