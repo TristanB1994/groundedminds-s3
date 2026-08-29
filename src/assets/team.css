@@ -15,10 +15,6 @@
     grid-area: RS;
 }
 
-.lianne {
-    grid-area: LS;
-}
-
 .team-gallery-container {
     display: block;
     min-height: 40vh;
@@ -32,9 +28,8 @@
 .team-thumbnails-grid {
     display: grid;
     grid-template-areas:
-    "AK   "
+    "NS   "
     "DK   "
-    "LS   "
     "AB   "
     ;
 
@@ -51,9 +46,8 @@
     display: grid;
     /* THIS SHOULD MATCH PROFILE ORDER */
     grid-template-areas: 
-    "AK   "
+    "NS   "
     "DK   "
-    "LS   "
     "AB   "
     ;
 }
@@ -103,8 +97,8 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "AK DK   "
-            "LS AB   "
+            "NS DK   "
+            "AB AB   "
         ;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
@@ -122,8 +116,8 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            "AK DK   "
-            "LS AB   "
+            "NS DK   "
+            "AB AB   "
             ;
 
         grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -149,8 +143,8 @@
 {
     .team-thumbnails-grid {
         grid-template-areas:
-            " . AK DK    . "
-            " . LS AB    . "
+            " . NS DK    . "
+            " . AB AB    . "
             ;
 
         grid-template-columns: auto repeat(2, minmax(300px, 1fr)) auto;

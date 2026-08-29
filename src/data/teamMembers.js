@@ -1,5 +1,11 @@
 const teamMembers = [
     {
+        name: "Natasha",
+        image: "/natasha_sudenis_team_page.jpeg",
+        profileUrl: "/about/natashasudenis",
+        alt: "Natasha Sudenis therapist",
+    },
+    {
         name: "Danielle",
         image: "/thumbnaildk.png",
         profileUrl: "/about/daniellekirshenbaum",
@@ -11,18 +17,6 @@ const teamMembers = [
         profileUrl: "/about/angieblandford",
         alt: "angie blandford therapist",
     },
-    {
-        name: "Lianne",
-        image: "/lianne-team-page.jpeg",
-        profileUrl: "/about/liannesaxon",
-        alt: "lianne saxon therapist",
-    },
-    {
-        name: "Natasha",
-        image: "/natasha_sudenis_team_page.jpeg",
-        profileUrl: "/about/natashasudenis",
-        alt: "Natasha Sudenis therapist",
-    }
 ];
 
 export default teamMembers;
