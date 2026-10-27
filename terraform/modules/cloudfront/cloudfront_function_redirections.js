@@ -8,8 +8,7 @@ function handler(event) {
         "/angieblandford/": "/about/angieblandford",
         "/daniellekirshenbaum": "/about/daniellekirshenbaum",
         "/daniellekirshenbaum/": "/about/daniellekirshenbaum",
-        "/liannesaxon": "/about/liannesaxon",
-        "/liannesaxon/": "/about/liannesaxon",
+
         // Service redirections
         "/anxiety": "/services/anxiety",
         "/anxiety/": "/services/anxiety",

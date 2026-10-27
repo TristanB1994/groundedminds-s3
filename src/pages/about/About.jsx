@@ -14,7 +14,7 @@ const About = () => {
     const AnkaSectionRef = useRef(null);
     const DanielleSectionRef = useRef(null);
     const AngieSectionRef = useRef(null);
-    const LianneSectionRef = useRef(null);
+
 
     const scrollToSection = (sectionRef) => {
         sectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -106,12 +106,7 @@ const About = () => {
                                 Meet Danielle
                             </button>
                         </div>
-                        <div className="team_portrait lianne">       
-                            <img onClick={() => scrollToSection(LianneSectionRef)} alt="lianne saxon therapist" id="LS-SECTION-THUMB" src="/lianne-team-page.jpeg"/>      
-                            <button onClick={() => scrollToSection(LianneSectionRef)} className="teamthumbs" id="LS-SECTION-CTA">                   
-                                Meet Lianne
-                            </button>
-                        </div>
+
                         <div className="team_portrait angie">       
                             <img onClick={() => scrollToSection(AngieSectionRef)} alt="angie blandford therapist" id="ALB-SECTION-THUMB" src="/ang_thumbnail.jpeg"/>      
                             <button onClick={() => scrollToSection(AngieSectionRef)} className="teamthumbs" id="ALB-SECTION-CTA">                   
@@ -273,68 +268,6 @@ const About = () => {
                     </section>
                     {/* Danielle End */}
 
-                    {/* Lianne Start */}
-                    <section className="content" ref={LianneSectionRef}>        
-                        <div className="portrait">            
-                            <div className="ownertexts">   
-                                <p className="fancy">       
-                                    <br/>
-                                       Lianne Saxon
-                                    <span id="bigabout">
-                                        <br/>
-                                    </span>           
-                                </p>
-                                <p id="ownertext">pronouns: she/her
-                                    <br/><br/>
-                                    MA | Registered Psychotherapist (Qualifying) 
-                                </p>            
-                            </div>
-                            <img alt="Therapist picture" id="ALB-SECTION" src="/lianne-profile.jpeg"/>    
-                        </div>
-                        <br/>
-                    </section>   
-                    <section className="content">     
-                        <p className="question">        
-                            Lianne's Approach      
-                        </p>
-                        <p className='pb10 aaa'>
-                            I’m an approachable, compassionate, non-judgmental therapist with a passion for sharing my knowledge and helping people. It would be an honour to work with you on your mental health and wellbeing. I understand how distressing mental health issues can be, and I’m eager to support you so that you’re not dealing with them alone. 
-                        </p>
-                        <p className='pb10 aaa'>
-                            I have experience and a keen interest in helping adults with anxiety disorders, OCD, trauma, depression and grief. Worries, intrusive thoughts, compulsions and trauma often include an element of shame, especially if they include “taboo” themes, and I’m comfortable discussing them. My approach is to respectfully listen, validate and normalize your experiences, and then figure out what we can do to address them.                        
-                        </p>
-                        <p className='pb10 aaa'>
-                            Together, we’ll use evidence-based therapies to work towards your goals, including reducing anxiety symptoms, managing OCD, and processing trauma. I listen but I also take an active role in sessions, gently challenging you in a way that encourages growth and learning.                            
-                        </p>
-                    </section>
-                    <p className="question">        
-                        Specialties
-                    </p>
-                    <section className="content">   
-                        <div className="pb10 specialtiesli">     
-                            <ul className="aaa aaaL">                
-                                <li>social anxiety</li>
-                                <li>generalized anxiety</li>
-                                <li>OCD</li>
-                                <li>trauma + PTSD + complex trauma</li>
-                                <li>health anxiety</li>
-                                <li>ADHD</li>
-                                <li>grief</li>
-                                <li>body-focused repetitive behaviours (BFRBs)</li>
-                                <li>depression</li>
-                            </ul>
-                        </div>
-                        <p className="availability"></p>
-                        <br/>
-                    </section>
-                    <section id="aboutBannermiddle">
-                        <div className="mb40 mt40 raise">  
-                            <a className="booknow caps" href="https://groundedmindstherapy.janeapp.com/#/staff_member/10" id="lianne-about-banner-cta" target="_blank">
-                                Book with Lianne
-                            </a>
-                        </div>
-                    </section>
-                    {/* Lianne End */}
 
                     {/* Angie Start */}
                     <section className="content" ref={AngieSectionRef}>        

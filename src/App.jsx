@@ -16,7 +16,7 @@ import AboutDanielleKirshenbaum from './pages/about/About-danielle-kirshenbaum';
 import AboutNatashaSudenis from './pages/about/natashasudenis';
 import Resources from './pages/Resources';
 import ScrollToTop from './components/ScrollToTop';
-import AboutLianneSaxon from './pages/about/About-lianne-saxon';
+
 
 
 const App = () => {
@@ -28,9 +28,9 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/angieblandford" element={<AboutAngieBlandford />} />
-        <Route path="/natashasudenis" element={<AboutAnkaKrivokuca />} />
+        <Route path="/natashasudenis" element={<AboutNatashaSudenis />} />
         <Route path="/daniellekirshenbaum" element={<AboutDanielleKirshenbaum />} />
-        <Route path="/liannesaxon" element={<AboutLianneSaxon />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/services" element={<ServicesAll />} />
